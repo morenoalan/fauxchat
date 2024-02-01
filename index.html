@@ -20,9 +20,33 @@
         Você precisa ativar o JavaScript para executar esta aplicação.<br />
 		<br />
     </noscript>
-    <head></head>
-    <main></main>
-    <footer></footer>
+    <head>
+        <figure>
+            <figcaption>FauxChat</figcaption>
+        </figure>
+    </head>
+    <main>
+        <section id='main-section-left' class='display-none'></section>
+        <section id='main-section-center'>
+            <div id='app-screens'>
+                <section id='screen-list' class='display-none'>
+                    <div id='screen-list-header'></div>
+                    <div id='screen-list-main'></div>
+                    <div id='screen-list-footer'></div>
+                </section>
+                <section id='screen-chat'>
+                    <div id='screen-chat-header'></div>
+                    <div id='screen-chat-main'></div>
+                    <div id='screen-chat-footer'></div>
+                </section>
+            </div>
+            <section id='float-keyboard' class='display-none'></section>
+        </section>
+        <section id='main-section-right' class='display-none'></section>
+    </main>
+    <footer id='footer'>
+		<p><a id='author' href='https://www.github.com/morenoalan' target='_blank'>Alan Moreno</a> <span class='invert-horizontal'>&#169;</span> <span id='copyleft-year'>2024</span> | <a href='https://www.github.com/morenoalan/fauxchat' target='_blank'>Repository</a></p>
+	</footer>
     <script type='text/javascript' id='script-main' src='./script/main.js'></script>
 </body>
 </html>
