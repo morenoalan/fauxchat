@@ -1,8 +1,9 @@
+@import url(./styles_fauxchat.css);
+
 :root {
     --color-white: #ffffff;
     --color-black: #000000;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,6 @@ html, body {
     width: 100%;
     overflow: auto;
 }
-
 html {
     background: var(--color-black);
     display: flex;
@@ -22,19 +22,18 @@ html {
     align-items: center;
     justify-content:center;
 }
-
 body {
     background: var(--color-white);
     color: var(--color-black);
     -webkit-font-smoothing: antialiased;
     font-family: 'Roboto', sans-serif;
+    font-size: 20pt;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     max-width: 500px;
 }
-
 ul {
     list-style-type: none;
 }
@@ -48,4 +47,37 @@ ul {
 }
 .pointer-events-none {
     pointer-events: none;
+}
+
+header,
+footer {
+    width: 100%;
+    height: 1.5rem;
+    background: crimson;
+    font-size: 1rem;
+    color: var(--color-white);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer * {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background: cyan;
+}
+
+#main-section-center {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
 }
