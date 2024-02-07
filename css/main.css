@@ -75,9 +75,12 @@ main {
     background: cyan;
 }
 
-#main-section-center {
+#main-section-center,
+#app-screens {
+    background: red;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    align-items: flex-start;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
 }
