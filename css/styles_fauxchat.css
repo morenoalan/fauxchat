@@ -2,29 +2,32 @@
 
     * {
         --fauxchat: "fauxchat";
-    };
+    };/*This first brace presents an unusual behavior, doesn't show the appropriate colors and needs this semicolon at the end. Reason to create this useless parameter.*/
 
     .icon {
-        width: 2rem;
-        height: 2rem;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    #screen-chat-header-menu-more {
+        width: 1rem;
     }
 
     .image-head {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    #screen-chat {
-        background: blue;
-        width: 100%;
+        width: 2.6rem;
+        height: 2.6rem;
+        background: var(--color-black);
+        border-radius: 50%;
     }
 
     #screen-chat {
         display: flex;
         position: relative;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: space-between;
         justify-content: center;
+        background: blue;
+        width: 100%;
     }
 
     #screen-chat-header {
@@ -34,29 +37,108 @@
         align-items: space-between;
         justify-content: space-between;
         width: 100%;
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
     }
 
     #screen-chat-header-figure {
         display: flex;
         position: relative;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         width: 100%;
-        height: 50px;
         background: var(--color-black);
-    };
+    }
 
-    #screen-chat-header-figure img {
-        width: 50px;
-        height: 50px;
-        background: var(--color-black);
-        border-radius: 50%;
-    };
-/*
-    #screen-chat-header-figure-back-bt {
+    #screen-chat-header-figure-back {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;
+        padding-left: 0.2rem;
+    }
+    
+    #screen-chat-header-figure-name {
+        height: 100%;
+    }
+
+    #screen-chat-header-figure-name figcaption {
+        margin-left: 0.6rem;
+        font-size: 1.3rem;
+        color: var(--color-black);
+    }
+
+    #screen-chat-header-menu {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 1rem;
+        width: fit-content;
+        column-gap: 1.6rem;
+    }
+
+    #screen-chat-main {
+        background: green;
         width: 100%;
         height: 100%;
     }
-*/
+
+    #screen-chat-footer {
+        background: violet;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.2rem;
+    }
+
+    #screen-chat-footer>div:first-child {
+        display: flex;
+        display: relative;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: fit-content;
+        height: 100%;
+        border-radius: 1.5rem;
+        background: gray;
+        padding: 0.45rem;
+    }
+
+    #screen-chat-footer>div>textarea {
+        width: 250px;
+        height: 1rem;
+        max-height: 6rem;
+        font-size: 1rem;
+        filter: opacity(50%);
+        margin-bottom: 0.2rem;
+    }
+
+    #screen-chat-footer>div:last-child {
+        width: fit-content;
+        height: 100%;
+        background: green;
+    }
+
+    .icon-mic-send {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .svg-color-white {
+        filter: invert(1);
+    }
+
+    .button-mic-send {
+        width: 3rem;
+        height: 3rem;
+        background: blue;
+        border-radius: 50%;
+    }
 }
