@@ -293,7 +293,7 @@ let people = [
         "surname": "Itapuã",
         "nickname": "",
         "photo": "./medias/people/fauxchat-people-033.jpg",
-        "username": "",
+        "username": "manuitapua",
         "bio": ""
     },
     {
@@ -302,7 +302,7 @@ let people = [
         "surname": "Guaraná",
         "nickname": "",
         "photo": "./medias/people/fauxchat-people-034.jpg",
-        "username": "",
+        "username": "mabelita",
         "bio": ""
     },
     {
@@ -311,7 +311,7 @@ let people = [
         "surname": "Guaraná",
         "nickname": "",
         "photo": "./medias/people/fauxchat-people-035.jpg",
-        "username": "",
+        "username": "miguelito",
         "bio": ""
     },
     {
@@ -320,7 +320,7 @@ let people = [
         "surname": "Moriçoca",
         "nickname": "",
         "photo": "./medias/people/fauxchat-people-036.jpg",
-        "username": "",
+        "username": "amorzinho",
         "bio": ""
     },
     {
@@ -329,7 +329,7 @@ let people = [
         "surname": "Tanajura",
         "nickname": "",
         "photo": "./medias/people/fauxchat-people-037.jpg",
-        "username": "",
+        "username": "perebento",
         "bio": ""
     },
     {
@@ -338,7 +338,7 @@ let people = [
         "surname": "Tanajura",
         "nickname": "",
         "photo": "./medias/people/fauxchat-people-038.jpg",
-        "username": "",
+        "username": "barbatana",
         "bio": ""
     },
     {
@@ -356,7 +356,7 @@ let people = [
         "surname": "Piaba",
         "nickname": "",
         "photo": "./medias/people/fauxchat-people-040.jpg",
-        "username": "",
+        "username": "a_re_pia",
         "bio": ""
     },
     {
@@ -365,7 +365,7 @@ let people = [
         "surname": "Itatiaia",
         "nickname": "",
         "photo": "./medias/people/fauxchat-people-041.jpg",
-        "username": "",
+        "username": "betinha",
         "bio": ""
     },
     {
@@ -383,7 +383,7 @@ let people = [
         "surname": "Lambari",
         "nickname": "",
         "photo": "./medias/people/fauxchat-people-043.jpg",
-        "username": "",
+        "username": "lambada",
         "bio": ""
     },
     {
@@ -554,7 +554,7 @@ let people = [
         "surname": "Butiá",
         "nickname": "",
         "photo": "./medias/people/fauxchat-people-062.jpg",
-        "username": "rabutia",
+        "username": "bolsofurado",
         "bio": ""
     },
     {

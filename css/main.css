@@ -10,6 +10,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
+    touch-action: none;
+    border: none;
+    outline: none;
 }
 
 html, body {
@@ -38,6 +42,9 @@ body {
 }
 ul {
     list-style-type: none;
+}
+button {
+    cursor: pointer;
 }
 
 .display-none {
@@ -79,10 +86,11 @@ main {
 
 #main-section-center,
 #app-screens {
-    background: red;
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
+    background: red;
 }
