@@ -26,8 +26,25 @@
         flex-direction: column;
         align-items: space-between;
         justify-content: center;
-        background: blue;
         width: 100%;
+        height: 100%;
+    }
+
+    #screen-chat-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url("/medias/backgrounds/_1b5694c4-153b-440c-9819-f7e6d96c25b3.jpeg");
+        background-size: cover;
+        background-position: center;
+        filter: brightness(0.3) invert(1);
+    }
+
+    #screen-chat-background > div {
+        width: 100%;
+        height: 100%;
+        background: burlywood;
+        filter: opacity(70%) invert(1);
     }
 
     #screen-chat-header {
@@ -37,8 +54,9 @@
         align-items: space-between;
         justify-content: space-between;
         width: 100%;
-        margin-top: 0.4rem;
-        margin-bottom: 0.4rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        background: white;/*gainsboro;*/
     }
 
     #screen-chat-header-figure {
@@ -83,58 +101,180 @@
     }
 
     #screen-chat-main {
-        background: green;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        background: transparent;
         width: 100%;
-        height: 100%;
+        height: fit-content;
+        resize: none;
+        overflow: auto;
+    }
+
+    .message-bubble {
+        background: #e7ffdb;
+        border-radius: 0.8rem;
+        padding: 0.4rem 0.7rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        max-width: 85%;
+    }
+
+    .message-bubble:last-of-type {
+        margin-bottom: 1.8rem;
+    }
+
+    .message-bubble-left {
+        align-self: flex-start;
+        margin-top: 0.5rem;
+        margin-left: 0.8rem;
+    }
+
+    .message-bubble-right {
+        align-self: flex-end;
+        margin-top: 0.5rem;
+        margin-right: 0.8rem;
+    }
+
+    .message-bubble-left + .message-bubble-left,
+    .message-bubble-right + .message-bubble-right {
+        margin-top: 0.15rem;
+    }
+
+    .message-bubble-left:first-of-type>.message-bubble-handle,
+    .message-bubble-left + :not(.message-bubble-left)>.message-bubble-handle {
+        width: 2rem;
+        height: 2rem;
+        background: red;
+        left: -1rem;
+    }
+
+    .message-bubble-right:first-of-type>.message-bubble-handle,
+    .message-bubble-right + :not(.message-bubble-right)>.message-bubble-handle {
+        width: 2rem;
+        height: 2rem;
+        background: red;
+        right: -1rem;
+    }
+
+
+    .message-bubble-left:first-of-type,
+    .message-bubble-right:first-of-type,
+    .message-bubble-left + :not(.message-bubble-left),
+    .message-bubble-right + :not(.message-bubble-right) {
+        background: green;
+    }
+
+    .message-bubble-message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /*
+    .message-bubble-message:last-child {
+        
+    }
+    */
+    .message-bubble-status {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-items: center;
+        position: relative;
+        column-gap: 0.2rem;
+        align-self: flex-end;
+    }
+
+    .message-bubble-time {
+        font-size: 0.8rem;
+        color: gray;
+    }
+
+    .message-bubble-all-done {
+        width: 1.2rem;
+        height: 1.2rem;
+        filter: invert(0.5);
+    }
+
+    .message-bubble-all-done-layer {
+        width: 20px;
+        height: 20px;
     }
 
     #screen-chat-footer {
-        background: violet;
+        background: transparent;
         display: flex;
         position: relative;
+        bottom: 1.5rem;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.2rem;
+        align-items: space-between;
+        justify-content: center;
+        padding: 0.3rem;
+        gap: 0.3rem;
     }
 
     #screen-chat-footer>div:first-child {
         display: flex;
-        display: relative;
+        position: relative;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
         width: 100%;
         height: 100%;
         border-radius: 1.5rem;
-        background: gray;
+        background: white;
         padding: 0.45rem;
     }
 
     .input-message-field {
-        min-width: 50%;
+        flex-grow: 1;
+        word-break: break-all;
         min-height: 1.7rem;
-        max-height: 6rem;
-        font-size: 1rem;
-        filter: opacity(100%);
-        margin-bottom: 0.2rem;
-        resize: none;
-        background: white;
+        max-height: 10.2rem;
+        font-size: 1.3rem;
+        margin-bottom: 0.17rem;
+        background: transparent;
         cursor: text;
         padding: 0.1rem 0.4rem;
+        resize: none;
         overflow: hidden;
+        caret-color: MediumSeaGreen;
+        user-select: auto;
+        display: inline;
+        text-decoration-style: solid;
     }
+
     .input-message-field:empty::before {
         content: "Mensagem";
-        color: gray;
+        color: gray;/*#808080;*/
         cursor: text;
-        min-width: 100%;
+    }
+
+    .input-message-field::selection {
+        background-color: MediumSeaGreen;
+        color: white;
+    }
+
+    #screen-chat-footer>div:first-child>button:not(:first-of-type):not(:nth-of-type(2)) {
+        margin-left: 1.6rem;
+    }
+
+    #screen-chat-footer>div:first-child {
+        padding-right: 1rem;
     }
 
     #screen-chat-footer>div:last-child {
         width: max-content;
         height: 100%;
-        background: green;
+        background: transparent;
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 1.6rem;
     }
 
     .icon-mic-send {
@@ -146,10 +286,15 @@
         filter: invert(1);
     }
 
+    .svg-color-gray {
+        filter: invert(0.5);
+    }
+
     .button-mic-send {
         width: 3rem;
         height: 3rem;
-        background: blue;
+        background: MediumSeaGreen;/*#1dab61;*/
         border-radius: 50%;
     }
+
 }
