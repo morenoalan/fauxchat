@@ -11,12 +11,14 @@
         align-items: fit-content;
         justify-content: flex-start;
         background: transparent;
-        width: 100%;
+        width: calc(100% - 0.05rem);
         height: 100%;
         resize: none;
         overflow-x: hidden;
         overflow-y: scroll;
     }
+
+    
 
     .message-bubble {
         clear: both;
@@ -127,4 +129,20 @@
         width: 1rem;
     }
 
+    .chat-scroll::-webkit-scrollbar {
+        width: 0.3rem;
+        height: 0.1rem;
+        z-index: 100;
+    }
+    
+    .chat-scroll::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    
+    .chat-scroll::-webkit-scrollbar-thumb {
+        border-radius: 0.15rem;
+        background-color: #80808080;
+    }
+
 }
+

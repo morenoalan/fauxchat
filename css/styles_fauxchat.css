@@ -10,7 +10,7 @@
     --color-mediumseagreen: #3cb371;/*#1dab61;*/
     --color-grass-smell: #015c4b;
     --color-leaf-stern: #1e2b33;
-    
+
     --bubble-border-radius: 0.5rem;
     --color-bubble-left: var(--color-white);
     --color-bubble-right: var(--color-lemon-serene);
@@ -53,6 +53,5 @@
         background: var(--color-burlywood);
         filter: opacity(70%) invert(1);
     }
-
 
 }
