@@ -119,12 +119,14 @@
         display: inline-block;
     }
 
-    .message-bubble-all-done {
-        filter: invert(0.5);    
+    .message-bubble-done {
         display: inline-block;
         margin-left: 0.1rem;
         position: relative;
         top: 0.25rem;
+    }
+
+    .message-bubble-done>img {
         height: 1rem;
         width: 1rem;
     }
@@ -142,6 +144,19 @@
     .chat-scroll::-webkit-scrollbar-thumb {
         border-radius: 0.15rem;
         background-color: #80808080;
+    }
+
+    .red {
+        filter: hue-rotate(14deg);
+    }
+    .green {
+        filter: hue-rotate(120deg);
+    }
+    .blue {
+        filter: hue-rotate(210deg);
+    }
+    .black {
+        filter: grayscale(100%);
     }
 
 }
