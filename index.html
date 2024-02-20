@@ -39,61 +39,101 @@
                         <div></div>
                     </div>
                     <div id='screen-chat-header'>
-                        <figure id='screen-chat-header-figure'>
-                            <button id='screen-chat-header-figure-back'>
-                                <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
-                                <img src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='image' class='image-head'/>
-                            </button>
-                            <button id='screen-chat-header-figure-name'>
-                                <figcaption>
-                                    Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa
-                                </figcaption>
-                            </button>
-                        </figure>
-                        <div id='screen-chat-header-menu'>
-                            <button>
-                                <img id='screen-chat-header-menu-videocam' src='./medias/icons/videocam_FILL0_wght400_GRAD0_opsz24.svg' alt='videocam' class='icon'/>
-                            </button>
-                            <button>
-                                <img id='screen-chat-header-menu-call' src='./medias/icons/call_FILL0_wght400_GRAD0_opsz24.svg' alt='call' class='icon'/>
-                            </button>
-                            <button>
-                                <img id='screen-chat-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
-                            </button>
+                        <div id='screen-chat-header-display' class='screen-chat-header '>
+                            <figure id='screen-chat-header-figure'>
+                                <button id='screen-chat-header-figure-back'>
+                                    <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
+                                    <img src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='image' class='image-head'/>
+                                </button>
+                                <button id='screen-chat-header-figure-name'>
+                                    <figcaption>
+                                        Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa
+                                    </figcaption>
+                                </button>
+                            </figure>
+                            <div id='screen-chat-header-menu'>
+                                <button>
+                                    <img id='screen-chat-header-menu-videocam' src='./medias/icons/videocam_FILL0_wght400_GRAD0_opsz24.svg' alt='videocam' class='icon'/>
+                                </button>
+                                <button>
+                                    <img id='screen-chat-header-menu-call' src='./medias/icons/call_FILL0_wght400_GRAD0_opsz24.svg' alt='call' class='icon'/>
+                                </button>
+                                <button>
+                                    <img id='screen-chat-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
+                                </button>
+                            </div>
+                        </div>
+                        <div id='screen-chat-header-edition' class='screen-chat-header'>
+                            <div class='screen-chat-header-edition-left'>
+                                <button id='screen-chat-header-figure-back'>
+                                    <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
+                                </button>
+                                <div id='screen-chat-header-edition-counter' class='button-chat-edition'>
+                                    88
+                                </div>
+                            </div>
+                            <div class='screen-chat-header-edition-right'>
+                                <button onclick='bubbleDelete();' class='button-chat-edition'>
+                                    <img src='/medias/icons/delete_FILL0_wght400_GRAD0_opsz24.svg' class='icon'/>
+                                </button>
+                                <button onclick='bubbleEdit();' class='button-chat-edition'>
+                                    <img src='/medias/icons/edit_FILL0_wght400_GRAD0_opsz24.svg' class='icon'/>
+                                </button>
+                                <button id='screen-chat-header-edition-me' class='image-head'>
+                                    <div>
+                                        Eu
+                                    </div>
+                                </button>
+                                <button class='image-head'>
+                                    <img src='./medias/icons/chat_info_FILL0_wght400_GRAD0_opsz24.svg' onclick='' alt='info' class='icon svg-color-white'/>
+                                </button>
+                                <button class='button-chat-edition'>
+                                    <img src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='002' class='image-head'/>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div id='screen-chat-main' class='chat-scroll'>
-                        <div class='message-bubble message-bubble-left'>
-                            1 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                        <div class='message-container'>
+                            <button class='message-selector'></button>
+                            <div class='message-bubble message-bubble-left'>
+                                1 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
+                                <div class='message-bubble-metadata'>
+                                    <p class='message-bubble-time' contenteditable='true'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class='message-bubble message-bubble-right'>
-                            2 Mensagens de exemplo.
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                        <div class='message-container'>
+                            <button class='message-selector'></button>
+                            <div class='message-bubble message-bubble-right'>
+                                2 Mensagens de exemplo.
+                                <div class='message-bubble-metadata'>
+                                    <p class='message-bubble-time' contenteditable='true'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class='message-bubble message-bubble-right'>
-                            3 Mensagens.
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                        <div class='message-container'>
+                            <button class='message-selector'></button>
+                            <div class='message-bubble message-bubble-right'>
+                                3 Mensagens.
+                                <div class='message-bubble-metadata'>
+                                    <p class='message-bubble-time' contenteditable='true'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class='message-bubble message-bubble-left'>
@@ -103,7 +143,7 @@
                                 <p class='message-bubble-time' contenteditable='true'>
                                     12:30
                                 </p>
-                                <button class='message-bubble-done'>
+                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
                                     <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                 </button>
                             </div>
@@ -118,7 +158,7 @@
                                 <p class='message-bubble-time' contenteditable='true'>
                                     12:30
                                 </p>
-                                <button class='message-bubble-done'>
+                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
                                     <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                 </button>
                             </div>
@@ -130,7 +170,7 @@
                                 <p class='message-bubble-time' contenteditable='true'>
                                     12:30
                                 </p>
-                                <button class='message-bubble-done'>
+                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
                                     <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                 </button>
                             </div>
@@ -142,7 +182,7 @@
                                 <p class='message-bubble-time' contenteditable='true'>
                                     12:30
                                 </p>
-                                <button class='message-bubble-done'>
+                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
                                     <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                 </button>
                             </div>
@@ -154,7 +194,7 @@
                                 <p class='message-bubble-time' contenteditable='true'>
                                     12:30
                                 </p>
-                                <button class='message-bubble-done'>
+                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
                                     <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                 </button>
                             </div>
@@ -166,7 +206,7 @@
                                 <p class='message-bubble-time' contenteditable='true'>
                                     12:30
                                 </p>
-                                <button class='message-bubble-done'>
+                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
                                     <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                 </button>
                             </div>
@@ -178,7 +218,7 @@
                                 <p class='message-bubble-time' contenteditable='true'>
                                     12:30
                                 </p>
-                                <button class='message-bubble-done'>
+                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
                                     <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                 </button>
                             </div>
@@ -190,7 +230,7 @@
                                 <p class='message-bubble-time' contenteditable='true'>
                                     12:30
                                 </p>
-                                <button class='message-bubble-done'>
+                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
                                     <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                 </button>
                             </div>

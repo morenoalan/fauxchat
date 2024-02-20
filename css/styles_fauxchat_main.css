@@ -18,8 +18,26 @@
         overflow-y: scroll;
     }
 
-    
+    .message-container {
+        background-color: brown;
+    }
 
+    .message-selector {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        height: 20px;
+        
+        background-color: blue;
+        filter: opacity(50%);
+        position: absolute;
+        z-index: 99;
+
+    }
+    
     .message-bubble {
         clear: both;
         float: left;
@@ -35,6 +53,7 @@
         margin: 0 1rem;
         color: var(--color-black);
         box-shadow: 0 0.1rem var(--color-gray-ds);
+        cursor: pointer;
     }
 
     .message-bubble:last-of-type {
@@ -144,19 +163,6 @@
     .chat-scroll::-webkit-scrollbar-thumb {
         border-radius: 0.15rem;
         background-color: #80808080;
-    }
-
-    .red {
-        filter: hue-rotate(14deg);
-    }
-    .green {
-        filter: hue-rotate(120deg);
-    }
-    .blue {
-        filter: hue-rotate(210deg);
-    }
-    .black {
-        filter: grayscale(100%);
     }
 
 }
