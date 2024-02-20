@@ -18,32 +18,32 @@
         overflow-y: scroll;
     }
 
-    .message-container {
-        background-color: brown;
+    .msg-container {
+        position: relative;
     }
 
-    .message-selector {
+    .msg-container:has(.msg-bubble) {
+        background-color: transparent;
+    }
+
+    .mask-selection {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
         width: 100%;
-        height: 20px;
-        
-        background-color: blue;
-        filter: opacity(50%);
+        height: 100%;
+        background-color: var(--color-mediumseagreen);
+        filter: opacity(30%);
         position: absolute;
         z-index: 99;
-
     }
     
-    .message-bubble {
+    .msg-bubble {
         clear: both;
         float: left;
-        line-height: 18px;
+        line-height: 1.2rem;
         font-size: 1rem;
-        padding: 8px;
         position: relative;
         max-width: 85%;
         word-wrap: break-word;
@@ -56,36 +56,58 @@
         cursor: pointer;
     }
 
-    .message-bubble:last-of-type {
+    .msg-container:has(.msg-bubble):last-of-type {
         margin-bottom: 0.5rem;
     }
 
-    .message-bubble-center {
-        align-self: center;
+    .msg-container:has(.msg-bubble-center) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .msg-bubble-center {
         width: fit-content;
+        max-width: 85%;
         font-size: 0.8rem;
         font-weight: 500;
         background: var(--color-lemon-serene);
     }
 
-    .message-bubble-left {
-        align-self: flex-start;
+    .msg-bubble-center .msg-bubble-metadata {
+        display: none;
+    }
+
+    .msg-container:has(.msg-bubble-left) {
         margin-top: 0.16rem;
+    }
+
+    .msg-bubble-left {
+        align-self: flex-start;
         margin-right: 0.8rem;
         background: var(--color-bubble-left);
+        border-radius: 0 var(--bubble-border-radius) var(--bubble-border-radius) var(--bubble-border-radius);
+        float: left;
     }
 
-    .message-bubble-right {
+    .msg-container:has(.msg-bubble-right) {
+        margin-top: 0.16rem;
+    }
+
+    .msg-bubble-right {
         flex-direction: row-reverse;
         align-self: flex-end;
-        margin-top: 0.16rem;
         margin-left: 0.8rem;
         background: var(--color-bubble-right);
+        border-radius: var(--bubble-border-radius) 0 var(--bubble-border-radius) var(--bubble-border-radius);
+        float: right;
     }
 
-    .message-bubble-left:after,
-    .message-bubble-right:after {
+    .msg-bubble-left:after,
+    .msg-bubble-right:after {
         position: absolute;
         content: "";
         width: 0;
@@ -93,15 +115,13 @@
         border-style: none;
     }
 
-    .message-bubble-left:first-of-type,
-    :not(.message-bubble-left) + .message-bubble-left {
-        border-radius: 0 var(--bubble-border-radius) var(--bubble-border-radius) var(--bubble-border-radius);
-        float: left;
+    .msg-container:has(.msg-bubble-left):first-of-type,
+    :not(.msg-container:has(.msg-bubble-left)) + .msg-container:has(.msg-bubble-left) {
         margin-top: 0.4rem;
     }
 
-    .message-bubble-left:first-of-type:after,
-    :not(.message-bubble-left) + .message-bubble-left:after {
+    .msg-bubble-left:first-of-type:after,
+    :not(.msg-bubble-left) + .msg-bubble-left:after {
         border-width: 0 0.8rem 0.8rem 0;
         border-color: transparent var(--color-bubble-left) transparent transparent;
         top: 0;
@@ -109,43 +129,54 @@
         border-style: solid;
     }
 
-    .message-bubble-right:first-of-type,
-    :not(.message-bubble-right) + .message-bubble-right {
-        border-radius: var(--bubble-border-radius) 0 var(--bubble-border-radius) var(--bubble-border-radius);
-        float: right;
+    .msg-container:has(.msg-bubble-right):first-of-type,
+    :not(.msg-container:has(.msg-bubble-right)) + .msg-container:has(.msg-bubble-right) {
         margin-top: 0.4rem;
     }
 
-    .message-bubble-right:first-of-type:after,
-    :not(.message-bubble-right) + .message-bubble-right:after {
+    .msg-bubble-right:first-of-type:after,
+    :not(.msg-bubble-right) + .msg-bubble-right:after {
         border-width: 0 0 0.8rem 0.8rem;
         border-color: transparent transparent transparent var(--color-bubble-right);
         top: 0;
         right: -0.7rem;
         border-style: solid;
-    } 
-
-    .message-bubble-metadata {
-        float: right;
-        padding: 0 0 0 0.4rem;
-        position: relative;
-        bottom: -0.25rem;
     }
 
-    .message-bubble-time {
+    .button-select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 88;
+    }
+
+    .msg-bubble-metadata {
+        float: right;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.4rem;
+        bottom: -0.35rem;
+        z-index: 89;
+    }
+
+    .msg-bubble-time {
         font-size: 0.8rem;
         color: var(--color-gray);
         display: inline-block;
     }
 
-    .message-bubble-done {
+    .msg-bubble-tick {
         display: inline-block;
         margin-left: 0.1rem;
         position: relative;
-        top: 0.25rem;
     }
 
-    .message-bubble-done>img {
+    .msg-bubble-tick>img {
         height: 1rem;
         width: 1rem;
     }

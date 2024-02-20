@@ -39,7 +39,7 @@
                         <div></div>
                     </div>
                     <div id='screen-chat-header'>
-                        <div id='screen-chat-header-display' class='screen-chat-header '>
+                        <div id='screen-chat-header-display' class='screen-chat-headers'>
                             <figure id='screen-chat-header-figure'>
                                 <button id='screen-chat-header-figure-back'>
                                     <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
@@ -63,176 +63,213 @@
                                 </button>
                             </div>
                         </div>
-                        <div id='screen-chat-header-edition' class='screen-chat-header'>
+                        <div id='screen-chat-header-edition' class='display-none'>
                             <div class='screen-chat-header-edition-left'>
-                                <button id='screen-chat-header-figure-back'>
+                                <button onclick='cleanSelection();' id='screen-chat-header-figure-back'>
                                     <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
                                 </button>
-                                <div id='screen-chat-header-edition-counter' class='button-chat-edition'>
-                                    88
-                                </div>
+                                <div id='screen-chat-header-edition-counter' class='button-chat-edition'>0</div>
                             </div>
                             <div class='screen-chat-header-edition-right'>
                                 <button onclick='bubbleDelete();' class='button-chat-edition'>
                                     <img src='/medias/icons/delete_FILL0_wght400_GRAD0_opsz24.svg' class='icon'/>
                                 </button>
-                                <button onclick='bubbleEdit();' class='button-chat-edition'>
+                                <button id='button-msg-edit' onclick='bubbleEdit();' class='button-chat-edition'>
                                     <img src='/medias/icons/edit_FILL0_wght400_GRAD0_opsz24.svg' class='icon'/>
                                 </button>
-                                <button id='screen-chat-header-edition-me' class='image-head'>
+                                <button id='screen-chat-header-edition-me' onclick='bubbleRight();' class='image-head'>
                                     <div>
                                         Eu
                                     </div>
                                 </button>
-                                <button class='image-head'>
+                                <button onclick='bubbleCenter();' class='image-head'>
                                     <img src='./medias/icons/chat_info_FILL0_wght400_GRAD0_opsz24.svg' onclick='' alt='info' class='icon svg-color-white'/>
                                 </button>
-                                <button class='button-chat-edition'>
+                                <button onclick='bubbleLeft();' class='button-chat-edition'>
                                     <img src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='002' class='image-head'/>
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div id='screen-chat-main' class='chat-scroll'>
-                        <div class='message-container'>
-                            <button class='message-selector'></button>
-                            <div class='message-bubble message-bubble-left'>
+                        <div id='chat-msg-1' class='msg-container'>
+                            <button onclick='msgDeselect(this);' class='msg-selector display-none'></button>
+                            <div class='msg-bubble msg-bubble-left'>
                                 1 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
-                                <div class='message-bubble-metadata'>
-                                    <p class='message-bubble-time' contenteditable='true'>
+                                <button onclick='msgSelect(this);' class='button-select'></button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
                                         12:30
                                     </p>
-                                    <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
                                         <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div class='message-container'>
-                            <button class='message-selector'></button>
-                            <div class='message-bubble message-bubble-right'>
+                        <div id='chat-msg-2' class='msg-container'>
+                            <button onclick='msgDeselect(this);' class='msg-selector display-none'></button>
+                            <div class='msg-bubble msg-bubble-right'>
                                 2 Mensagens de exemplo.
-                                <div class='message-bubble-metadata'>
-                                    <p class='message-bubble-time' contenteditable='true'>
+                                <button onclick='msgSelect(this);' class='button-select'></button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
                                         12:30
                                     </p>
-                                    <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
                                         <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div class='message-container'>
-                            <button class='message-selector'></button>
-                            <div class='message-bubble message-bubble-right'>
-                                3 Mensagens.
-                                <div class='message-bubble-metadata'>
-                                    <p class='message-bubble-time' contenteditable='true'>
+                        <div id='chat-msg-3' class='msg-container'>
+                            <button onclick='msgDeselect(this);' class='msg-selector display-none'></button>
+                            <div class='msg-bubble msg-bubble-right'>
+                                3 Mensagens
+                                <button onclick='msgSelect(this);' class='button-select'></button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
                                         12:30
                                     </p>
-                                    <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
                                         <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
                                     </button>
                                 </div>
                             </div>
                         </div>
-                        <div class='message-bubble message-bubble-left'>
-                            4 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
+                        <div class='msg-container'>
+                            <button class='display-none'></button>
+                            <div class='msg-bubble msg-bubble-left'>
+                                4 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
 
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class='message-bubble message-bubble-center' contenteditable='true'>
-                            Hoje
-                        </div>
-                        <div class='message-bubble message-bubble-left'>
-                            5 Mensagens de exemplo. Mensagens.
-
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                        <div id='chat-msg-4b' class='msg-container'>
+                            <button onclick='msgDeselect(this);' class='msg-selector display-none'></button>
+                            <div class='msg-bubble msg-bubble-center'>
+                                Hoje
+                                <button onclick='msgSelect(this);' class='button-select'></button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class='message-bubble message-bubble-right'>
-                            6 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
+                        <div class='msg-container'>
+                            <button class='display-none'></button>
+                            <div class='msg-bubble msg-bubble-left'>
+                                5 Mensagens de exemplo. Mensagens.
 
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class='message-bubble message-bubble-left'>
-                            7 Mensagens de exemplo.
+                        <div class='msg-container'>
+                            <button class='display-none'></button>
+                            <div class='msg-bubble msg-bubble-right'>
+                                6 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
 
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class='message-bubble message-bubble-left'>
-                            8 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
+                        <div class='msg-container'>
+                            <button class='display-none'></button>
+                            <div class='msg-bubble msg-bubble-left'>
+                                7 Mensagens de exemplo.
 
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class='message-bubble message-bubble-left'>
-                            9 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.Mensagens de exemplo. Mensagens de exemplo.
+                        <div class='msg-container'>
+                            <button class='display-none'></button>
+                            <div class='msg-bubble msg-bubble-left'>
+                                8 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
 
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class='message-bubble message-bubble-right'>
-                            10 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.Mensagens de exemplo.
+                        <div class='msg-container'>
+                            <button class='msg-selection'></button>
+                            <div class='msg-bubble msg-bubble-left'>
+                                9 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.Mensagens de exemplo. Mensagens de exemplo.
 
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class='message-bubble message-bubble-right'>
-                            11 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
+                        <div class='msg-container'>
+                            <button class='display-none'></button>
+                            <div class='msg-bubble msg-bubble-right'>
+                                10 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.Mensagens de exemplo.
 
-                            <div class='message-bubble-metadata'>
-                                <p class='message-bubble-time' contenteditable='true'>
-                                    12:30
-                                </p>
-                                <button onclick='changeBubbleDone(this);' value='1' class='message-bubble-done'>
-                                    <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
-                                </button>
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='msg-container'>
+                            <button class='display-none'></button>
+                            <div class='msg-bubble msg-bubble-right'>
+                                11 Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo. Mensagens de exemplo.
+
+                                <div class='msg-bubble-metadata'>
+                                    <p class='msg-bubble-time'>
+                                        12:30
+                                    </p>
+                                    <button onclick='changeTicks(this);' value='1' class='msg-bubble-tick'>
+                                        <img src='./medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -241,7 +278,7 @@
                             <button>
                                 <img id='screen-chat-footer-emoji-text' src='./medias/icons/mood_FILL0_wght500_GRAD0_opsz48.svg' alt='more' class='icon svg-color-gray'/>
                             </button>
-                            <div id='screen-chat-footer-input-message-field' class='input-message-field chat-scroll' role='textbox' contenteditable='true'></div>
+                            <div id='screen-chat-footer-input-msg-field' class='input-msg-field chat-scroll' role='textbox' contenteditable='true'></div>
                             <button id='screen-chat-footer-attachment'>
                                 <img src='./medias/icons/attach_file_FILL0_wght500_GRAD0_opsz48.svg' alt='more' class='icon svg-color-gray'/>
                             </button>

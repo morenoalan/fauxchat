@@ -29,7 +29,7 @@
         padding: 0.45rem;
     }
 
-    .input-message-field {
+    .input-msg-field {
         flex-grow: 1;
         word-break: break-all;
         min-height: 1.7rem;
@@ -48,13 +48,13 @@
         text-decoration-style: solid;
     }
 
-    .input-message-field:empty::before {
+    .input-msg-field:empty::before {
         content: "Mensagem";
         color: var(--color-gray);
         cursor: text;
     }
     /*
-    .input-message-field::selection {
+    .input-msg-field::selection {
         background-color: var(--color-mediumseagreen);
         color: var(--color-white);
     }
@@ -105,6 +105,7 @@
         position: absolute;
         row-gap: 0.3rem;
         top: -6.3rem;
+        z-index: 100;
     }
 
     .image-send-people {
