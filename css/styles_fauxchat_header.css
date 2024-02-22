@@ -24,27 +24,25 @@
 
     .screen-chat-headers {
         display: flex;
-        position: relative;
-        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        height: 3.5rem;
         padding-top: 0.4rem;
+        padding-right: 1.2rem;
         padding-bottom: 0.4rem;
         padding-left: 0.2rem;
-        padding-right: 1rem;
         background: var(--color-white);
         border-bottom: solid 0.01rem var(--color-gray-ds);
+        position: relative;
+        flex-direction: row;
+        height: 3.5rem;
     }
 
     #screen-chat-header-figure {
         display: flex;
-        position: relative;
-        flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
-        width: 100%;
+        flex-grow: 1;
+        
     }
 
     #screen-chat-header-figure-back {
@@ -54,29 +52,31 @@
         align-items: center;
         justify-content: flex-start;
         height: 100%;
+        
     }
     
     #screen-chat-header-figure-name {
-        height: 100%;
+        display: flex;
+        flex-grow: 1;
+        max-width: calc(100% - 14rem);
+
     }
 
     #screen-chat-header-figure-name figcaption {
+        display: flex;
+        flex-grow: 1;
         margin-left: 0.6rem;
         font-size: 1.3rem;
         color: var(--color-black);
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: calc(31.25rem - 15rem);
     }
 
     #screen-chat-header-menu {
         display: flex;
-        position: relative;
-        flex-direction: row;
         align-items: center;
-        justify-content: flex-end;
-        width: fit-content;
+        
         column-gap: 1.6rem;
     }
 
