@@ -16,15 +16,15 @@ function flipChatHeader(msgsCounter){
     msgsCounterTag.textContent = msgsCounter;
 
     if(msgsCounter === 0){
-        headerDisplay.classList.add('screen-chat-headers');
+        headerDisplay.classList.add('screen-chat-header-display');
         headerDisplay.classList.remove('display-none');
         headerEdition.classList.add('display-none');
-        headerEdition.classList.remove('screen-chat-headers');
+        headerEdition.classList.remove('screen-chat-header-display');
         maskedBubblesList = [];
     }else{
         headerDisplay.classList.add('display-none');
-        headerDisplay.classList.remove('screen-chat-headers');
-        headerEdition.classList.add('screen-chat-headers');
+        headerDisplay.classList.remove('screen-chat-header-display');
+        headerEdition.classList.add('screen-chat-header-display');
         headerEdition.classList.remove('display-none');
     }
 
