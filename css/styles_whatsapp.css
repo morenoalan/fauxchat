@@ -1,6 +1,6 @@
-@import url(./styles_fauxchat_header.css);
-@import url(./styles_fauxchat_main.css);
-@import url(./styles_fauxchat_footer.css);
+@import url(./styles_whatsapp_chat_header.css);
+@import url(./styles_whatsapp_chat_main.css);
+@import url(./styles_whatsapp_chat_footer.css);
 
 :root {
     --color-gray-ds: #dddddd;
@@ -18,10 +18,10 @@
 
 }
 
-.style-fauxchat {
+.style-whatsapp {
 
     * {
-        --fauxchat: "fauxchat";
+        --whatsapp: "whatsapp";
     };/*This first brace presents an unusual behavior, doesn't show the appropriate colors and needs this semicolon at the end. Reason to create this useless parameter.*/
 
     .icon {
@@ -29,7 +29,7 @@
         height: 1.8rem;
     }
 
-    #screen-chat {
+    .display-active {
         display: flex;
         position: relative;
         flex-direction: column;

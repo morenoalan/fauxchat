@@ -2,10 +2,24 @@
 
 //Screenshot Region
 
+// navigation
+function goToScreen(nextScreen) {
+    const appScreens = document.getElementById('app-screens').getElementsByTagName('section');
+    console.log(appScreens.length);
+    const openScreen = document.getElementById(nextScreen);
+    let counter;
+    for(counter = 0; counter < appScreens.length; counter++) {
+        appScreens[counter].classList.remove('display-active');
+        appScreens[counter].classList.add('display-none');
+        console.log(appScreens[counter]);
+    }
+    openScreen.classList.remove('display-none');
+    openScreen.classList.add('display-active');
+}
+
 // flip chat-header-edition
 let msgsCounterTag = document.getElementById('screen-chat-header-edition-counter');
 let msgsCounter = parseInt(msgsCounterTag.textContent);
-
 
 function flipChatHeader(msgsCounter){
 

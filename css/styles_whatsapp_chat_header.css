@@ -1,7 +1,7 @@
-.style-fauxchat {
+.style-whatsapp {
 
     * {
-        --fauxchat: "fauxchat";
+        --whatsapp: "whatsapp";
     };
 
     #screen-chat-header-menu-more {
@@ -68,15 +68,16 @@
     
     .screen-chat-header-figure-name {
         display: flex;
+        margin-left: 0.6rem;
         flex-grow: 1;
-        max-width: calc(100% - 4.4rem);
+        max-width: calc(100% - 5rem);
     }
 
     .screen-chat-header-figure-name-figcaption {
         display: inline-block;
-        width: 100%;
+        text-align: left;
+        max-width: max-content;
         flex-grow: 1;
-        margin-left: 0.6rem;
         font-size: 1.3rem;
         color: var(--color-black);
         white-space: nowrap;

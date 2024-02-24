@@ -1,7 +1,7 @@
-.style-fauxchat {
+.style-whatsapp {
 
     * {
-        --fauxchat: "fauxchat";
+        --whatsapp: "whatsapp";
     };
 
     #screen-chat-footer {

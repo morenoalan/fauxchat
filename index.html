@@ -28,13 +28,13 @@
     <main>
         <section id='main-section-left' class='display-none'></section>
         <section id='main-section-center'>
-            <div id='app-screens' class='style-fauxchat'>
+            <div id='app-screens' class='style-whatsapp'>
                 <section id='screen-list' class='display-none'>
-                    <div id='screen-list-header'></div>
+                    <div id='screen-list-header' style='background-color: red; height: 100%; width: 100%;'></div>
                     <div id='screen-list-main'></div>
                     <div id='screen-list-footer'></div>
                 </section>
-                <section id='screen-chat'>
+                <section id='screen-chat' class='display-active'>
                     <div id='screen-chat-background'>
                         <div></div>
                     </div>
@@ -42,15 +42,13 @@
                         <div id='screen-chat-header-display' class='screen-chat-header-display'>
                             <figure id='screen-chat-header-figure' class='screen-chat-header-figure'>
                                 <button id='screen-chat-header-figure-back'
-                                class='screen-chat-header-figure-back'>
+                                class='screen-chat-header-figure-back' onclick=''>
                                     <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
                                     <img src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='image' class='image-head'/>
                                 </button>
                                 <button id='screen-chat-header-figure-name'
-                                class='screen-chat-header-figure-name'>
-                                    <figcaption class='screen-chat-header-figure-name-figcaption'>
-                                    Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa
-                                    </figcaption>
+                                class='screen-chat-header-figure-name' onclick='goToScreen("screen-profile")'>
+                                    <figcaption class='screen-chat-header-figure-name-figcaption'>Flávia Xaxim</figcaption>
                                 </button>
                             </figure>
                             <div id='screen-chat-header-menu'
@@ -75,10 +73,10 @@
                             </div>
                             <div class='screen-chat-header-edition-right'>
                                 <button onclick='bubbleDelete();' class='button-chat-edition'>
-                                    <img src='/medias/icons/delete_FILL0_wght400_GRAD0_opsz24.svg' class='icon'/>
+                                    <img src='/medias/icons/delete_FILL0_wght400_GRAD0_opsz24.svg' alt='delete' class='icon'/>
                                 </button>
                                 <button id='button-msg-edit' onclick='bubbleEdit();' class='button-chat-edition'>
-                                    <img src='/medias/icons/edit_FILL0_wght400_GRAD0_opsz24.svg' class='icon'/>
+                                    <img src='/medias/icons/edit_FILL0_wght400_GRAD0_opsz24.svg' alt='edit' class='icon'/>
                                 </button>
                                 <button id='screen-chat-header-edition-me' onclick='bubbleRight();' class='image-head'>
                                     <div>
@@ -99,22 +97,22 @@
                     <div id='screen-chat-footer'>
                         <div id='screen-chat-footer-content'>
                             <button>
-                                <img id='screen-chat-footer-emoji-text' src='./medias/icons/mood_FILL0_wght500_GRAD0_opsz48.svg' alt='more' class='icon svg-color-gray'/>
+                                <img id='screen-chat-footer-emoji-text' src='./medias/icons/mood_FILL0_wght500_GRAD0_opsz48.svg' alt='emoji' class='icon svg-color-gray'/>
                             </button>
                             <div id='screen-chat-footer-input-msg-field' class='input-msg-field chat-scroll' role='textbox' contenteditable='true'></div>
                             <button id='screen-chat-footer-attachment'>
-                                <img src='./medias/icons/attach_file_FILL0_wght500_GRAD0_opsz48.svg' alt='more' class='icon svg-color-gray'/>
+                                <img src='./medias/icons/attach_file_FILL0_wght500_GRAD0_opsz48.svg' alt='attach' class='icon svg-color-gray'/>
                             </button>
                             <button id='screen-chat-footer-photo'>
-                                <img src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='more' class='icon svg-color-gray'/>
+                                <img src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='photo' class='icon svg-color-gray'/>
                             </button>
                         </div>
                         <div id='screen-chat-footer-command'>
                             <button id='screen-chat-footer-mic' class='button-mic-send'>
-                                <img src='./medias/icons/mic_FILL1_wght500_GRAD0_opsz48.svg' alt='more' class='icon-mic-send svg-color-white'/>
+                                <img src='./medias/icons/mic_FILL1_wght500_GRAD0_opsz48.svg' alt='mic' class='icon-mic-send svg-color-white'/>
                             </button>
                             <button id='screen-chat-footer-send' onclick='sendMessage();' class='button-mic-send display-none'>
-                                <img src='./medias/icons/send_FILL1_wght500_GRAD0_opsz48.svg' alt='more' class='icon-mic-send svg-color-white'/>
+                                <img src='./medias/icons/send_FILL1_wght500_GRAD0_opsz48.svg' alt='send' class='icon-mic-send svg-color-white'/>
                             </button>
                             <div id='screen-chat-footer-send-panel' class='display-none'>
                                 <button onclick='sendToMe();' id='screen-chat-footer-me'>
@@ -132,7 +130,9 @@
                         </div>
                     </div>
                 </section>
-                <section id='screen-profile' class='display-none'></section>
+                <section id='screen-profile' class='display-none'>
+                    <div style='background-color: blue; height: 100%; width: 100%;'></div>
+                </section>
                 <section id='screen-folders' class='display-none'></section>
             </div>
             <section id='float-keyboard' class='display-none'></section>
