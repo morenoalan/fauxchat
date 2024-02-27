@@ -171,7 +171,6 @@ const tickIcons = [
 
 let tickCounter = 1;
 
-
 function changeTick(button){
     tickCounter = (parseInt(button.value) % 4) + 1;
     let btBubbleDone = button.querySelector('img');
@@ -188,15 +187,24 @@ const panelSend = document.getElementById('screen-chat-footer-send-panel');
 const msgField = document.getElementById('screen-chat-footer-input-msg-field');
 const chatMain = document.getElementById('screen-chat-main');
 
+function messageFieldWriting(){
+    buttonPhoto.classList.add("display-none");
+    buttonMic.classList.add("display-none");
+    buttonSend.classList.remove("display-none");
+}
+
+function messageFieldClean(){
+    buttonPhoto.classList.remove("display-none");
+    buttonMic.classList.remove("display-none");
+    buttonSend.classList.add("display-none");
+}
+
 msgField.addEventListener('input', function () {
     if(msgField.textContent != ""){
-        buttonPhoto.classList.add("display-none");
-        buttonMic.classList.add("display-none");
-        buttonSend.classList.remove("display-none");
+        messageFieldWriting();
     }else{
-        buttonPhoto.classList.remove("display-none");
-        buttonMic.classList.remove("display-none");
-        buttonSend.classList.add("display-none");
+        messageFieldClean();
+        collapseSendPanel();
     }
 });
 
@@ -209,9 +217,7 @@ function sendMessage(){
 function collapseSendPanel(){
     panelSend.classList.add('display-none');
     panelSend.classList.remove('chat-send-panel');
-    buttonPhoto.classList.remove("display-none");
-    buttonMic.classList.remove("display-none");
-    buttonSend.classList.add("display-none");
+    messageFieldClean();
 }
 
 function cleanMsgField(){
