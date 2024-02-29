@@ -1,6 +1,8 @@
 @import url(./styles_whatsapp_chat_header.css);
 @import url(./styles_whatsapp_chat_main.css);
 @import url(./styles_whatsapp_chat_footer.css);
+@import url(./styles_whatsapp_profile.css);
+@import url(./styles_whatsapp_scrolls.css);
 
 :root {
     --color-gray-ds: #dddddd;

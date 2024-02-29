@@ -1,0 +1,32 @@
+.style-whatsapp {
+
+    * {
+        --whatsapp: "whatsapp";
+    };
+
+    .screen-profile-header {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: var(--dim-max-screen);
+        height: fit-content;
+    }
+
+    .screen-chat-main {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: fit-content;
+        justify-content: flex-start;
+        background: transparent;
+        width: calc(100% - 0.05rem);
+        height: 100%;
+        resize: none;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    
+}
