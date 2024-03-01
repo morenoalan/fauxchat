@@ -4,7 +4,7 @@
         --whatsapp: "whatsapp";
     };
 
-    .screen-profile-header {
+    .screen-profile-header-0 {
         display: flex;
         position: relative;
         flex-direction: column;
@@ -15,11 +15,28 @@
         height: fit-content;
     }
 
-    .screen-chat-main {
+    .screen-profile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.4rem;
+        padding-right: 1.2rem;
+        padding-bottom: 0.4rem;
+        padding-left: 0.2rem;
+        background: var(--color-white);
+        /*border-bottom: solid 0.01rem var(--color-gray-ds);*/
+        position: relative;
+        flex-direction: row;
+        height: 3.5rem;
+        width: 100%;
+        max-width: var(--dim-max-screen);
+    }
+
+    .screen-profile-main {
         display: flex;
         position: relative;
         flex-direction: column;
-        align-items: fit-content;
+        align-items: center;
         justify-content: flex-start;
         background: transparent;
         width: calc(100% - 0.05rem);
@@ -29,4 +46,9 @@
         overflow-y: scroll;
     }
     
+    .image-profile {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+    }
 }
