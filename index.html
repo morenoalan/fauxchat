@@ -132,16 +132,21 @@
                 </section>
                 <section id='screen-profile' class='display-none'>
                     <div id='screen-profile-header' class='screen-profile-header'>
-                        <button id='screen-chat-profile-back'
-                                class='screen-chat-profile-back' onclick='goToScreen("screen-chat")'>
-                            <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
-                        </button>
-                        <button>
-                            <img id='screen-chat-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
-                        </button>
+                        <div id='screen-profile-header-display' class='screen-profile-header-display'>
+                            <button onclick='goToScreen("screen-chat")'>
+                                <img id='screen-chat-profile-back'
+                                src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon screen-chat-profile-back'/>
+                            </button>
+                            <button>
+                                <img id='screen-chat-profile-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
+                            </button>
+                        </div>
                     </div>
                     <div id='screen-profile-main' class='screen-profile-main whatsapp-scroll'>
-                        <img src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='image' class='image-profile'/>
+                        <figure class='profile-image-container'>
+                            <img id='screen-profile-main-photo' onclick='clickObject("screen-profile-main-photo-input")' src='./medias/people/fauxchat-people-002.jpg' alt='image' class='image-profile'/>
+                        </figure>
+                        <input type='file' id='screen-profile-main-photo-input' accept='image/*' onchange='loadNewPhoto(this, "screen-profile-main-photo")' class='display-none'>
                         <figcaption>Flávia Xaxim</figcaption>
                         <p>+55 00 99999-0002</p>
                     </div>

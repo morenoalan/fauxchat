@@ -3,7 +3,7 @@
     * {
         --whatsapp: "whatsapp";
     };
-
+/*
     .screen-profile-header-0 {
         display: flex;
         position: relative;
@@ -14,8 +14,19 @@
         max-width: var(--dim-max-screen);
         height: fit-content;
     }
-
+*/
     .screen-profile-header {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: var(--dim-max-screen);
+        height: fit-content;
+    }
+
+    .screen-profile-header-display {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -24,12 +35,27 @@
         padding-bottom: 0.4rem;
         padding-left: 0.2rem;
         background: var(--color-white);
-        /*border-bottom: solid 0.01rem var(--color-gray-ds);*/
         position: relative;
         flex-direction: row;
         height: 3.5rem;
         width: 100%;
         max-width: var(--dim-max-screen);
+    }
+/*
+    .height-support {
+        padding: 0;
+        height: 2.6rem;
+        width: 100%;
+        background-color: green;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+    }
+*/
+    #screen-chat-profile-more {
+        width: 1rem;
     }
 
     .screen-profile-main {
@@ -44,11 +70,19 @@
         resize: none;
         overflow-x: hidden;
         overflow-y: scroll;
+        top: 0.5rem;
     }
     
-    .image-profile {
-        width: 8rem;
-        height: 8rem;
+    .profile-image-container {
+        width: 12rem;
+        height: 12rem;
         border-radius: 50%;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .image-profile {
+        width: 100%;
+        height: 100%;
     }
 }

@@ -11,7 +11,6 @@ function goToScreen(nextScreen) {
     for(counter = 0; counter < appScreens.length; counter++) {
         appScreens[counter].classList.remove('display-active');
         appScreens[counter].classList.add('display-none');
-        console.log(appScreens[counter]);
     }
     openScreen.classList.remove('display-none');
     openScreen.classList.add('display-active');
@@ -264,4 +263,37 @@ function sendToInfo(){
 
 function sendToPeople(people){
     postMsg('msg-bubble-left');
+}
+
+// screen-profile
+function clickObject(input){
+    document.getElementById(input).click();
+}
+
+function loadNewPhoto(input, img){
+    let preview = document.getElementById(img);
+    console.log(img);
+    let file = input.files[0];
+    let reader = new FileReader();
+
+    reader.onload = function(e) {
+        preview.src = e.target.result;
+    };
+
+    if (file) {
+        reader.readAsDataURL(file);
+    }
+
+    console.log(reader.height);
+
+    //adaptImage(img);
+}
+
+function adaptImage(img){
+    let newPreview = document.getElementById(img);
+    let widthContainer = newPreview.parentNode.offsetWidth;
+    let heightContainer = newPreview.parentNode.offsetHeight;
+
+    let ratioNewPreview = newPreview.naturalWidth / newPreview.naturalHeight;
+    console.log(newPreview.naturalWidth + ', ' + newPreview.naturalHeight + ', ' + ratioNewPreview);
 }
