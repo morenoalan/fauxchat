@@ -147,8 +147,8 @@
                             <img id='screen-profile-main-photo' onclick='clickObject("screen-profile-main-photo-input")' src='./medias/people/fauxchat-people-002.jpg' alt='image' class='image-profile'/>
                         </figure>
                         <input type='file' id='screen-profile-main-photo-input' accept='image/*' onchange='loadNewPhoto(this, "screen-profile-main-photo")' class='display-none'>
-                        <figcaption>Flávia Xaxim</figcaption>
-                        <p>+55 00 99999-0002</p>
+                        <figcaption contenteditable='true'>Flávia Xaxim</figcaption>
+                        <p contenteditable='true'>+55 00 99999-0002</p>
                     </div>
                 </section>
                 <section id='screen-folders' class='display-none'></section>
@@ -160,6 +160,8 @@
     <footer id='footer'>
 		<p><a id='author' href='https://www.github.com/morenoalan' target='_blank'>Alan Moreno</a> <span class='invert-horizontal'>&#169;</span> <span id='copyleft-year'>2024</span> | <a href='https://www.github.com/morenoalan/fauxchat' target='_blank'>Repository</a></p>
 	</footer>
+    <script type='text/javascript' id='script-people' src='./scripts/people.js'></script>
+    <script type='text/javascript' id='script-chats' src='./scripts/chats.js'></script>
     <script type='text/javascript' id='script-main' src='./scripts/main.js'></script>
 </body>
 </html>

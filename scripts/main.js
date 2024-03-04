@@ -5,7 +5,7 @@
 // navigation
 function goToScreen(nextScreen) {
     const appScreens = document.getElementById('app-screens').getElementsByTagName('section');
-    console.log(appScreens.length);
+
     const openScreen = document.getElementById(nextScreen);
     let counter;
     for(counter = 0; counter < appScreens.length; counter++) {
@@ -276,24 +276,36 @@ function loadNewPhoto(input, img){
     let file = input.files[0];
     let reader = new FileReader();
 
-    reader.onload = function(e) {
+    reader.onload = function(e){
         preview.src = e.target.result;
+        adaptImage(preview.src, preview);
     };
 
-    if (file) {
+    if(file){
         reader.readAsDataURL(file);
     }
 
-    console.log(reader.height);
-
-    //adaptImage(img);
 }
 
-function adaptImage(img){
-    let newPreview = document.getElementById(img);
-    let widthContainer = newPreview.parentNode.offsetWidth;
-    let heightContainer = newPreview.parentNode.offsetHeight;
+function adaptImage(dataURL, img){
 
-    let ratioNewPreview = newPreview.naturalWidth / newPreview.naturalHeight;
-    console.log(newPreview.naturalWidth + ', ' + newPreview.naturalHeight + ', ' + ratioNewPreview);
+    let imgLoaded = new Image();
+    let ratioImage;
+
+    imgLoaded.onload = function (){
+        let imageWidth = imgLoaded.width;
+        let imageHeight = imgLoaded.height;
+        ratioImage = imageWidth / imageHeight;
+        
+        if(ratioImage < 1){
+            img.style.width = '100%';
+            img.style.height = 'auto';
+        }else{
+            img.style.width = 'auto';
+            img.style.height = '100%';
+        }
+    };
+    imgLoaded.src = dataURL;
 }
+
+console.log(people[0].phone);
