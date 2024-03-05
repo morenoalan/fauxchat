@@ -143,12 +143,36 @@
                         </div>
                     </div>
                     <div id='screen-profile-main' class='screen-profile-main whatsapp-scroll'>
-                        <figure class='profile-image-container'>
-                            <img id='screen-profile-main-photo' onclick='clickObject("screen-profile-main-photo-input")' src='./medias/people/fauxchat-people-002.jpg' alt='image' class='image-profile'/>
-                        </figure>
-                        <input type='file' id='screen-profile-main-photo-input' accept='image/*' onchange='loadNewPhoto(this, "screen-profile-main-photo")' class='display-none'>
-                        <figcaption contenteditable='true'>Flávia Xaxim</figcaption>
-                        <p contenteditable='true'>+55 00 99999-0002</p>
+                        <div id='screen-profile-main-settings' class='screen-profile-main-settings'>
+                            <figure class='screen-profile-main-photo-container'>
+                                <img id='screen-profile-main-photo' onclick='clickObject("screen-profile-main-photo-input")' src='./medias/people/fauxchat-people-002.jpg' alt='image' class='screen-profile-main-photo'/>
+                            </figure>
+                            <input type='file' id='screen-profile-main-photo-input' accept='image/*' onchange='loadNewPhoto(this, "screen-profile-main-photo")' class='display-none'>
+                            <figcaption id='screen-profile-main-name' class='screen-profile-main-name' contenteditable='true'>Flávia Xaxim</figcaption>
+                            <p id='screen-profile-main-phone' class='screen-profile-main-phone' contenteditable='true'>+55 00 99999-0002</p>
+                        </div>
+                        <div id='screen-profile-tools1' class='screen-profile-tools1'>
+                            <button class='screen-profile-tools1-buttons'>
+                                <img id='screen-profile-tools1-buttons-call' src='./medias/icons/call_FILL0_wght400_GRAD0_opsz24.svg' alt='call' class='icon'/>
+                                <p>Ligar</p>
+                            </button>
+                            <button class='screen-profile-tools1-buttons'>
+                                <img id='screen-profile-tools1-buttons-videocam' src='./medias/icons/videocam_FILL0_wght400_GRAD0_opsz24.svg' alt='videocam' class='icon'/>
+                                <p>Vídeo</p>
+                            </button>
+                            <button class='screen-profile-tools1-buttons'>
+                                <img id='screen-profile-tools1-buttons-paid' src='./medias/icons/paid_FILL0_wght400_GRAD0_opsz24.svg' alt='paid' class='icon'/>
+                                <p>Pagar</p>
+                            </button>
+                            <button class='screen-profile-tools1-buttons'>
+                                <img id='screen-profile-tools1-buttons-search' src='./medias/icons/search_FILL0_wght600_GRAD0_opsz48.svg' alt='search' class='icon'/>
+                                <p>Pesquisar</p>
+                            </button>
+                        </div>
+                        <div id='screen-profile-tools2' class='screen-profile-tools2'>
+                            <p id='screen-profile-tools2-bio' class='screen-profile-tools2-bio' contenteditable='true'>Curtindo a vida adoidado.</p>
+                            <p id='screen-profile-tools2-date' class='screen-profile-tools2-date'>4 de mar. de 2024</p>
+                        </div>
                     </div>
                 </section>
                 <section id='screen-folders' class='display-none'></section>

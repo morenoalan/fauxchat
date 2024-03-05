@@ -272,7 +272,6 @@ function clickObject(input){
 
 function loadNewPhoto(input, img){
     let preview = document.getElementById(img);
-    console.log(img);
     let file = input.files[0];
     let reader = new FileReader();
 
