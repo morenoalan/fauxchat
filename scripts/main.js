@@ -16,6 +16,10 @@ function goToScreen(nextScreen) {
     openScreen.classList.add('display-active');
 }
 
+// loading chat variables
+let chatProfiles = [];
+
+
 // flip chat-header-edition
 let msgsCounterTag = document.getElementById('screen-chat-header-edition-counter');
 let msgsCounter = parseInt(msgsCounterTag.textContent);
