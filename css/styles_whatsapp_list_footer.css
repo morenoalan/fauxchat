@@ -1,0 +1,12 @@
+.style-whatsapp {
+
+    * {
+        --whatsapp: "whatsapp";
+    };
+
+    .screen-list-footer {
+        background: rebeccapurple;
+        height: 3rem;
+    }
+
+}

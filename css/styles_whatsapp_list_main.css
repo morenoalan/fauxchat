@@ -1,0 +1,25 @@
+.style-whatsapp {
+
+    * {
+        --whatsapp: "whatsapp";
+    };
+
+    .screen-list-main {
+        height: 100%;
+        background: yellow;
+    }
+
+    .screen-list-main-chatlink {
+        background: gray;
+    }
+    .screen-list-main-chatlink-img {
+        background: royalblue;
+    }
+
+    .screen-list-main-chatlink-button {
+        width: 100%;
+        height: 2rem;
+        background: green;
+    }
+    
+}

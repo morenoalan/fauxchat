@@ -1,4 +1,6 @@
-@import url(./styles_whatsapp_list.css);
+@import url(./styles_whatsapp_list_header.css);
+@import url(./styles_whatsapp_list_main.css);
+@import url(./styles_whatsapp_list_footer.css);
 @import url(./styles_whatsapp_chat_header.css);
 @import url(./styles_whatsapp_chat_main.css);
 @import url(./styles_whatsapp_chat_footer.css);

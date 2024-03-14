@@ -29,28 +29,75 @@
         <section id='main-section-left' class='display-none'></section>
         <section id='main-section-center'>
             <div id='app-screens' class='style-whatsapp'>
-                <section id='screen-list' class='display-none'>
+                <section id='screen-list' class='display-active'>
                     <div id='screen-list-header' class='screen-list-header'>
                         Header
                     </div>
-                    <ul id='screen-list-main'>
+                    <ul id='screen-list-main' class='screen-list-main'>
                         <li>
-                            <button class='screen-list-main-chatlink'>
-                                teste 1
+                            <div class='screen-list-main-chatlink'>
+                                <div class='screen-list-main-chatlink'>
+                                    <img class='screen-list-main-chatlink-img' src='#'/>
+                                    <div class='screen-list-main-chatlink-line'>
+                                        <div class='screen-list-main-chatlink-line-left'>
+                                            <p class='screen-list-main-chatlink-contact'></p>
+                                        </div>
+                                        <div class='screen-list-main-chatlink-line-right'>
+                                            <p class='screen-list-main-chatlink-time'></p>
+                                        </div>
+                                    </div>
+                                    <div class='screen-list-main-chatlink-line'>
+                                        <div class='screen-list-main-chatlink-line-left'>
+                                            <div class='screen-list-main-chatlink-status'>
+                                                <img src='#' />
+                                            </div>
+                                            <p class='screen-list-main-chatlink-msg'></p>
+                                        </div>
+                                        <div class='screen-list-main-chatlink-line-right'>
+                                            <p class='screen-list-main-chatlink-counter'></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class='screen-list-main-chatlink-button' onclick='goToChat(this);'>
                             </button>
                         </li>
                         <li>
-                            <button class='screen-list-main-chatlink'>
-                            </button>
+                            <button class='screen-list-main-chatlink'>Chat 2</button>
                         </li>
                         <li>
-                            <button class='screen-list-main-chatlink'>
-                            </button>
+                            <button class='screen-list-main-chatlink'>Chat 3</button>
                         </li>
                     </ul>
-                    <div id='screen-list-footer'></div>
+                    <div id='screen-list-footer' class='screen-list-footer'>
+                        <div class='screen-list-footer-menu'>
+                            <button>
+                                <img id='screen-list-footer-menu-chat' src='./medias/icons/chat_FILL0_wght400_GRAD0_opsz24.svg' alt='chats' class='icon'/>
+                                <div class='screen-list-footer-menu-button-icon-mask'></div>
+                                <p class='screen-list-footer-menu-button-label'>Conversas</p>
+                            </button>
+                            <button>
+                                <img id='screen-list-footer-menu-updates' src='./medias/icons/updates_wpp_FILL0_wght400_GRAD0_opsz24.svg' alt='updates' class='icon'/>
+                                <div class='screen-list-footer-menu-button-icon-mask'></div>
+                                <p class='screen-list-footer-menu-button-label'>Atualizações</p>
+                            </button>
+                            <button>
+                                <img id='screen-list-footer-menu-communities' src='./medias/icons/groups_FILL0_wght400_GRAD0_opsz24.svg' alt='communities' class='icon'/>
+                                <div class='screen-list-footer-menu-button-icon-mask'></div>
+                                <p class='screen-list-footer-menu-button-label'>Comunidades</p>
+                            </button>
+                            <button>
+                                <img id='screen-list-footer-menu-calls' src='./medias/icons/call_FILL0_wght400_GRAD0_opsz24.svg' alt='calls' class='icon'/>
+                                <div class='screen-list-footer-menu-button-icon-mask'></div>
+                                <p class='screen-list-footer-menu-button-label'>Ligações</p>
+                            </button>
+                        </div>
+                        <button>
+                            <img id='screen-list-footer-addchat' src='./medias/icons/add_comment_FILL1_wght400_GRAD0_opsz24.svg' alt='addchat' class='icon'/>
+                        </button>
+                    </div>
                 </section>
-                <section id='screen-chat' class='display-active'>
+                <section id='screen-chat' class='display-none'>
                     <div id='screen-chat-background'>
                         <div></div>
                     </div>
