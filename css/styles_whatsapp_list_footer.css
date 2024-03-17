@@ -5,8 +5,51 @@
     };
 
     .screen-list-footer {
-        background: rebeccapurple;
-        height: 3rem;
+        background: var(--color-white);
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-top: solid 0.01rem var(--color-gray-ds);
+    }
+
+    .screen-list-footer-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: calc(100% - 2rem);
+    }
+
+    .screen-list-footer-menu > button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 23%;
+        height: 4.5rem;
+        background: var(--color-white);
+    }
+
+    .screen-list-footer-menu > button > p {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1rem;
+    }
+
+    .screen-list-footer-addchat-button {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1rem;
+        background: var(--color-mediumseagreen);
+        position: absolute;
+        top: -5rem;
+        right: 1rem;
+        z-index: 99;
+        box-shadow: 0 0.2rem 0.5rem var(--color-gray-9s);
     }
 
 }

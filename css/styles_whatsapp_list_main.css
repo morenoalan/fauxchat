@@ -6,11 +6,11 @@
 
     .screen-list-main {
         height: 100%;
-        background: yellow;
+        background: var(--color-white);
     }
 
     .screen-list-main-chatlink {
-        background: gray;
+        background: white;
     }
     .screen-list-main-chatlink-img {
         background: royalblue;
