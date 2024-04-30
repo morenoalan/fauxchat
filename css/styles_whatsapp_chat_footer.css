@@ -34,7 +34,7 @@
         word-break: break-all;
         min-height: 1.7rem;
         max-height: 9.6rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-bottom: 0.17rem;
         background: transparent;
         cursor: text;
@@ -46,6 +46,7 @@
         user-select: auto;
         display: inline;
         text-decoration-style: solid;
+        color: var(--color-black);
     }
 
     .input-msg-field:empty::before {
