@@ -54,6 +54,12 @@ function flipChatHeader(msgsCounter){
     }
 }
 
+//chat-list
+
+function newChat(){
+    console.log('open new chat');
+}
+
 //chat-main
 let bubblesIdCount = 0;
 
