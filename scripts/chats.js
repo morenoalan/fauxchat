@@ -6,10 +6,10 @@ let chats = [
             {
                 msgId: "0",
                 time: "12:00",
-                author: "me",
+                author: "info",
                 respId: "",
                 resp: "",
-                msg: "first text"
+                msg: "Yesterday"
             },
             {
                 msgId: "1",
@@ -41,11 +41,11 @@ let chats = [
                 author: "info",
                 respId: "",
                 resp: "",
-                msg: "here is a new start"
+                msg: "Today"
             },
             {
                 msgId: "5",
-                time: "12:05",
+                time: "10:05",
                 author: "me",
                 respId: "",
                 resp: "",
@@ -53,7 +53,7 @@ let chats = [
             },
             {
                 msgId: "6",
-                time: "12:06",
+                time: "10:06",
                 author: "Flávia",
                 respId: "",
                 resp: "",
@@ -62,6 +62,17 @@ let chats = [
         ]
     },
     {
+        chat_id: "0",
         phone: "5500999990035",
+        msgs: [
+            {
+                msgId: "0",
+                time: "12:00",
+                author: "Miguél",
+                respId: "",
+                resp: "",
+                msg: "Hi!"
+            },
+        ]
     }
 ];
