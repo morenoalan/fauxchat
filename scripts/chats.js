@@ -62,7 +62,7 @@ let chats = [
         ]
     },
     {
-        chat_id: "0",
+        chat_id: "1",
         phone: "5500999990035",
         msgs: [
             {
@@ -74,5 +74,33 @@ let chats = [
                 msg: "Hi!"
             },
         ]
-    }
+    },
+    {
+        chat_id: "2",
+        phone: "5500999990035",
+        msgs: [
+            {
+                msgId: "0",
+                time: "14:00",
+                author: "Miguél",
+                respId: "",
+                resp: "",
+                msg: "Hello!"
+            },
+        ]
+    },
+    {
+        chat_id: "3",
+        phone: "5500999990035",
+        msgs: [
+            {
+                msgId: "0",
+                time: "13:00",
+                author: "Miguél",
+                respId: "",
+                resp: "",
+                msg: "what's up?"
+            },
+        ]
+    },
 ];
