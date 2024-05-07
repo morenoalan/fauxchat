@@ -68,7 +68,7 @@ let chats = [
             {
                 msgId: "0",
                 time: "12:00",
-                author: "Miguél",
+                author: "Miguel",
                 respId: "",
                 resp: "",
                 msg: "Hi!"
@@ -77,12 +77,12 @@ let chats = [
     },
     {
         chat_id: "2",
-        phone: "5500999990035",
+        phone: "5500999990036",
         msgs: [
             {
                 msgId: "0",
                 time: "14:00",
-                author: "Miguél",
+                author: "Alicinha",
                 respId: "",
                 resp: "",
                 msg: "Hello!"
@@ -91,12 +91,12 @@ let chats = [
     },
     {
         chat_id: "3",
-        phone: "5500999990035",
+        phone: "5500999990030",
         msgs: [
             {
                 msgId: "0",
                 time: "13:00",
-                author: "Miguél",
+                author: "Luciana",
                 respId: "",
                 resp: "",
                 msg: "what's up?"
