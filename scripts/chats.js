@@ -103,4 +103,26 @@ let chats = [
             },
         ]
     },
+    {
+        chat_id: "4",
+        phone: "5500999990028",
+        msgs: [
+            {
+                msgId: "0",
+                time: "17:00",
+                author: "Zé",
+                respId: "",
+                resp: "",
+                msg: "hey"
+            },
+            {
+                msgId: "1",
+                time: "17:15",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "hey"
+            },
+        ]
+    },
 ];
