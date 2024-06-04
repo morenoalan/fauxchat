@@ -147,4 +147,18 @@ let chats = [
             },
         ]
     },
+    {
+        chat_id: "6",
+        phone: "5500999990026",
+        msgs: [
+            {
+                msgId: "0",
+                time: "9:33",
+                author: "Nando",
+                respId: "",
+                resp: "",
+                msg: "remember the meeting friday night"
+            },
+        ]
+    },
 ];
