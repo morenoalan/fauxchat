@@ -161,4 +161,18 @@ let chats = [
             },
         ]
     },
+    {
+        chat_id: "7",
+        phone: "5500999990031",
+        msgs: [
+            {
+                msgId: "0",
+                time: "7:00",
+                author: "Samanta",
+                respId: "",
+                resp: "",
+                msg: "This isn't a pyramid scheme, just listen to our proposal"
+            },
+        ]
+    },
 ];
