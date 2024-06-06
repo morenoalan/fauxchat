@@ -175,4 +175,18 @@ let chats = [
             },
         ]
     },
+    {
+        chat_id: "8",
+        phone: "5500999990032",
+        msgs: [
+            {
+                msgId: "0",
+                time: "8:23",
+                author: "Lara",
+                respId: "",
+                resp: "",
+                msg: "Are you all right?"
+            },
+        ]
+    },
 ];
