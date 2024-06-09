@@ -189,4 +189,18 @@ let chats = [
             },
         ]
     },
+    {
+        chat_id: "9",
+        phone: "5500999990040",
+        msgs: [
+            {
+                msgId: "0",
+                time: "11:48",
+                author: "Renata",
+                respId: "",
+                resp: "",
+                msg: "Hello there?"
+            },
+        ]
+    },
 ];
