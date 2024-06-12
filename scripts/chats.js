@@ -229,6 +229,22 @@ let chats = [
                 resp: "",
                 msg: "Don't do it, please."
             },
+            {
+                msgId: "1",
+                time: "16:21",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "Don't worry."
+            },
+            {
+                msgId: "2",
+                time: "16:21",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "Be happy."
+            },
         ]
     },
 ];
