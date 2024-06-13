@@ -247,4 +247,34 @@ let chats = [
             },
         ]
     },
+    {
+        chat_id: "12",
+        phone: "5500999990029",
+        msgs: [
+            {
+                msgId: "0",
+                time: "23:44",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "Can you want to go with us?"
+            },
+            {
+                msgId: "1",
+                time: "23:50",
+                author: "Alzira",
+                respId: "",
+                resp: "",
+                msg: "Tomorrow I don't."
+            },
+            {
+                msgId: "2",
+                time: "23:52",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "Everything ok."
+            },
+        ]
+    },
 ];
