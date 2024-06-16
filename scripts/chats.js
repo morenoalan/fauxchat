@@ -321,4 +321,26 @@ let chats = [
             },
         ]
     },
+    {
+        chat_id: "15",
+        phone: "5500999990046",
+        msgs: [
+            {
+                msgId: "0",
+                time: "08:02",
+                author: "Clara",
+                respId: "",
+                resp: "",
+                msg: "Morning, friend!"
+            },
+            {
+                msgId: "1",
+                time: "08:03",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "I'm here already."
+            },
+        ]
+    },
 ];
