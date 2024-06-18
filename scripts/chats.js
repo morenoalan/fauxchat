@@ -365,4 +365,26 @@ let chats = [
             },
         ]
     },
+    {
+        chat_id: "17",
+        phone: "5500999990048",
+        msgs: [
+            {
+                msgId: "0",
+                time: "12:02",
+                author: "Suzy",
+                respId: "",
+                resp: "",
+                msg: "Lunch is ready."
+            },
+            {
+                msgId: "1",
+                time: "12:11",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "Ok, I'm coming."
+            },
+        ]
+    },
 ];
