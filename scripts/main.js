@@ -63,6 +63,10 @@ function newChat(){
 //chat-main
 let bubblesIdCount = 0;
 
+function bubbleEdit(){
+    console.log('edit');
+}
+
 //chat-header-edition changing side of Msgs
 function cleanSelection(){
     maskedBubblesList.forEach(function (id) {
