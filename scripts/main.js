@@ -64,8 +64,8 @@ function newChat(){
 let bubblesIdCount = 0;
 
 function bubbleEdit(){
-    let bubbleEditText = document.getElementById(maskedBubblesList[0]).getElementsByClassName('msg-bubble');
-    console.log(bubbleEditText);
+    let bubbleEditText = document.getElementById(maskedBubblesList[0]).getElementsByClassName('msg-bubble')[0];
+    console.log(bubbleEditText.textContent);
 }
 
 //chat-header-edition changing side of Msgs
