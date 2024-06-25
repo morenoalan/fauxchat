@@ -65,6 +65,7 @@ let bubblesIdCount = 0;
 
 function bubbleEdit(){
     let bubbleEditText = document.getElementById(maskedBubblesList[0]).getElementsByClassName('msg-bubble')[0];
+    bubbleEditText.getElementsByClassName('msg-bubble-time')[0].remove();
     console.log(bubbleEditText.textContent);
 }
 
