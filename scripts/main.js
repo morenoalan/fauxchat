@@ -65,8 +65,9 @@ let bubblesIdCount = 0;
 
 function bubbleEdit(){
     let bubbleEditText = document.getElementById(maskedBubblesList[0]).getElementsByClassName('msg-bubble')[0];
-    bubbleEditText.getElementsByClassName('msg-bubble-time')[0].remove();//bug: removing time from screen
-    console.log(bubbleEditText.textContent);
+    let bubbleEditTextClone = bubbleEditText.cloneNode(true);
+    bubbleEditTextClone.getElementsByClassName('msg-bubble-time')[0].remove();
+    console.log(bubbleEditTextClone.textContent);
 }
 
 //chat-header-edition changing side of Msgs
