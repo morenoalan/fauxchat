@@ -67,9 +67,10 @@ function bubbleEdit(){
     let bubbleEditText = document.getElementById(maskedBubblesList[0]).getElementsByClassName('msg-bubble')[0];
     let bubbleEditTextClone = bubbleEditText.cloneNode(true);
     bubbleEditTextClone.getElementsByClassName('msg-bubble-time')[0].remove();
-    console.log(bubbleEditTextClone.textContent);
     document.getElementById('screen-chat-footer-input-msg-field').textContent = bubbleEditTextClone.textContent;
+
     messageFieldWriting();
+    console.log('ok');
 }
 
 //chat-header-edition changing side of Msgs
