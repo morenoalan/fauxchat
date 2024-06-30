@@ -38,6 +38,10 @@ function flipChatHeader(msgsCounter){
         headerEdition.classList.add('display-none');
         headerEdition.classList.remove('screen-chat-header-display');
         maskedBubblesList = [];
+
+        if(bubbleEditActivated == true){
+            closeBubbleEdit();
+        }
     }else{
         headerDisplay.classList.add('display-none');
         headerDisplay.classList.remove('screen-chat-header-display');
@@ -62,15 +66,40 @@ function newChat(){
 
 //chat-main
 let bubblesIdCount = 0;
+let bubbleEditActivated = false;
 
 function bubbleEdit(){
+    bubbleEditActivated = true;
+
     let bubbleEditText = document.getElementById(maskedBubblesList[0]).getElementsByClassName('msg-bubble')[0];
     let bubbleEditTextClone = bubbleEditText.cloneNode(true);
     bubbleEditTextClone.getElementsByClassName('msg-bubble-time')[0].remove();
     document.getElementById('screen-chat-footer-input-msg-field').textContent = bubbleEditTextClone.textContent;
 
     messageFieldWriting();
-    console.log('ok');
+}
+
+function closeBubbleEdit(){
+    cleanMsgField();
+    cleanSelection();
+}
+
+function sendBubbleEdited(){
+    bubbleEditActivated = false;
+
+    let msg = msgField.innerHTML.replace(/\<div\>/g, '<br>').replace(/\<\/div\>/g, '');
+
+    let bubbleEditText = document.getElementById(maskedBubblesList[0]).getElementsByClassName('msg-bubble')[0];
+    
+    whatTimeIsIt = bubbleEditText.getElementsByClassName('msg-bubble-time')[0].textContent;
+
+    let pickIcon = tickIcons.find(item => item.value == tickCounter);
+
+    let msgDefault = `${msg}\<button onmousedown='msgSelect(this);' class='button-select'\>\<\/button\>\<div class='msg-bubble-metadata'\>\<p class='msg-bubble-time'\>Editada ${whatTimeIsIt}\<\/p\>\<button onclick='changeTick(this);' value='${tickCounter}' class='msg-bubble-tick'\>\<img src='${pickIcon.icon}'\/\>\<\/button\>\<\/div\>\<\/div\>`;
+
+    bubbleEditText.innerHTML = msgDefault;
+
+    closeBubbleEdit();
 }
 
 //chat-header-edition changing side of Msgs
@@ -229,8 +258,12 @@ msgField.addEventListener('input', function () {
 
 //chat-send
 function sendMessage(){
-    panelSend.classList.add('chat-send-panel');
-    panelSend.classList.remove('display-none');
+    if(bubbleEditActivated == true){
+        sendBubbleEdited();
+    }else{
+        panelSend.classList.add('chat-send-panel');
+        panelSend.classList.remove('display-none');
+    }
 }
 
 function collapseSendPanel(){
