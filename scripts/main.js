@@ -82,6 +82,7 @@ function bubbleEdit(){
 function closeBubbleEdit(){
     cleanMsgField();
     cleanSelection();
+    // To update: button screen-chat-header-figure-back
 }
 
 function sendBubbleEdited(){
