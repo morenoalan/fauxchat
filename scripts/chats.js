@@ -443,6 +443,14 @@ let chats = [
                 resp: "",
                 msg: "Learn to dance with teacher Coisinha de Jesus."
             },
+            {
+                msgId: "1",
+                time: "16:04",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "Seems great!"
+            },
         ]
     },
 ];
