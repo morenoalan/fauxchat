@@ -451,6 +451,14 @@ let chats = [
                 resp: "",
                 msg: "Seems great!"
             },
+            {
+                msgId: "2",
+                time: "16:05",
+                author: "César",
+                respId: "",
+                resp: "",
+                msg: "Do you want to visit us for a free class?"
+            },
         ]
     },
 ];
