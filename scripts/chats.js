@@ -468,12 +468,12 @@ let chats = [
                 msg: "Of course."
             },
             {
-                msgId: "3",
-                time: "16:05",
-                author: "me",
+                msgId: "4",
+                time: "16:07",
+                author: "César",
                 respId: "",
                 resp: "",
-                msg: "Of course."
+                msg: "Can you come here next tuesday, at 2PM?"
             },
         ]
     },
