@@ -475,6 +475,14 @@ let chats = [
                 resp: "",
                 msg: "Can you come here next tuesday, at 2PM?"
             },
+            {
+                msgId: "5",
+                time: "16:08",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "Yes, I can."
+            },
         ]
     },
 ];
