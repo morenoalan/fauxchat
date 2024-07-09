@@ -483,6 +483,14 @@ let chats = [
                 resp: "",
                 msg: "Yes, I can."
             },
+            {
+                msgId: "6",
+                time: "16:08",
+                author: "César",
+                respId: "",
+                resp: "",
+                msg: "So we are waiting for you."
+            },
         ]
     },
 ];
