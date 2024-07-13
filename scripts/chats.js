@@ -521,6 +521,14 @@ let chats = [
                 resp: "",
                 msg: "But ok, I see you."
             },
+            {
+                msgId: "2",
+                time: "22:08",
+                author: "Bia",
+                respId: "",
+                resp: "",
+                msg: "Write it down, don't forget."
+            },
         ]
     },
 ];
