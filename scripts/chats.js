@@ -545,6 +545,14 @@ let chats = [
                 resp: "",
                 msg: "I forgot a thing. Where you will be?"
             },
+            {
+                msgId: "6",
+                time: "22:30",
+                author: "Bia",
+                respId: "",
+                resp: "",
+                msg: "In front of the library."
+            },
         ]
     },
 ];
