@@ -551,7 +551,7 @@ let chats = [
                 author: "Bia",
                 respId: "",
                 resp: "",
-                msg: "In front of the library."
+                msg: "In front of the library. At 9 a.m."
             },
         ]
     },
