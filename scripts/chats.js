@@ -553,6 +553,14 @@ let chats = [
                 resp: "",
                 msg: "In front of the library. At 9 a.m."
             },
+            {
+                msgId: "7",
+                time: "22:31",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "Right."
+            },
         ]
     },
 ];
