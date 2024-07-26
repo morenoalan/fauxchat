@@ -613,14 +613,6 @@ let chats = [
                 author: "me",
                 respId: "",
                 resp: "",
-                msg: "Of course, but sleeping."
-            },
-            {
-                msgId: "5",
-                time: "3:38",
-                author: "me",
-                respId: "",
-                resp: "",
                 msg: "I'm sleeping. Bye."
             },
         ]
