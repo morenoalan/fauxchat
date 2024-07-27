@@ -615,6 +615,14 @@ let chats = [
                 resp: "",
                 msg: "I'm sleeping. Bye."
             },
+            {
+                msgId: "6",
+                time: "3:39",
+                author: "Baiacu",
+                respId: "",
+                resp: "",
+                msg: "Please, don't go!"
+            },
         ]
     },
 ];
