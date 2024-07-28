@@ -623,6 +623,14 @@ let chats = [
                 resp: "",
                 msg: "Please, don't go!"
             },
+            {
+                msgId: "7",
+                time: "3:39",
+                author: "Baiacu",
+                respId: "",
+                resp: "",
+                msg: "Don't go. Don't go away!"
+            },
         ]
     },
 ];
