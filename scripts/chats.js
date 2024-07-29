@@ -633,4 +633,18 @@ let chats = [
             },
         ]
     },
+    {
+        chat_id: "23",
+        phone: "5500999990054",
+        msgs: [
+            {
+                msgId: "0",
+                time: "12:04",
+                author: "Gabiroba",
+                respId: "",
+                resp: "",
+                msg: "Gabi here."
+            },
+        ]
+    },
 ];
