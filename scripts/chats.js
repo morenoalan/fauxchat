@@ -684,12 +684,20 @@ let chats = [
                 msg: "Hello"
             },
             {
-                msgId: "0",
+                msgId: "1",
                 time: "16:29",
                 author: "Laura",
                 respId: "",
                 resp: "",
                 msg: "Hey, wup?"
+            },
+            {
+                msgId: "2",
+                time: "16:31",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "I talk to you in a minute."
             },
         ]
     }
