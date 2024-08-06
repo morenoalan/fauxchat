@@ -707,6 +707,14 @@ let chats = [
                 resp: "",
                 msg: "Sorry, I'm full of work here."
             },
+            {
+                msgId: "4",
+                time: "21:03",
+                author: "me",
+                respId: "",
+                resp: "",
+                msg: "Ok, now I can text."
+            },
         ]
     }
 ];
