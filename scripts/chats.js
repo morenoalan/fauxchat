@@ -723,6 +723,14 @@ let chats = [
                 resp: "",
                 msg: "Are you there right now?"
             },
+            {
+                msgId: "7",
+                time: "21:08",
+                author: "Laura",
+                respId: "",
+                resp: "",
+                msg: "It's late. We can talk tomorrow."
+            },
         ]
     }
 ];
