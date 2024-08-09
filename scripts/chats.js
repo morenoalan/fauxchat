@@ -724,7 +724,7 @@ let chats = [
                 msg: "Are you there right now?"
             },
             {
-                msgId: "7",
+                msgId: "6",
                 time: "21:08",
                 author: "Laura",
                 respId: "",
