@@ -729,7 +729,15 @@ let chats = [
                 author: "Laura",
                 respId: "",
                 resp: "",
-                msg: "It's late. We can talk tomorrow."
+                msg: "It's late."
+            },
+            {
+                msgId: "7",
+                time: "21:08",
+                author: "Laura",
+                respId: "",
+                resp: "",
+                msg: "We can talk tomorrow."
             },
         ]
     }
