@@ -220,6 +220,10 @@ const tickIcons = [
 
 let tickCounter = 1;
 
+function changeTime(button){
+    console.log('change time');
+}
+
 function changeTick(button){
     tickCounter = (parseInt(button.value) % 4) + 1;
     let btBubbleDone = button.querySelector('img');
@@ -297,7 +301,7 @@ function postMsg(prop){
 
     let pickIcon = tickIcons.find(item => item.value == tickCounter);
 
-    let msgDefault = `\<button onclick='msgDeselect(this);' class='msg-selector display-none'\>\<\/button\><div class='msg-bubble ${prop}'\>${msg}\<button onmousedown='msgSelect(this);' class='button-select'\>\<\/button\>\<div class='msg-bubble-metadata'\>\<p class='msg-bubble-time'\>${whatTimeIsIt}\<\/p\>\<button onclick='changeTick(this);' value='${tickCounter}' class='msg-bubble-tick'\>\<img src='${pickIcon.icon}'\/\>\<\/button\>\<\/div\>\<\/div\>`;
+    let msgDefault = `\<button onclick='msgDeselect(this);' class='msg-selector display-none'\>\<\/button\><div class='msg-bubble ${prop}'\>${msg}\<button onmousedown='msgSelect(this);' class='button-select'\>\<\/button\>\<div class='msg-bubble-metadata'\>\<button onclick='changeTime(this);' class='msg-bubble-time'\>${whatTimeIsIt}\<\/button\>\<button onclick='changeTick(this);' value='${tickCounter}' class='msg-bubble-tick'\>\<img src='${pickIcon.icon}'\/\>\<\/button\>\<\/div\>\<\/div\>`;
 
     let newMsg = document.createElement('div');
     newMsg.id = 'chat-msg-'+bubblesIdCount;
