@@ -221,7 +221,10 @@ const tickIcons = [
 let tickCounter = 1;
 
 function changeTime(button){
-    console.log('change time');
+    console.log(button.textContent);
+
+    let timeChanger = '';
+    //chatMain.appendChild(timeBubble);
 }
 
 function changeTick(button){
