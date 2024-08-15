@@ -1,6 +1,17 @@
 // localStorage
 
 //Screenshot Region
+/*Need access to API html2canvas*/
+function captureDivScreenshot(divId) {
+    let div = document.getElementById(divId);
+    html2canvas(div).then(canvas => {
+        let img = canvas.toDataURL('image/jpeg', 0.9);
+        let link = document.createElement('a');
+        link.href = img;
+        link.download = 'screenshot.jpg';
+        link.click();
+    });
+}
 
 // navigation
 function goToScreen(nextScreen) {
