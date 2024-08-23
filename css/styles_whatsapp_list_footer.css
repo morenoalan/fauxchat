@@ -52,5 +52,9 @@
         box-shadow: 0 0.2rem 0.5rem var(--color-gray-9s);
         padding-top: 0.4rem;
     }
+    
+    .screen-list-footer-menu-button-label {
+        color: var(--color-black);
+    }
 
 }
