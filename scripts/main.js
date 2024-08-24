@@ -75,6 +75,14 @@ function newChat(){
     console.log('open new chat');
 }
 
+function chatsList() {
+    chats.forEach(function(elemento) {
+        console.log(elemento.phone);
+    });
+}
+
+chatsList();
+
 //chat-main
 let bubblesIdCount = 0;
 let bubbleEditActivated = false;
