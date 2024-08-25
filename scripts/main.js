@@ -76,8 +76,10 @@ function newChat(){
 }
 
 function chatsList() {
-    chats.forEach(function(elemento) {
-        console.log(elemento.phone);
+    chats.forEach(function(element) {
+        //console.log(element.phone);
+        let person = people.find(item => item.phone == element.phone);
+        console.log(person.name);
     });
 }
 
@@ -386,5 +388,3 @@ function adaptImage(dataURL, img){
     };
     imgLoaded.src = dataURL;
 }
-
-console.log(people[0].phone);
