@@ -79,7 +79,11 @@ function chatsList() {
     chats.forEach(function(element) {
         //console.log(element.phone);
         let person = people.find(item => item.phone == element.phone);
-        console.log(person.name);
+        if(person.nickname != ""){
+            console.log(person.nickname);
+        }else{
+            console.log(person.name+" "+person.surname);
+        }
     });
 }
 

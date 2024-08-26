@@ -6,7 +6,7 @@ let chats = [
             {
                 msgId: "0",
                 time: "12:00",
-                author: "info",
+                author: "00_info",
                 respId: "",
                 resp: "",
                 msg: "Yesterday"
@@ -22,7 +22,7 @@ let chats = [
             {
                 msgId: "2",
                 time: "12:01",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "third msg"
@@ -30,7 +30,7 @@ let chats = [
             {
                 msgId: "3",
                 time: "12:02",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "lorem ipsum 4"
@@ -38,7 +38,7 @@ let chats = [
             {
                 msgId: "4",
                 time: "12:04",
-                author: "info",
+                author: "00_info",
                 respId: "",
                 resp: "",
                 msg: "Today"
@@ -46,7 +46,7 @@ let chats = [
             {
                 msgId: "5",
                 time: "10:05",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "message 5"
@@ -118,7 +118,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "17:15",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "hey"
@@ -140,7 +140,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "15:10",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "hey"
@@ -232,7 +232,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "16:21",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Don't worry."
@@ -240,7 +240,7 @@ let chats = [
             {
                 msgId: "2",
                 time: "16:21",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Be happy."
@@ -254,7 +254,7 @@ let chats = [
             {
                 msgId: "0",
                 time: "23:44",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Can you want to go with us?"
@@ -270,7 +270,7 @@ let chats = [
             {
                 msgId: "2",
                 time: "23:52",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Everything ok."
@@ -292,7 +292,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "06:23",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "No."
@@ -314,7 +314,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "10:37",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "General, Kenobi!"
@@ -336,7 +336,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "08:03",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "I'm here already."
@@ -350,7 +350,7 @@ let chats = [
             {
                 msgId: "0",
                 time: "08:24",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Right?"
@@ -380,7 +380,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "12:11",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Ok, I'm coming."
@@ -402,7 +402,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "17:17",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "17."
@@ -424,7 +424,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "19:38",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "No."
@@ -446,7 +446,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "16:04",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Seems great!"
@@ -462,7 +462,7 @@ let chats = [
             {
                 msgId: "3",
                 time: "16:05",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Of course."
@@ -478,7 +478,7 @@ let chats = [
             {
                 msgId: "5",
                 time: "16:08",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Yes, I can."
@@ -500,7 +500,7 @@ let chats = [
             {
                 msgId: "0",
                 time: "21:44",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Bia, a need to see you tomorrow."
@@ -532,7 +532,7 @@ let chats = [
             {
                 msgId: "4",
                 time: "22:09",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "ok!"
@@ -540,7 +540,7 @@ let chats = [
             {
                 msgId: "5",
                 time: "22:25",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "I forgot a thing. Where you will be?"
@@ -556,7 +556,7 @@ let chats = [
             {
                 msgId: "7",
                 time: "22:31",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Right."
@@ -578,7 +578,7 @@ let chats = [
             {
                 msgId: "1",
                 time: "3:33",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "No. Go to sleep!"
@@ -610,7 +610,7 @@ let chats = [
             {
                 msgId: "5",
                 time: "3:38",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "I'm sleeping. Bye."
@@ -664,7 +664,7 @@ let chats = [
             {
                 msgId: "0",
                 time: "16:25",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Hi, I'm here now."
@@ -678,7 +678,7 @@ let chats = [
             {
                 msgId: "0",
                 time: "16:26",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Hello"
@@ -694,7 +694,7 @@ let chats = [
             {
                 msgId: "2",
                 time: "16:31",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "I talk to you in a minute."
@@ -702,7 +702,7 @@ let chats = [
             {
                 msgId: "3",
                 time: "17:55",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Sorry, I'm full of work here."
@@ -710,7 +710,7 @@ let chats = [
             {
                 msgId: "4",
                 time: "21:03",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Ok, now I can text."
@@ -718,7 +718,7 @@ let chats = [
             {
                 msgId: "5",
                 time: "21:03",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "Are you there right now?"
@@ -742,7 +742,7 @@ let chats = [
             {
                 msgId: "8",
                 time: "21:10",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "ok."
@@ -756,7 +756,7 @@ let chats = [
             {
                 msgId: "0",
                 time: "11:11",
-                author: "me",
+                author: "00_me",
                 respId: "",
                 resp: "",
                 msg: "What's up, Pereba?"

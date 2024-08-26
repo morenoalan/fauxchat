@@ -237,7 +237,7 @@ let people = [
         phone: "5500999990027",
         name: "Carlos",
         surname: "Pitu",
-        nickname: "",
+        nickname: "Capitu",
         photo: "./medias/people/fauxchat-people-027.jpg",
         username: "pituca",
         bio: ""
@@ -282,7 +282,7 @@ let people = [
         phone: "5500999990032",
         name: "Lara",
         surname: "Araripe",
-        nickname: "",
+        nickname: "Larará",
         photo: "./medias/people/fauxchat-people-032.jpg",
         username: "larara",
         bio: ""
@@ -336,7 +336,7 @@ let people = [
         phone: "5500999990038",
         name: "Bárbara",
         surname: "Tanajura",
-        nickname: "",
+        nickname: "Braba",
         photo: "./medias/people/fauxchat-people-038.jpg",
         username: "barbatana",
         bio: ""
@@ -354,7 +354,7 @@ let people = [
         phone: "5500999990040",
         name: "Renata",
         surname: "Piaba",
-        nickname: "",
+        nickname: "Arrepia",
         photo: "./medias/people/fauxchat-people-040.jpg",
         username: "a_re_pia",
         bio: ""
@@ -489,7 +489,7 @@ let people = [
         phone: "5500999990055",
         name: "Laura",
         surname: "Baraúna",
-        nickname: "",
+        nickname: "Laraúna",
         photo: "./medias/people/fauxchat-people-055.jpg",
         username: "umbabarauma",
         bio: "O telefone tocou novamente"
@@ -498,7 +498,7 @@ let people = [
         phone: "5500999990056",
         name: "Marcos",
         surname: "Taperebá",
-        nickname: "",
+        nickname: "Perebas",
         photo: "./medias/people/fauxchat-people-056.jpg",
         username: "perebento",
         bio: ""
@@ -516,7 +516,7 @@ let people = [
         phone: "5500999990058",
         name: "Suellen",
         surname: "Suassuna",
-        nickname: "",
+        nickname: "Sussu",
         photo: "./medias/people/fauxchat-people-058.jpg",
         username: "sussuca",
         bio: ""
@@ -543,7 +543,7 @@ let people = [
         phone: "5500999990061",
         name: "Enzo",
         surname: "Peteca",
-        nickname: "",
+        nickname: "Zé Pitica",
         photo: "./medias/people/fauxchat-people-061.jpg",
         username: "petequenzo",
         bio: ""
@@ -552,7 +552,7 @@ let people = [
         phone: "5500999990062",
         name: "Raquel",
         surname: "Butiá",
-        nickname: "",
+        nickname: "Rabu",
         photo: "./medias/people/fauxchat-people-062.jpg",
         username: "bolsofurado",
         bio: ""
