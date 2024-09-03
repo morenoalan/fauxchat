@@ -9,7 +9,8 @@ let chats = [
                 author: "00_info",
                 respId: "",
                 resp: "",
-                msg: "Yesterday"
+                msg: "Yesterday",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -17,7 +18,8 @@ let chats = [
                 author: "Flávia",
                 respId: "",
                 resp: "",
-                msg: "second msg"
+                msg: "second msg",
+                status: "3"
             },
             {
                 msgId: "2",
@@ -25,7 +27,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "third msg"
+                msg: "third msg",
+                status: "3"
             },
             {
                 msgId: "3",
@@ -33,7 +36,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "lorem ipsum 4"
+                msg: "lorem ipsum 4",
+                status: "3"
             },
             {
                 msgId: "4",
@@ -41,7 +45,8 @@ let chats = [
                 author: "00_info",
                 respId: "",
                 resp: "",
-                msg: "Today"
+                msg: "Today",
+                status: "3"
             },
             {
                 msgId: "5",
@@ -49,7 +54,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "message 5"
+                msg: "message 5",
+                status: "3"
             },
             {
                 msgId: "6",
@@ -57,7 +63,8 @@ let chats = [
                 author: "Flávia",
                 respId: "",
                 resp: "",
-                msg: "answer 6"
+                msg: "answer 6",
+                status: "3"
             },
         ]
     },
@@ -71,7 +78,8 @@ let chats = [
                 author: "Miguel",
                 respId: "",
                 resp: "",
-                msg: "Hi!"
+                msg: "Hi!",
+                status: "3"
             },
         ]
     },
@@ -85,7 +93,8 @@ let chats = [
                 author: "Alicinha",
                 respId: "",
                 resp: "",
-                msg: "Hello!"
+                msg: "Hello!",
+                status: "3"
             },
         ]
     },
@@ -99,7 +108,8 @@ let chats = [
                 author: "Luciana",
                 respId: "",
                 resp: "",
-                msg: "what's up?"
+                msg: "what's up?",
+                status: "3"
             },
         ]
     },
@@ -113,7 +123,8 @@ let chats = [
                 author: "Zé",
                 respId: "",
                 resp: "",
-                msg: "hey"
+                msg: "hey",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -121,7 +132,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "hey"
+                msg: "hey",
+                status: "3"
             },
         ]
     },
@@ -135,7 +147,8 @@ let chats = [
                 author: "Érica",
                 respId: "",
                 resp: "",
-                msg: "starting a chat here, friend"
+                msg: "starting a chat here, friend",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -143,7 +156,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "hey"
+                msg: "hey",
+                status: "3"
             },
         ]
     },
@@ -157,7 +171,8 @@ let chats = [
                 author: "Nando",
                 respId: "",
                 resp: "",
-                msg: "remember the meeting friday night"
+                msg: "remember the meeting friday night",
+                status: "3"
             },
         ]
     },
@@ -171,7 +186,8 @@ let chats = [
                 author: "Samanta",
                 respId: "",
                 resp: "",
-                msg: "This isn't a pyramid scheme, just listen to our proposal"
+                msg: "This isn't a pyramid scheme, just listen to our proposal",
+                status: "3"
             },
         ]
     },
@@ -185,7 +201,8 @@ let chats = [
                 author: "Lara",
                 respId: "",
                 resp: "",
-                msg: "Are you all right?"
+                msg: "Are you all right?",
+                status: "3"
             },
         ]
     },
@@ -199,7 +216,8 @@ let chats = [
                 author: "Renata",
                 respId: "",
                 resp: "",
-                msg: "Hello?"
+                msg: "Hello?",
+                status: "3"
             },
         ]
     },
@@ -213,7 +231,8 @@ let chats = [
                 author: "Pitu",
                 respId: "",
                 resp: "",
-                msg: "Make a count to me. Take the length of a circle and divide it by 2 times the radius."
+                msg: "Make a count to me. Take the length of a circle and divide it by 2 times the radius.",
+                status: "3"
             },
         ]
     },
@@ -227,7 +246,8 @@ let chats = [
                 author: "Beca",
                 respId: "",
                 resp: "",
-                msg: "Don't do it, please."
+                msg: "Don't do it, please.",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -235,7 +255,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Don't worry."
+                msg: "Don't worry.",
+                status: "3"
             },
             {
                 msgId: "2",
@@ -243,7 +264,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Be happy."
+                msg: "Be happy.",
+                status: "3"
             },
         ]
     },
@@ -257,7 +279,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Can you want to go with us?"
+                msg: "Can you want to go with us?",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -265,7 +288,8 @@ let chats = [
                 author: "Alzira",
                 respId: "",
                 resp: "",
-                msg: "Tomorrow I don't."
+                msg: "Tomorrow I don't.",
+                status: "3"
             },
             {
                 msgId: "2",
@@ -273,7 +297,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Everything ok."
+                msg: "Everything ok.",
+                status: "3"
             },
         ]
     },
@@ -287,7 +312,8 @@ let chats = [
                 author: "Ariel",
                 respId: "",
                 resp: "",
-                msg: "Are you Sebastian?"
+                msg: "Are you Sebastian?",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -295,7 +321,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "No."
+                msg: "No.",
+                status: "3"
             },
         ]
     },
@@ -309,7 +336,8 @@ let chats = [
                 author: "Ben",
                 respId: "",
                 resp: "",
-                msg: "Hello, there!"
+                msg: "Hello, there!",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -317,7 +345,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "General, Kenobi!"
+                msg: "General, Kenobi!",
+                status: "3"
             },
         ]
     },
@@ -331,7 +360,8 @@ let chats = [
                 author: "Clara",
                 respId: "",
                 resp: "",
-                msg: "Morning, friend!"
+                msg: "Morning, friend!",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -339,7 +369,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "I'm here already."
+                msg: "I'm here already.",
+                status: "3"
             },
         ]
     },
@@ -353,7 +384,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Right?"
+                msg: "Right?",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -361,7 +393,8 @@ let chats = [
                 author: "Rosa",
                 respId: "",
                 resp: "",
-                msg: "Right."
+                msg: "Right.",
+                status: "3"
             },
         ]
     },
@@ -375,7 +408,8 @@ let chats = [
                 author: "Suzy",
                 respId: "",
                 resp: "",
-                msg: "Lunch is ready."
+                msg: "Lunch is ready.",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -383,7 +417,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Ok, I'm coming."
+                msg: "Ok, I'm coming.",
+                status: "3"
             },
         ]
     },
@@ -397,7 +432,8 @@ let chats = [
                 author: "Van",
                 respId: "",
                 resp: "",
-                msg: "13."
+                msg: "13.",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -405,7 +441,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "17."
+                msg: "17.",
+                status: "3"
             },
         ]
     },
@@ -419,7 +456,8 @@ let chats = [
                 author: "Emily",
                 respId: "",
                 resp: "",
-                msg: "It's Sebas's number?"
+                msg: "It's Sebas's number?",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -427,7 +465,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "No."
+                msg: "No.",
+                status: "3"
             },
         ]
     },
@@ -441,7 +480,8 @@ let chats = [
                 author: "César",
                 respId: "",
                 resp: "",
-                msg: "Learn to dance with teacher Coisinha de Jesus."
+                msg: "Learn to dance with teacher Coisinha de Jesus.",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -449,7 +489,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Seems great!"
+                msg: "Seems great!",
+                status: "3"
             },
             {
                 msgId: "2",
@@ -457,7 +498,8 @@ let chats = [
                 author: "César",
                 respId: "",
                 resp: "",
-                msg: "Do you want to visit us for a free class?"
+                msg: "Do you want to visit us for a free class?",
+                status: "3"
             },
             {
                 msgId: "3",
@@ -465,7 +507,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Of course."
+                msg: "Of course.",
+                status: "3"
             },
             {
                 msgId: "4",
@@ -473,7 +516,8 @@ let chats = [
                 author: "César",
                 respId: "",
                 resp: "",
-                msg: "Can you come here next tuesday, at 2PM?"
+                msg: "Can you come here next tuesday, at 2PM?",
+                status: "3"
             },
             {
                 msgId: "5",
@@ -481,7 +525,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Yes, I can."
+                msg: "Yes, I can.",
+                status: "3"
             },
             {
                 msgId: "6",
@@ -489,7 +534,8 @@ let chats = [
                 author: "César",
                 respId: "",
                 resp: "",
-                msg: "So we are waiting for you."
+                msg: "So we are waiting for you.",
+                status: "3"
             },
         ]
     },
@@ -503,7 +549,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Bia, a need to see you tomorrow."
+                msg: "Bia, a need to see you tomorrow.",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -511,7 +558,8 @@ let chats = [
                 author: "Bia",
                 respId: "",
                 resp: "",
-                msg: "It's so late!"
+                msg: "It's so late!",
+                status: "3"
             },
             {
                 msgId: "2",
@@ -519,7 +567,8 @@ let chats = [
                 author: "Bia",
                 respId: "",
                 resp: "",
-                msg: "But ok, I see you."
+                msg: "But ok, I see you.",
+                status: "3"
             },
             {
                 msgId: "3",
@@ -527,7 +576,8 @@ let chats = [
                 author: "Bia",
                 respId: "",
                 resp: "",
-                msg: "Write it down, don't forget."
+                msg: "Write it down, don't forget.",
+                status: "3"
             },
             {
                 msgId: "4",
@@ -535,7 +585,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "ok!"
+                msg: "ok!",
+                status: "3"
             },
             {
                 msgId: "5",
@@ -543,7 +594,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "I forgot a thing. Where you will be?"
+                msg: "I forgot a thing. Where you will be?",
+                status: "3"
             },
             {
                 msgId: "6",
@@ -551,7 +603,8 @@ let chats = [
                 author: "Bia",
                 respId: "",
                 resp: "",
-                msg: "In front of the library. At 9 a.m."
+                msg: "In front of the library. At 9 a.m.",
+                status: "3"
             },
             {
                 msgId: "7",
@@ -559,7 +612,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Right."
+                msg: "Right.",
+                status: "3"
             },
         ]
     },
@@ -573,7 +627,8 @@ let chats = [
                 author: "Baiacu",
                 respId: "",
                 resp: "",
-                msg: "Are you awake?"
+                msg: "Are you awake?",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -581,7 +636,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "No. Go to sleep!"
+                msg: "No. Go to sleep!",
+                status: "3"
             },
             {
                 msgId: "2",
@@ -589,7 +645,8 @@ let chats = [
                 author: "Baiacu",
                 respId: "",
                 resp: "",
-                msg: "I can't."
+                msg: "I can't.",
+                status: "3"
             },
             {
                 msgId: "3",
@@ -597,7 +654,8 @@ let chats = [
                 author: "Baiacu",
                 respId: "",
                 resp: "",
-                msg: "Stay here."
+                msg: "Stay here.",
+                status: "3"
             },
             {
                 msgId: "4",
@@ -605,7 +663,8 @@ let chats = [
                 author: "Baiacu",
                 respId: "",
                 resp: "",
-                msg: "Are you still here?"
+                msg: "Are you still here?",
+                status: "3"
             },
             {
                 msgId: "5",
@@ -613,7 +672,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "I'm sleeping. Bye."
+                msg: "I'm sleeping. Bye.",
+                status: "3"
             },
             {
                 msgId: "6",
@@ -621,7 +681,8 @@ let chats = [
                 author: "Baiacu",
                 respId: "",
                 resp: "",
-                msg: "Please, don't go!"
+                msg: "Please, don't go!",
+                status: "3"
             },
             {
                 msgId: "7",
@@ -629,7 +690,8 @@ let chats = [
                 author: "Baiacu",
                 respId: "",
                 resp: "",
-                msg: "Don't go. Don't go away!"
+                msg: "Don't go. Don't go away!",
+                status: "3"
             },
         ]
     },
@@ -643,7 +705,8 @@ let chats = [
                 author: "Gabiroba",
                 respId: "",
                 resp: "",
-                msg: "Gabi here."
+                msg: "Gabi here.",
+                status: "3"
             },
             {
                 msgId: "0",
@@ -651,7 +714,8 @@ let chats = [
                 author: "Gabiroba",
                 respId: "",
                 resp: "",
-                msg: "Do you still have this number?"
+                msg: "Do you still have this number?",
+                status: "3"
             },
             {
                 msgId: "0",
@@ -659,7 +723,8 @@ let chats = [
                 author: "Gabiroba",
                 respId: "",
                 resp: "",
-                msg: "please answer me asap."
+                msg: "please answer me asap.",
+                status: "3"
             },
             {
                 msgId: "0",
@@ -667,7 +732,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Hi, I'm here now."
+                msg: "Hi, I'm here now.",
+                status: "3"
             },
         ]
     },
@@ -681,7 +747,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Hello"
+                msg: "Hello",
+                status: "3"
             },
             {
                 msgId: "1",
@@ -689,7 +756,8 @@ let chats = [
                 author: "Laura",
                 respId: "",
                 resp: "",
-                msg: "Hey, wup?"
+                msg: "Hey, wup?",
+                status: "3"
             },
             {
                 msgId: "2",
@@ -697,7 +765,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "I talk to you in a minute."
+                msg: "I talk to you in a minute.",
+                status: "3"
             },
             {
                 msgId: "3",
@@ -705,7 +774,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Sorry, I'm full of work here."
+                msg: "Sorry, I'm full of work here.",
+                status: "3"
             },
             {
                 msgId: "4",
@@ -713,7 +783,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Ok, now I can text."
+                msg: "Ok, now I can text.",
+                status: "3"
             },
             {
                 msgId: "5",
@@ -721,7 +792,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "Are you there right now?"
+                msg: "Are you there right now?",
+                status: "3"
             },
             {
                 msgId: "6",
@@ -729,7 +801,8 @@ let chats = [
                 author: "Laura",
                 respId: "",
                 resp: "",
-                msg: "It's late."
+                msg: "It's late.",
+                status: "3"
             },
             {
                 msgId: "7",
@@ -737,7 +810,8 @@ let chats = [
                 author: "Laura",
                 respId: "",
                 resp: "",
-                msg: "We can talk tomorrow."
+                msg: "We can talk tomorrow.",
+                status: "3"
             },
             {
                 msgId: "8",
@@ -745,7 +819,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "ok."
+                msg: "ok.",
+                status: "3"
             },
         ]
     },
@@ -759,7 +834,8 @@ let chats = [
                 author: "00_me",
                 respId: "",
                 resp: "",
-                msg: "What's up, Pereba?"
+                msg: "What's up, Pereba?",
+                status: "3"
             },
         ]
     },

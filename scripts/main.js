@@ -227,19 +227,19 @@ function msgDeselect(msgSelector){
 const tickIcons = [
     {
         'value': '1',
-        'icon': '/medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'
-    },
-    {
-        'value': '2',
-        'icon': '/medias/icons/done_all_blue_FILL0_wght500_GRAD0_opsz48.svg'
-    },
-    {
-        'value': '3',
         'icon': '/medias/icons/schedule_FILL0_wght400_GRAD0_opsz24.svg'
     },
     {
+        'value': '2',
+        'icon': '/medias/icons/done_FILL0_wght500_GRAD0_opsz48.svg'
+    },
+    {
+        'value': '3',
+        'icon': '/medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'
+    },
+    {
         'value': '4',
-        'icon': '/medias//icons/done_FILL0_wght500_GRAD0_opsz48.svg'
+        'icon': '/medias/icons/done_all_blue_FILL0_wght500_GRAD0_opsz48.svg'
     }
 ];
 
