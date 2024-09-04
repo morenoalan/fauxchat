@@ -4,11 +4,25 @@
         --whatsapp: "whatsapp";
     };
 
+    #screen-list-main {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        /*align-items: fit-content;*/
+        justify-content: flex-start;
+        background: transparent;
+        width: calc(100% - 0.05rem);
+        height: 100%;
+        resize: none;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+/*
     .screen-list-main {
         height: 100%;
         background: var(--color-white);
     }
-
+*/
     .screen-list-main-chatlink {
         width: 100%;
         background: white;

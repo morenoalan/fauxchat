@@ -69,6 +69,43 @@ function flipChatHeader(msgsCounter){
     }
 }
 
+// chat-main msg ticks
+const tickIcons = [
+    {
+        'value': '1',
+        'icon': '/medias/icons/schedule_FILL0_wght400_GRAD0_opsz24.svg'
+    },
+    {
+        'value': '2',
+        'icon': '/medias/icons/done_FILL0_wght500_GRAD0_opsz48.svg'
+    },
+    {
+        'value': '3',
+        'icon': '/medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'
+    },
+    {
+        'value': '4',
+        'icon': '/medias/icons/done_all_blue_FILL0_wght500_GRAD0_opsz48.svg'
+    }
+];
+
+let tickCounter = 1;
+
+function changeTime(button){
+    console.log(button.textContent);
+
+    let timeChanger = '';
+    //chatMain.appendChild(timeBubble);
+}
+
+function changeTick(button){
+    tickCounter = (parseInt(button.value) % 4) + 1;
+    let btBubbleDone = button.querySelector('img');
+    let pickIcon = tickIcons.find(item => item.value == tickCounter);
+    btBubbleDone.src = pickIcon.icon;
+    button.value = tickCounter;
+}
+
 //chat-list
 
 function newChat(){
@@ -79,15 +116,50 @@ function chatsList() {
     chats.forEach(function(element) {
         //console.log(element.phone);
         let person = people.find(item => item.phone == element.phone);
+        let contactName = '';
         if(person.nickname != ""){
-            console.log(person.nickname);
+            //console.log(person.nickname);
+            contactName = person.nickname;
         }else{
-            console.log(person.name+" "+person.surname);
+            //console.log(person.name+" "+person.surname);
+            contactName = person.name+" "+person.surname;
         }
+
+        let lastMsg = element.msgs[element.msgs.length - 1];
+
+        let msg = lastMsg.msg;
+        let time = lastMsg.time;
+        let status = lastMsg.status;
+
+        console.log(person.phone+"; "+person.photo+"; "+contactName+"; "+msg+"; "+time+"; "+status);
+
+        chatListButton(person.phone, person.photo, contactName, msg, time, status);
     });
 }
 
 chatsList();
+
+function chatListButton(number0, img0, name0, msg0, time0, status0) {
+
+    let number = number0;
+    let img = img0;
+    let name = name0;
+    let time = time0;
+    let status = status0;
+    let statusIcon = tickIcons.find(item => item.value == status);
+    let lastMsg = msg0;
+    let unread = 0;
+
+    let buttonDefault = `\<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign'\>\<img class='screen-list-main-chatlink-img' src=${img}\/\>\<div class='screen-list-main-chatlink-columnalign'\>\<div class='screen-list-main-chatlink-rowalign'\>\<p class='screen-list-main-chatlink-contact'\>${name}\<\/p\>\<p class='screen-list-main-chatlink-time'\>${time}\<\/p\>\<\/div\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-status'\>\<img src='${statusIcon}' \/\>\<\/div\>\<p class='screen-list-main-chatlink-msg'\>${lastMsg}\<\/p\>\<p class='screen-list-main-chatlink-counter'\>${unread}\<\/p\>\<\/div\>\<\/div\>\<\/button\>`
+
+    let newButton = document.createElement('li');
+    newButton.id = 'chat-'+number;
+    /*newButton.setAttribute('class','msg-container');*/
+    newButton.innerHTML = buttonDefault;
+
+    let chatList = document.getElementById('screen-list-main');
+    chatList.appendChild(newButton);
+}
 
 //chat-main
 let bubblesIdCount = 0;
@@ -116,7 +188,7 @@ function sendBubbleEdited(){
     let msg = msgField.innerHTML.replace(/\<div\>/g, '<br>').replace(/\<\/div\>/g, '');
 
     let bubbleEditText = document.getElementById(maskedBubblesList[0]).getElementsByClassName('msg-bubble')[0];
-    
+
     whatTimeIsIt = bubbleEditText.getElementsByClassName('msg-bubble-time')[0].textContent;
 
     let pickIcon = tickIcons.find(item => item.value == tickCounter);
@@ -221,43 +293,6 @@ function msgDeselect(msgSelector){
         maskedBubblesList.splice(indexMaskedBubblesList, 1);
     }
     console.log(maskedBubblesList);
-}
-
-// chat-main msg ticks
-const tickIcons = [
-    {
-        'value': '1',
-        'icon': '/medias/icons/schedule_FILL0_wght400_GRAD0_opsz24.svg'
-    },
-    {
-        'value': '2',
-        'icon': '/medias/icons/done_FILL0_wght500_GRAD0_opsz48.svg'
-    },
-    {
-        'value': '3',
-        'icon': '/medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'
-    },
-    {
-        'value': '4',
-        'icon': '/medias/icons/done_all_blue_FILL0_wght500_GRAD0_opsz48.svg'
-    }
-];
-
-let tickCounter = 1;
-
-function changeTime(button){
-    console.log(button.textContent);
-
-    let timeChanger = '';
-    //chatMain.appendChild(timeBubble);
-}
-
-function changeTick(button){
-    tickCounter = (parseInt(button.value) % 4) + 1;
-    let btBubbleDone = button.querySelector('img');
-    let pickIcon = tickIcons.find(item => item.value == tickCounter);
-    btBubbleDone.src = pickIcon.icon;
-    button.value = tickCounter;
 }
 
 // chat-footer

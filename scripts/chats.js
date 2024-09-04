@@ -10,7 +10,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Yesterday",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -19,7 +19,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "second msg",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "2",
@@ -28,7 +28,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "third msg",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "3",
@@ -37,7 +37,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "lorem ipsum 4",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "4",
@@ -46,7 +46,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Today",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "5",
@@ -55,7 +55,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "message 5",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "6",
@@ -64,7 +64,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "answer 6",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -79,7 +79,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hi!",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -94,7 +94,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hello!",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -109,7 +109,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "what's up?",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -124,7 +124,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "hey",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -133,7 +133,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "hey",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -148,7 +148,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "starting a chat here, friend",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -157,7 +157,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "hey",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -172,7 +172,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "remember the meeting friday night",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -187,7 +187,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "This isn't a pyramid scheme, just listen to our proposal",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -202,7 +202,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Are you all right?",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -217,7 +217,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hello?",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -232,7 +232,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Make a count to me. Take the length of a circle and divide it by 2 times the radius.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -247,7 +247,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Don't do it, please.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -256,7 +256,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Don't worry.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "2",
@@ -265,7 +265,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Be happy.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -280,7 +280,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Can you want to go with us?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -289,7 +289,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Tomorrow I don't.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "2",
@@ -298,7 +298,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Everything ok.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -313,7 +313,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Are you Sebastian?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -322,7 +322,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "No.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -337,7 +337,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hello, there!",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -346,7 +346,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "General, Kenobi!",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -361,7 +361,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Morning, friend!",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -370,7 +370,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "I'm here already.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -385,7 +385,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Right?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -394,7 +394,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Right.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -409,7 +409,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Lunch is ready.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -418,7 +418,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Ok, I'm coming.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -433,7 +433,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "13.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -442,7 +442,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "17.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -457,7 +457,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "It's Sebas's number?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -466,7 +466,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "No.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -481,7 +481,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Learn to dance with teacher Coisinha de Jesus.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -490,7 +490,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Seems great!",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "2",
@@ -499,7 +499,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Do you want to visit us for a free class?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "3",
@@ -508,7 +508,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Of course.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "4",
@@ -517,7 +517,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Can you come here next tuesday, at 2PM?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "5",
@@ -526,7 +526,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Yes, I can.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "6",
@@ -535,7 +535,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "So we are waiting for you.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -550,7 +550,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Bia, a need to see you tomorrow.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -559,7 +559,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "It's so late!",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "2",
@@ -568,7 +568,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "But ok, I see you.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "3",
@@ -577,7 +577,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Write it down, don't forget.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "4",
@@ -586,7 +586,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "ok!",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "5",
@@ -595,7 +595,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "I forgot a thing. Where you will be?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "6",
@@ -604,7 +604,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "In front of the library. At 9 a.m.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "7",
@@ -613,7 +613,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Right.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -628,7 +628,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Are you awake?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -637,7 +637,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "No. Go to sleep!",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "2",
@@ -646,7 +646,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "I can't.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "3",
@@ -655,7 +655,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Stay here.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "4",
@@ -664,7 +664,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Are you still here?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "5",
@@ -673,7 +673,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "I'm sleeping. Bye.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "6",
@@ -682,7 +682,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Please, don't go!",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "7",
@@ -691,7 +691,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Don't go. Don't go away!",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -706,7 +706,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Gabi here.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "0",
@@ -715,7 +715,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Do you still have this number?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "0",
@@ -724,7 +724,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "please answer me asap.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "0",
@@ -733,7 +733,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hi, I'm here now.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -748,7 +748,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hello",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "1",
@@ -757,7 +757,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hey, wup?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "2",
@@ -766,7 +766,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "I talk to you in a minute.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "3",
@@ -775,7 +775,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Sorry, I'm full of work here.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "4",
@@ -784,7 +784,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Ok, now I can text.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "5",
@@ -793,7 +793,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Are you there right now?",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "6",
@@ -802,7 +802,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "It's late.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "7",
@@ -811,7 +811,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "We can talk tomorrow.",
-                status: "3"
+                status: "4"
             },
             {
                 msgId: "8",
@@ -820,7 +820,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "ok.",
-                status: "3"
+                status: "4"
             },
         ]
     },
@@ -835,7 +835,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "What's up, Pereba?",
-                status: "3"
+                status: "4"
             },
         ]
     },
