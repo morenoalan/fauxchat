@@ -73,19 +73,19 @@ function flipChatHeader(msgsCounter){
 const tickIcons = [
     {
         'value': '1',
-        'icon': '/medias/icons/schedule_FILL0_wght400_GRAD0_opsz24.svg'
+        'icon': './medias/icons/schedule_FILL0_wght400_GRAD0_opsz24.svg'
     },
     {
         'value': '2',
-        'icon': '/medias/icons/done_FILL0_wght500_GRAD0_opsz48.svg'
+        'icon': './medias/icons/done_FILL0_wght500_GRAD0_opsz48.svg'
     },
     {
         'value': '3',
-        'icon': '/medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'
+        'icon': './medias/icons/done_all_FILL0_wght500_GRAD0_opsz48.svg'
     },
     {
         'value': '4',
-        'icon': '/medias/icons/done_all_blue_FILL0_wght500_GRAD0_opsz48.svg'
+        'icon': './medias/icons/done_all_blue_FILL0_wght500_GRAD0_opsz48.svg'
     }
 ];
 
@@ -146,11 +146,13 @@ function chatListButton(number0, img0, name0, msg0, time0, status0) {
     let name = name0;
     let time = time0;
     let status = status0;
-    let statusIcon = tickIcons.find(item => item.value == status);
+    let statusIcon = tickIcons.find(item => item.value == status).icon;
+    let tickDisplayNone = '';
     let lastMsg = msg0;
     let unread = 0;
+    let unreadDisplayNone = '';
 
-    let buttonDefault = `\<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign'\>\<img class='screen-list-main-chatlink-img' src=${img}\/\>\<div class='screen-list-main-chatlink-columnalign'\>\<div class='screen-list-main-chatlink-rowalign'\>\<p class='screen-list-main-chatlink-contact'\>${name}\<\/p\>\<p class='screen-list-main-chatlink-time'\>${time}\<\/p\>\<\/div\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-status'\>\<img src='${statusIcon}' \/\>\<\/div\>\<p class='screen-list-main-chatlink-msg'\>${lastMsg}\<\/p\>\<p class='screen-list-main-chatlink-counter'\>${unread}\<\/p\>\<\/div\>\<\/div\>\<\/button\>`
+    let buttonDefault = `\<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign'\>\<img class='screen-list-main-chatlink-img' src='${img}'\/\>\<div class='screen-list-main-chatlink-columnalign'\>\<div class='screen-list-main-chatlink-rowalign'\>\<p class='screen-list-main-chatlink-contact'\>${name}\<\/p\>\<p class='screen-list-main-chatlink-time'\>${time}\<\/p\>\<\/div\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-status msg-bubble-tick ${tickDisplayNone}'\>\<img src='${statusIcon}'\/\>\<\/div\>\<p class='screen-list-main-chatlink-msg'\>${lastMsg}\<\/p\>\<p class='screen-list-main-chatlink-counter ${unreadDisplayNone}'\>${unread}\<\/p\>\<\/div\>\<\/div\>\<\/button\>`
 
     let newButton = document.createElement('li');
     newButton.id = 'chat-'+number;
@@ -427,3 +429,58 @@ function adaptImage(dataURL, img){
     };
     imgLoaded.src = dataURL;
 }
+
+// Drag Scrolling
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollableDivs = document.querySelectorAll('.scrollable');
+    
+    scrollableDivs.forEach(scrollableDiv => {
+        let isDown = false;
+        let startY;
+        let scrollTop;
+    
+        scrollableDiv.addEventListener('mousedown', (e) => {
+            isDown = true;
+            scrollableDiv.classList.add('active');
+            startY = e.pageY - scrollableDiv.offsetTop;
+            scrollTop = scrollableDiv.scrollTop;
+        });
+    
+        scrollableDiv.addEventListener('mouseleave', () => {
+            isDown = false;
+            scrollableDiv.classList.remove('active');
+        });
+    
+        scrollableDiv.addEventListener('mouseup', () => {
+            isDown = false;
+            scrollableDiv.classList.remove('active');
+        });
+    
+        scrollableDiv.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const y = e.pageY - scrollableDiv.offsetTop;
+            const walk = (y - startY) * 3; // Scroll speed
+            scrollableDiv.scrollTop = scrollTop - walk;
+        });
+    
+        // Mobile touch
+        scrollableDiv.addEventListener('touchstart', (e) => {
+            isDown = true;
+            startY = e.touches[0].pageY - scrollableDiv.offsetTop;
+            scrollTop = scrollableDiv.scrollTop;
+        });
+    
+        scrollableDiv.addEventListener('touchend', () => {
+            isDown = false;
+        });
+    
+        scrollableDiv.addEventListener('touchmove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const y = e.touches[0].pageY - scrollableDiv.offsetTop;
+            const walk = (y - startY) * 3; // Scroll speed
+            scrollableDiv.scrollTop = scrollTop - walk;
+        });
+    });
+});

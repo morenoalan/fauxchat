@@ -119,3 +119,7 @@ main {
     height: 100%;
     background-color: var(--color-gray-fns);
 }
+
+.scrollable {
+    cursor: grab;
+}
