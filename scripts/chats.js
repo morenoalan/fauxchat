@@ -79,7 +79,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hi!",
-                status: "4"
+                status: "3"
             },
         ]
     },
@@ -94,7 +94,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hello!",
-                status: "4"
+                status: "3"
             },
         ]
     },
@@ -124,7 +124,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "hey",
-                status: "4"
+                status: "3"
             },
             {
                 msgId: "1",
@@ -133,7 +133,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "hey",
-                status: "4"
+                status: "3"
             },
         ]
     },
@@ -187,7 +187,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "This isn't a pyramid scheme, just listen to our proposal",
-                status: "4"
+                status: "3"
             },
         ]
     },
@@ -232,7 +232,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Make a count to me. Take the length of a circle and divide it by 2 times the radius.",
-                status: "4"
+                status: "3"
             },
         ]
     },

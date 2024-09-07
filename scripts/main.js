@@ -15,16 +15,12 @@ function captureDivScreenshot(divId) {
 
 // navigation
 function goToScreen(nextScreen) {
-    const appScreens = document.getElementById('app-screens').getElementsByTagName('section');
-
-    const openScreen = document.getElementById(nextScreen);
-    let counter;
-    for(counter = 0; counter < appScreens.length; counter++) {
-        appScreens[counter].classList.remove('display-active');
-        appScreens[counter].classList.add('display-none');
-    }
-    openScreen.classList.remove('display-none');
-    openScreen.classList.add('display-active');
+    document.querySelectorAll('#app-screens section').forEach(section => {
+        section.classList.remove('display-active');
+        section.classList.add('display-none');
+    });
+    document.getElementById(nextScreen).classList.remove('display-none');
+    document.getElementById(nextScreen).classList.add('display-active');
 }
 
 // loading chat variables

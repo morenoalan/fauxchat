@@ -6,16 +6,16 @@ let people = [
         nickname: "Oi Isa",
         photo: "./medias/people/fauxchat-people-001.jpg",
         username: "oititica",
-        bio: ""
+        bio: "Sorria, você está sendo amado!"
     },
     {
         phone: "5500999990002",
         name: "Flávia",
         surname: "Xaxim",
-        nickname: "Faúxa",
+        nickname: "Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa",
         photo: "./medias/people/fauxchat-people-002.jpg",
         username: "fauxa",
-        bio: ""
+        bio: "Seja luz, sempre."
     },
     {
         phone: "5500999990003",
@@ -24,7 +24,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-003.jpg",
         username: "elisapintangui",
-        bio: ""
+        bio: "A vida é curta, aproveite cada momento."
     },
     {
         phone: "5500999990004",
@@ -33,7 +33,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-004.jpg",
         username: "larissarahyba",
-        bio: ""
+        bio: "Gratidão transforma tudo."
     },
     {
         phone: "5500999990005",
@@ -42,7 +42,7 @@ let people = [
         nickname: "Buh",
         photo: "./medias/people/fauxchat-people-005.jpg",
         username: "bubutantan",
-        bio: ""
+        bio: "Tudo passa."
     },
     {
         phone: "5500999990006",
@@ -51,7 +51,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-006.jpg",
         username: "danieljatoba",
-        bio: ""
+        bio: "Siga em frente, o melhor está por vir."
     },
     {
         phone: "5500999990007",
@@ -69,7 +69,7 @@ let people = [
         nickname: "Cacá",
         photo: "./medias/people/fauxchat-people-008.jpg",
         username: "kkkpanema",
-        bio: ""
+        bio: "Foco, força e fé."
     },
     {
         phone: "5500999990009",
@@ -78,7 +78,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-009.jpg",
         username: "rafaparanagua",
-        bio: ""
+        bio: "A felicidade está nas pequenas coisas."
     },
     {
         phone: "5500999990010",
@@ -87,7 +87,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-010.jpg",
         username: "viva_ursal",
-        bio: ""
+        bio: "Respira, vai dar certo!"
     },
     {
         phone: "5500999990011",
@@ -96,7 +96,7 @@ let people = [
         nickname: "Toba",
         photo: "./medias/people/fauxchat-people-011.jpg",
         username: "tobiasbabassu",
-        bio: ""
+        bio: "O melhor ainda está por vir."
     },
     {
         phone: "5500999990012",
@@ -105,7 +105,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-012.jpg",
         username: "geo314",
-        bio: ""
+        bio: "Viva, ame, sorria."
     },
     {
         phone: "5500999990013",
@@ -114,7 +114,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-013.jpg",
         username: "rodpira",
-        bio: ""
+        bio: "Um dia de cada vez."
     },
     {
         phone: "5500999990014",
@@ -123,7 +123,7 @@ let people = [
         nickname: "Doug",
         photo: "./medias/people/fauxchat-people-014.jpg",
         username: "dougzueiro",
-        bio: ""
+        bio: "Seja o seu próprio sol."
     },
     {
         phone: "5500999990015",
@@ -132,7 +132,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-015.jpg",
         username: "daianeitapua",
-        bio: ""
+        bio: "Acredite nos seus sonhos."
     },
     {
         phone: "5500999990016",
@@ -141,7 +141,7 @@ let people = [
         nickname: "Guga",
         photo: "./medias/people/fauxchat-people-016.jpg",
         username: "jaguar",
-        bio: ""
+        bio: "Deixe o vento levar."
     },
     {
         phone: "5500999990017",
@@ -159,7 +159,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-018.jpg",
         username: "perebao",
-        bio: ""
+        bio: "Não se preocupe, seja feliz!"
     },
     {
         phone: "5500999990019",
@@ -177,7 +177,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-020.jpg",
         username: "caradepau",
-        bio: ""
+        bio: "Sem pressa, sem pausa."
     },
     {
         phone: "5500999990021",
@@ -195,7 +195,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-022.jpg",
         username: "rubinhopole",
-        bio: ""
+        bio: "Mais amor, por favor."
     },
     {
         phone: "5500999990023",
@@ -204,7 +204,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-023.jpg",
         username: "jabuticabeca",
-        bio: ""
+        bio: "A vida é agora."
     },
     {
         phone: "5500999990024",
@@ -213,7 +213,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-024.jpg",
         username: "littlemermaid",
-        bio: "A vida é boa, eu vivo à toa/ Onde eu nasci."
+        bio: "A vida é boa, eu vivo à toa onde eu nasci."
     },
     {
         phone: "5500999990025",
@@ -222,7 +222,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-025.jpg",
         username: "perobinha",
-        bio: ""
+        bio: "Tudo tem seu tempo."
     },
     {
         phone: "5500999990026",
@@ -231,7 +231,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-026.jpg",
         username: "nando_raba",
-        bio: ""
+        bio: "Confie no processo."
     },
     {
         phone: "5500999990027",
@@ -240,7 +240,7 @@ let people = [
         nickname: "Capitu",
         photo: "./medias/people/fauxchat-people-027.jpg",
         username: "pituca",
-        bio: ""
+        bio: "A vida é feita de momentos."
     },
     {
         phone: "5500999990028",
@@ -258,7 +258,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-029.jpg",
         username: "zizipirada",
-        bio: ""
+        bio: "Simplicidade é tudo."
     },
     {
         phone: "5500999990030",
@@ -267,7 +267,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-030.jpg",
         username: "capi_vara",
-        bio: ""
+        bio: "Paz interior, sempre."
     },
     {
         phone: "5500999990031",
@@ -276,7 +276,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-031.jpg",
         username: "samantapaiaca",
-        bio: ""
+        bio: "Agradeça mais, reclame menos."
     },
     {
         phone: "5500999990032",
@@ -285,7 +285,7 @@ let people = [
         nickname: "Larará",
         photo: "./medias/people/fauxchat-people-032.jpg",
         username: "larara",
-        bio: ""
+        bio: "O universo conspira a favor."
     },
     {
         phone: "5500999990033",
@@ -294,7 +294,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-033.jpg",
         username: "manuitapua",
-        bio: ""
+        bio: "Não espere, faça acontecer."
     },
     {
         phone: "5500999990034",
@@ -303,7 +303,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-034.jpg",
         username: "mabelita",
-        bio: ""
+        bio: "Seja você, por você."
     },
     {
         phone: "5500999990035",
@@ -312,7 +312,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-035.jpg",
         username: "miguelito",
-        bio: ""
+        bio: "Espalhe boas energias."
     },
     {
         phone: "5500999990036",
@@ -321,7 +321,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-036.jpg",
         username: "amorzinho",
-        bio: ""
+        bio: "Cada dia é uma nova chance."
     },
     {
         phone: "5500999990037",
@@ -330,7 +330,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-037.jpg",
         username: "perebento",
-        bio: ""
+        bio: "Seja a mudança que você quer ver no mundo."
     },
     {
         phone: "5500999990038",
@@ -339,7 +339,7 @@ let people = [
         nickname: "Braba",
         photo: "./medias/people/fauxchat-people-038.jpg",
         username: "barbatana",
-        bio: ""
+        bio: "Faça o bem, sem olhar a quem."
     },
     {
         phone: "5500999990039",
@@ -348,7 +348,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-039.jpg",
         username: "tabajara_agosto",
-        bio: ""
+        bio: "Onde há fé, há esperança."
     },
     {
         phone: "5500999990040",
@@ -357,7 +357,7 @@ let people = [
         nickname: "Arrepia",
         photo: "./medias/people/fauxchat-people-040.jpg",
         username: "a_re_pia",
-        bio: ""
+        bio: "Permita-se ser feliz."
     },
     {
         phone: "5500999990041",
@@ -366,7 +366,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-041.jpg",
         username: "betinha",
-        bio: ""
+        bio: "Menos é mais."
     },
     {
         phone: "5500999990042",
@@ -375,7 +375,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-042.jpg",
         username: "guacamole",
-        bio: ""
+        bio: "Valorize as pequenas vitórias."
     },
     {
         phone: "5500999990043",
@@ -384,7 +384,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-043.jpg",
         username: "lambada",
-        bio: ""
+        bio: "Siga seus instintos."
     },
     {
         phone: "5500999990044",
@@ -393,7 +393,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-044.jpg",
         username: "lusca_pong",
-        bio: ""
+        bio: "Mente leve, coração tranquilo."
     },
     {
         phone: "5500999990045",
@@ -402,7 +402,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-045.jpg",
         username: "ben10",
-        bio: ""
+        bio: "Seja gentil sempre."
     },
     {
         phone: "5500999990046",
@@ -411,7 +411,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-046.jpg",
         username: "clarijo",
-        bio: ""
+        bio: "Aprenda a dançar na chuva."
     },
     {
         phone: "5500999990047",
@@ -420,7 +420,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-047.jpg",
         username: "pitangarosa",
-        bio: ""
+        bio: "Viva intensamente, ame profundamente."
     },
     {
         phone: "5500999990048",
@@ -429,7 +429,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-048.jpg",
         username: "susy_pb",
-        bio: ""
+        bio: "A vida é um sopro."
     },
     {
         phone: "5500999990049",
@@ -438,7 +438,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-049.jpg",
         username: "vanzoca",
-        bio: ""
+        bio: "Hoje é um bom dia para recomeçar."
     },
     {
         phone: "5500999990050",
@@ -447,7 +447,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-050.jpg",
         username: "potifagia",
-        bio: ""
+        bio: "Tenha coragem para ser feliz."
     },
     {
         phone: "5500999990051",
@@ -456,7 +456,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-051.jpg",
         username: "tabajara_setembro",
-        bio: ""
+        bio: "Viva o presente, ele é tudo o que temos."
     },
     {
         phone: "5500999990052",
@@ -465,7 +465,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-052.jpg",
         username: "bianaotai",
-        bio: ""
+        bio: "Ser feliz é uma escolha."
     },
     {
         phone: "5500999990053",
@@ -474,7 +474,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-053.jpg",
         username: "baiacuzao",
-        bio: ""
+        bio: "Não desista dos seus sonhos."
     },
     {
         phone: "5500999990054",
@@ -483,7 +483,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-054.jpg",
         username: "gabigabi",
-        bio: ""
+        bio: "Leve a vida com leveza."
     },
     {
         phone: "5500999990055",
@@ -501,7 +501,7 @@ let people = [
         nickname: "Perebas",
         photo: "./medias/people/fauxchat-people-056.jpg",
         username: "perebento",
-        bio: ""
+        bio: "O segredo é ter paciência."
     },
     {
         phone: "5500999990057",
@@ -510,7 +510,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-057.jpg",
         username: "canibal",
-        bio: ""
+        bio: "Energia boa atrai coisas boas."
     },
     {
         phone: "5500999990058",
@@ -519,7 +519,7 @@ let people = [
         nickname: "Sussu",
         photo: "./medias/people/fauxchat-people-058.jpg",
         username: "sussuca",
-        bio: ""
+        bio: "Amor próprio em primeiro lugar."
     },
     {
         phone: "5500999990059",
@@ -528,7 +528,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-059.jpg",
         username: "tapipoca",
-        bio: ""
+        bio: "Não perca a fé."
     },
     {
         phone: "5500999990060",
@@ -537,7 +537,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-060.jpg",
         username: "catupirinha",
-        bio: ""
+        bio: "Momentos simples, memórias eternas."
     },
     {
         phone: "5500999990061",
@@ -546,7 +546,7 @@ let people = [
         nickname: "Zé Pitica",
         photo: "./medias/people/fauxchat-people-061.jpg",
         username: "petequenzo",
-        bio: ""
+        bio: "A vida é uma jornada, aproveite a paisagem."
     },
     {
         phone: "5500999990062",
@@ -555,7 +555,7 @@ let people = [
         nickname: "Rabu",
         photo: "./medias/people/fauxchat-people-062.jpg",
         username: "bolsofurado",
-        bio: ""
+        bio: "Ame sem medida."
     },
     {
         phone: "5500999990063",
@@ -564,7 +564,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-063.jpg",
         username: "tabajara_julho",
-        bio: ""
+        bio: "Quem semeia amor, colhe felicidade."
     },
     {
         phone: "5500999990064",
@@ -573,6 +573,6 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-064.jpg",
         username: "melepop",
-        bio: ""
+        bio: "Sempre em frente, sem medo."
     }
 ]
