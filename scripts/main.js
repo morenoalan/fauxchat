@@ -121,21 +121,30 @@ function chatsList() {
             contactName = person.name+" "+person.surname;
         }
 
+        let countStatus3 = 0;
+        element.msgs.forEach(msg => {
+            if (msg.status === "3" &&
+                msg.author !== "00_me" &&
+                msg.author !== "00_info") {
+                countStatus3++;
+            }
+        });
+
         let lastMsg = element.msgs[element.msgs.length - 1];
 
         let msg = lastMsg.msg;
         let time = lastMsg.time;
         let status = lastMsg.status;
 
-        console.log(person.phone+"; "+person.photo+"; "+contactName+"; "+msg+"; "+time+"; "+status);
+        console.log(person.phone+"; "+person.photo+"; "+contactName+"; "+msg+"; "+time+"; "+status+"; "+countStatus3);
 
-        chatListButton(person.phone, person.photo, contactName, msg, time, status);
+        chatListButton(person.phone, person.photo, contactName, msg, time, status, countStatus3);
     });
 }
 
 chatsList();
 
-function chatListButton(number0, img0, name0, msg0, time0, status0) {
+function chatListButton(number0, img0, name0, msg0, time0, status0, unread0) {
 
     let number = number0;
     let img = img0;
@@ -145,10 +154,21 @@ function chatListButton(number0, img0, name0, msg0, time0, status0) {
     let statusIcon = tickIcons.find(item => item.value == status).icon;
     let tickDisplayNone = '';
     let lastMsg = msg0;
-    let unread = 0;
+    const pin = './medias/icons/keep_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg';
+    let pinDisplayNone = 'display-none';
+    let unread = unread0;
+
     let unreadDisplayNone = '';
 
-    let buttonDefault = `\<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign'\>\<img class='screen-list-main-chatlink-img' src='${img}'\/\>\<div class='screen-list-main-chatlink-columnalign'\>\<div class='screen-list-main-chatlink-rowalign'\>\<p class='screen-list-main-chatlink-contact'\>${name}\<\/p\>\<p class='screen-list-main-chatlink-time'\>${time}\<\/p\>\<\/div\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-status msg-bubble-tick ${tickDisplayNone}'\>\<img src='${statusIcon}'\/\>\<\/div\>\<p class='screen-list-main-chatlink-msg'\>${lastMsg}\<\/p\>\<p class='screen-list-main-chatlink-counter ${unreadDisplayNone}'\>${unread}\<\/p\>\<\/div\>\<\/div\>\<\/button\>`
+    if(unread == '0' ) {
+        unreadDisplayNone = 'display-none';
+        timeUnread = 'screen-list-main-chatlink-time-read';
+    }else{
+        unreadDisplayNone = '';
+        timeUnread = 'screen-list-main-chatlink-time-unread';
+    }
+
+    let buttonDefault = `\<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign'\>\<img class='screen-list-main-chatlink-img' src='${img}'\/\>\<div class='screen-list-main-chatlink-columnalign'\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-container'\>\<p class='screen-list-main-chatlink-contact'\>${name}\<\/p\>\<\/div\>\<p class='screen-list-main-chatlink-time ${timeUnread}'\>${time}\<\/p\>\<\/div\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-status msg-bubble-tick ${tickDisplayNone}'\>\<img src='${statusIcon}'\/\>\<\/div\>\<div class='screen-list-main-chatlink-container'\>\<p class='screen-list-main-chatlink-msg'\>${lastMsg}\<\/p\>\<\/div\>\<div class='${pinDisplayNone}'\>\<img class='screen-list-main-chatlink-pin msg-bubble-tick' src='${pin}'\/\>\<\/div\>\<div class='${unreadDisplayNone}'\>\<p class='screen-list-main-chatlink-counter'\>${unread}\<\/p\>\<\/div\>\<\/div\>\<\/div\>\<\/button\>`
 
     let newButton = document.createElement('li');
     newButton.id = 'chat-'+number;

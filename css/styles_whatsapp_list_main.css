@@ -59,29 +59,69 @@
         flex-shrink: 0;
     }
 
-    .screen-list-main-chatlink-contact {
+    .screen-list-main-chatlink-container {
+        display: flex;
+        flex-direction: row;
+        width: 2rem; /* idk why but the msg containment only works this way, with a defined and not relative value to the width added to flex-grow and flex-shrink */
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .screen-list-main-chatlink-contact,
+    .screen-list-main-chatlink-msg {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        padding-right: 1rem;
+    }
+
+    .screen-list-main-chatlink-contact {
+        font-size: 1rem;
+        font-weight: 600;
     }
 
     .screen-list-main-chatlink-msg {
-        display: inline-block;
-        flex-grow: 1;
-        flex-shrink: 1;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        text-align: left;
-        margin-right: 0.5rem;
-        /*width: 100%;*/
-        box-sizing: border-box;
+        font-size: 0.85rem;
+        font-weight: 400;
+        padding-left: 0.15rem;
+        color: var(--color-gray);
     }
 
+    .screen-list-main-chatlink-time,
     .screen-list-main-chatlink-counter {
         flex-shrink: 0; /* prevent counter to decrease */
         margin-left: auto; /* pull counter to right */
-        padding-left: 0.5rem;
+        font-size: 0.75rem;
+        font-weight: 500;
     }
 
+    .screen-list-main-chatlink-time-read {
+        color: var(--color-gray);
+    }
+
+    .screen-list-main-chatlink-time-unread {
+        color: var(--color-mediumseagreen);
+        font-weight: 600;
+    }
+
+    .screen-list-main-chatlink-counter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-white);
+        background-color: var(--color-mediumseagreen);
+        height: 1.2rem;
+        min-width: 1.2rem;
+        border-radius: 0.6rem;
+        padding: 0 0.3rem;
+    }
+
+    .screen-list-main-chatlink-pin {
+        margin-right: 0.25rem;
+    }
+
+    .screen-list-main-chatlink-status {
+        margin-top: 0.15rem;
+    }
 }

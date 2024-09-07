@@ -10,7 +10,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Yesterday",
-                status: "4"
+                status: "3"
             },
             {
                 msgId: "1",
@@ -19,7 +19,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "second msg",
-                status: "4"
+                status: "3"
             },
             {
                 msgId: "2",
@@ -28,7 +28,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "third msg",
-                status: "4"
+                status: "3"
             },
             {
                 msgId: "3",
@@ -37,7 +37,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "lorem ipsum 4",
-                status: "4"
+                status: "3"
             },
             {
                 msgId: "4",
@@ -46,7 +46,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Today",
-                status: "4"
+                status: "3"
             },
             {
                 msgId: "5",
@@ -55,7 +55,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "message 5",
-                status: "4"
+                status: "3"
             },
             {
                 msgId: "6",
@@ -64,7 +64,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "answer 6",
-                status: "4"
+                status: "3"
             },
         ]
     },
@@ -79,7 +79,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hi!",
-                status: "3"
+                status: "1"
             },
         ]
     },
@@ -94,7 +94,7 @@ let chats = [
                 respId: "",
                 resp: "",
                 msg: "Hello!",
-                status: "3"
+                status: "2"
             },
         ]
     },

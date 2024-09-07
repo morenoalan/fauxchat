@@ -171,12 +171,13 @@
     }
 
     .msg-bubble-tick {
-        display: inline-block;
+        /*display: inline-block;*/
         margin-left: 0.1rem;
         position: relative;
     }
 
-    .msg-bubble-tick>img {
+    .msg-bubble-tick,
+    .msg-bubble-tick > img {
         height: 1rem;
         width: 1rem;
     }

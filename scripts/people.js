@@ -6,16 +6,18 @@ let people = [
         nickname: "Oi Isa",
         photo: "./medias/people/fauxchat-people-001.jpg",
         username: "oititica",
-        bio: "Sorria, você está sendo amado!"
+        bio: "Sorria, você está sendo amado!",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990002",
         name: "Flávia",
         surname: "Xaxim",
-        nickname: "Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa Faúxa",
+        nickname: "Faúxa",
         photo: "./medias/people/fauxchat-people-002.jpg",
         username: "fauxa",
-        bio: "Seja luz, sempre."
+        bio: "Seja luz, sempre.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990003",
@@ -24,7 +26,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-003.jpg",
         username: "elisapintangui",
-        bio: "A vida é curta, aproveite cada momento."
+        bio: "A vida é curta, aproveite cada momento.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990004",
@@ -33,7 +36,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-004.jpg",
         username: "larissarahyba",
-        bio: "Gratidão transforma tudo."
+        bio: "Gratidão transforma tudo.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990005",
@@ -42,7 +46,8 @@ let people = [
         nickname: "Buh",
         photo: "./medias/people/fauxchat-people-005.jpg",
         username: "bubutantan",
-        bio: "Tudo passa."
+        bio: "Tudo passa.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990006",
@@ -51,7 +56,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-006.jpg",
         username: "danieljatoba",
-        bio: "Siga em frente, o melhor está por vir."
+        bio: "Siga em frente, o melhor está por vir.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990007",
@@ -60,7 +66,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-007.jpg",
         username: "jamesbond",
-        bio: "Meu nome é Tiago, Tiago Bonduque"
+        bio: "Meu nome é Tiago, Tiago Bonduque",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990008",
@@ -69,7 +76,8 @@ let people = [
         nickname: "Cacá",
         photo: "./medias/people/fauxchat-people-008.jpg",
         username: "kkkpanema",
-        bio: "Foco, força e fé."
+        bio: "Foco, força e fé.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990009",
@@ -78,7 +86,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-009.jpg",
         username: "rafaparanagua",
-        bio: "A felicidade está nas pequenas coisas."
+        bio: "A felicidade está nas pequenas coisas.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990010",
@@ -87,7 +96,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-010.jpg",
         username: "viva_ursal",
-        bio: "Respira, vai dar certo!"
+        bio: "Respira, vai dar certo!",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990011",
@@ -96,7 +106,8 @@ let people = [
         nickname: "Toba",
         photo: "./medias/people/fauxchat-people-011.jpg",
         username: "tobiasbabassu",
-        bio: "O melhor ainda está por vir."
+        bio: "O melhor ainda está por vir.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990012",
@@ -105,7 +116,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-012.jpg",
         username: "geo314",
-        bio: "Viva, ame, sorria."
+        bio: "Viva, ame, sorria.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990013",
@@ -114,7 +126,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-013.jpg",
         username: "rodpira",
-        bio: "Um dia de cada vez."
+        bio: "Um dia de cada vez.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990014",
@@ -123,7 +136,8 @@ let people = [
         nickname: "Doug",
         photo: "./medias/people/fauxchat-people-014.jpg",
         username: "dougzueiro",
-        bio: "Seja o seu próprio sol."
+        bio: "Seja o seu próprio sol.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990015",
@@ -132,7 +146,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-015.jpg",
         username: "daianeitapua",
-        bio: "Acredite nos seus sonhos."
+        bio: "Acredite nos seus sonhos.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990016",
@@ -141,7 +156,8 @@ let people = [
         nickname: "Guga",
         photo: "./medias/people/fauxchat-people-016.jpg",
         username: "jaguar",
-        bio: "Deixe o vento levar."
+        bio: "Deixe o vento levar.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990017",
@@ -150,7 +166,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-017.jpg",
         username: "caicai",
-        bio: "Eu, Caio. E me levanto."
+        bio: "Eu, Caio. E me levanto.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990018",
@@ -159,7 +176,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-018.jpg",
         username: "perebao",
-        bio: "Não se preocupe, seja feliz!"
+        bio: "Não se preocupe, seja feliz!",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990019",
@@ -168,7 +186,8 @@ let people = [
         nickname: "Carol",
         photo: "./medias/people/fauxchat-people-019.jpg",
         username: "xenhenhem",
-        bio: "Diz Imbassahy! Carolina foi pro samba."
+        bio: "Diz Imbassahy! Carolina foi pro samba.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990020",
@@ -177,7 +196,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-020.jpg",
         username: "caradepau",
-        bio: "Sem pressa, sem pausa."
+        bio: "Sem pressa, sem pausa.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990021",
@@ -186,7 +206,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-021.jpg",
         username: "asimov",
-        bio: "Vamos tocar esse reggae"
+        bio: "Vamos tocar esse reggae",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990022",
@@ -195,7 +216,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-022.jpg",
         username: "rubinhopole",
-        bio: "Mais amor, por favor."
+        bio: "Mais amor, por favor.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990023",
@@ -204,7 +226,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-023.jpg",
         username: "jabuticabeca",
-        bio: "A vida é agora."
+        bio: "A vida é agora.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990024",
@@ -213,7 +236,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-024.jpg",
         username: "littlemermaid",
-        bio: "A vida é boa, eu vivo à toa onde eu nasci."
+        bio: "A vida é boa, eu vivo à toa onde eu nasci.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990025",
@@ -222,7 +246,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-025.jpg",
         username: "perobinha",
-        bio: "Tudo tem seu tempo."
+        bio: "Tudo tem seu tempo.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990026",
@@ -231,7 +256,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-026.jpg",
         username: "nando_raba",
-        bio: "Confie no processo."
+        bio: "Confie no processo.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990027",
@@ -240,7 +266,8 @@ let people = [
         nickname: "Capitu",
         photo: "./medias/people/fauxchat-people-027.jpg",
         username: "pituca",
-        bio: "A vida é feita de momentos."
+        bio: "A vida é feita de momentos.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990028",
@@ -249,7 +276,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-028.jpg",
         username: "zezepirado",
-        bio: "'...E na abundância de dias, o entendimento.' Jó 12:12"
+        bio: "'...E na abundância de dias, o entendimento.' Jó 12:12",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990029",
@@ -258,7 +286,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-029.jpg",
         username: "zizipirada",
-        bio: "Simplicidade é tudo."
+        bio: "Simplicidade é tudo.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990030",
@@ -267,7 +296,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-030.jpg",
         username: "capi_vara",
-        bio: "Paz interior, sempre."
+        bio: "Paz interior, sempre.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990031",
@@ -276,7 +306,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-031.jpg",
         username: "samantapaiaca",
-        bio: "Agradeça mais, reclame menos."
+        bio: "Agradeça mais, reclame menos.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990032",
@@ -285,7 +316,8 @@ let people = [
         nickname: "Larará",
         photo: "./medias/people/fauxchat-people-032.jpg",
         username: "larara",
-        bio: "O universo conspira a favor."
+        bio: "O universo conspira a favor.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990033",
@@ -294,7 +326,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-033.jpg",
         username: "manuitapua",
-        bio: "Não espere, faça acontecer."
+        bio: "Não espere, faça acontecer.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990034",
@@ -303,7 +336,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-034.jpg",
         username: "mabelita",
-        bio: "Seja você, por você."
+        bio: "Seja você, por você.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990035",
@@ -312,7 +346,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-035.jpg",
         username: "miguelito",
-        bio: "Espalhe boas energias."
+        bio: "Espalhe boas energias.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990036",
@@ -321,7 +356,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-036.jpg",
         username: "amorzinho",
-        bio: "Cada dia é uma nova chance."
+        bio: "Cada dia é uma nova chance.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990037",
@@ -330,7 +366,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-037.jpg",
         username: "perebento",
-        bio: "Seja a mudança que você quer ver no mundo."
+        bio: "Seja a mudança que você quer ver no mundo.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990038",
@@ -339,7 +376,8 @@ let people = [
         nickname: "Braba",
         photo: "./medias/people/fauxchat-people-038.jpg",
         username: "barbatana",
-        bio: "Faça o bem, sem olhar a quem."
+        bio: "Faça o bem, sem olhar a quem.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990039",
@@ -348,7 +386,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-039.jpg",
         username: "tabajara_agosto",
-        bio: "Onde há fé, há esperança."
+        bio: "Onde há fé, há esperança.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990040",
@@ -357,7 +396,8 @@ let people = [
         nickname: "Arrepia",
         photo: "./medias/people/fauxchat-people-040.jpg",
         username: "a_re_pia",
-        bio: "Permita-se ser feliz."
+        bio: "Permita-se ser feliz.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990041",
@@ -366,7 +406,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-041.jpg",
         username: "betinha",
-        bio: "Menos é mais."
+        bio: "Menos é mais.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990042",
@@ -375,7 +416,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-042.jpg",
         username: "guacamole",
-        bio: "Valorize as pequenas vitórias."
+        bio: "Valorize as pequenas vitórias.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990043",
@@ -384,7 +426,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-043.jpg",
         username: "lambada",
-        bio: "Siga seus instintos."
+        bio: "Siga seus instintos.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990044",
@@ -393,7 +436,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-044.jpg",
         username: "lusca_pong",
-        bio: "Mente leve, coração tranquilo."
+        bio: "Mente leve, coração tranquilo.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990045",
@@ -402,7 +446,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-045.jpg",
         username: "ben10",
-        bio: "Seja gentil sempre."
+        bio: "Seja gentil sempre.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990046",
@@ -411,7 +456,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-046.jpg",
         username: "clarijo",
-        bio: "Aprenda a dançar na chuva."
+        bio: "Aprenda a dançar na chuva.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990047",
@@ -420,7 +466,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-047.jpg",
         username: "pitangarosa",
-        bio: "Viva intensamente, ame profundamente."
+        bio: "Viva intensamente, ame profundamente.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990048",
@@ -429,7 +476,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-048.jpg",
         username: "susy_pb",
-        bio: "A vida é um sopro."
+        bio: "A vida é um sopro.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990049",
@@ -438,7 +486,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-049.jpg",
         username: "vanzoca",
-        bio: "Hoje é um bom dia para recomeçar."
+        bio: "Hoje é um bom dia para recomeçar.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990050",
@@ -447,7 +496,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-050.jpg",
         username: "potifagia",
-        bio: "Tenha coragem para ser feliz."
+        bio: "Tenha coragem para ser feliz.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990051",
@@ -456,7 +506,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-051.jpg",
         username: "tabajara_setembro",
-        bio: "Viva o presente, ele é tudo o que temos."
+        bio: "Viva o presente, ele é tudo o que temos.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990052",
@@ -465,7 +516,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-052.jpg",
         username: "bianaotai",
-        bio: "Ser feliz é uma escolha."
+        bio: "Ser feliz é uma escolha.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990053",
@@ -474,7 +526,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-053.jpg",
         username: "baiacuzao",
-        bio: "Não desista dos seus sonhos."
+        bio: "Não desista dos seus sonhos.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990054",
@@ -483,7 +536,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-054.jpg",
         username: "gabigabi",
-        bio: "Leve a vida com leveza."
+        bio: "Leve a vida com leveza.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990055",
@@ -492,7 +546,8 @@ let people = [
         nickname: "Laraúna",
         photo: "./medias/people/fauxchat-people-055.jpg",
         username: "umbabarauma",
-        bio: "O telefone tocou novamente"
+        bio: "O telefone tocou novamente",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990056",
@@ -501,7 +556,8 @@ let people = [
         nickname: "Perebas",
         photo: "./medias/people/fauxchat-people-056.jpg",
         username: "perebento",
-        bio: "O segredo é ter paciência."
+        bio: "O segredo é ter paciência.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990057",
@@ -510,7 +566,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-057.jpg",
         username: "canibal",
-        bio: "Energia boa atrai coisas boas."
+        bio: "Energia boa atrai coisas boas.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990058",
@@ -519,7 +576,8 @@ let people = [
         nickname: "Sussu",
         photo: "./medias/people/fauxchat-people-058.jpg",
         username: "sussuca",
-        bio: "Amor próprio em primeiro lugar."
+        bio: "Amor próprio em primeiro lugar.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990059",
@@ -528,7 +586,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-059.jpg",
         username: "tapipoca",
-        bio: "Não perca a fé."
+        bio: "Não perca a fé.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990060",
@@ -537,7 +596,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-060.jpg",
         username: "catupirinha",
-        bio: "Momentos simples, memórias eternas."
+        bio: "Momentos simples, memórias eternas.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990061",
@@ -546,7 +606,8 @@ let people = [
         nickname: "Zé Pitica",
         photo: "./medias/people/fauxchat-people-061.jpg",
         username: "petequenzo",
-        bio: "A vida é uma jornada, aproveite a paisagem."
+        bio: "A vida é uma jornada, aproveite a paisagem.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990062",
@@ -555,7 +616,8 @@ let people = [
         nickname: "Rabu",
         photo: "./medias/people/fauxchat-people-062.jpg",
         username: "bolsofurado",
-        bio: "Ame sem medida."
+        bio: "Ame sem medida.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990063",
@@ -564,7 +626,8 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-063.jpg",
         username: "tabajara_julho",
-        bio: "Quem semeia amor, colhe felicidade."
+        bio: "Quem semeia amor, colhe felicidade.",
+        datebio: "1 de abril"
     },
     {
         phone: "5500999990064",
@@ -573,6 +636,7 @@ let people = [
         nickname: "",
         photo: "./medias/people/fauxchat-people-064.jpg",
         username: "melepop",
-        bio: "Sempre em frente, sem medo."
+        bio: "Sempre em frente, sem medo.",
+        datebio: "1 de abril"
     }
 ]
