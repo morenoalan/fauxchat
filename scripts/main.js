@@ -368,6 +368,27 @@ function currentTime() {
     let hours = now.getHours().toString().padStart(2, '0');
     let minutes = now.getMinutes().toString().padStart(2, '0');
     whatTimeIsIt = hours + ':' + minutes;
+
+    function getMessageTimeInfo() {
+        const date = new Date();
+        
+        // Get date and time in format: YYYY-MM-DD HH:MM:SS
+        const dateString = date.toISOString().slice(0, 19).replace("T", " ");
+    
+        // Time zone difference in minutes and convert to hours
+        const timeZoneOffset = -date.getTimezoneOffset() / 60;
+    
+        // Format the time zone with the sign (+ or -) and always with two digits
+        const timeZone = (timeZoneOffset >= 0 ? "+" : "-") + Math.abs(timeZoneOffset).toString().padStart(2, '0') + ":00";
+    
+        return {
+            dateTime: dateString,
+            timeZone: timeZone
+        };
+    }
+
+    const messageTimeInfo = getMessageTimeInfo();
+    console.log(`Data e Hora: ${messageTimeInfo.dateTime}, Fuso Horário: UTC${messageTimeInfo.timeZone}`);
 }
 
 function postMsg(prop){
