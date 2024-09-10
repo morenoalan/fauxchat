@@ -388,7 +388,7 @@ function currentTime() {
     }
 
     const messageTimeInfo = getMessageTimeInfo();
-    console.log(`Data e Hora: ${messageTimeInfo.dateTime}, Fuso Horário: UTC${messageTimeInfo.timeZone}`);
+    console.log(`${messageTimeInfo.dateTime} UTC${messageTimeInfo.timeZone}; Local Time: ${whatTimeIsIt}`);
 }
 
 function postMsg(prop){
