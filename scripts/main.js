@@ -363,6 +363,8 @@ function cleanMsgField(){
 }
 
 let whatTimeIsIt = '00:00';
+
+/*
 function currentTime() {
     let now = new Date();
     let hours = now.getHours().toString().padStart(2, '0');
@@ -380,6 +382,37 @@ function currentTime() {
     
         // Format the time zone with the sign (+ or -) and always with two digits
         const timeZone = (timeZoneOffset >= 0 ? "+" : "-") + Math.abs(timeZoneOffset).toString().padStart(2, '0') + ":00";
+    
+        return {
+            dateTime: dateString,
+            timeZone: timeZone
+        };
+    }
+
+    const messageTimeInfo = getMessageTimeInfo();
+    console.log(`${messageTimeInfo.dateTime} UTC${messageTimeInfo.timeZone}; Local Time: ${whatTimeIsIt}`);
+}
+*/
+
+function currentTime() {
+    function getMessageTimeInfo() {
+        const date = new Date();
+        
+        // Get date and time in format: YYYY-MM-DD HH:MM:SS
+        const dateString = date.toISOString().slice(0, 19).replace("T", " ");
+    
+        // Time zone difference in minutes and convert to hours
+        const timeZoneOffset = -date.getTimezoneOffset() / 60;
+    
+        // Format the time zone with the sign (+ or -) and always with two digits
+        const timeZone = (timeZoneOffset >= 0 ? "+" : "-") + Math.abs(timeZoneOffset).toString().padStart(2, '0') + ":00";
+    
+        // Calculating local time by adding time zone offset to UTC time
+        console.log("getTime: " + timeZoneOffset + "; " + timeZoneOffset * 60 * 60 * 1000);
+        const localDate = new Date(date.getTime() + timeZoneOffset * 60 * 60 * 1000);
+        let localHours = localDate.getHours().toString().padStart(2, '0');
+        let localMinutes = localDate.getMinutes().toString().padStart(2, '0');
+        whatTimeIsIt = localHours + ':' + localMinutes;
     
         return {
             dateTime: dateString,
