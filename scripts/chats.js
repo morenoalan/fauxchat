@@ -2,6 +2,7 @@ let chats = [
     {
         chat_id: "0",
         phone: "5500999990002",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -71,6 +72,7 @@ let chats = [
     {
         chat_id: "1",
         phone: "5500999990035",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -86,6 +88,7 @@ let chats = [
     {
         chat_id: "2",
         phone: "5500999990036",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -101,6 +104,7 @@ let chats = [
     {
         chat_id: "3",
         phone: "5500999990030",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -116,6 +120,7 @@ let chats = [
     {
         chat_id: "4",
         phone: "5500999990028",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -140,6 +145,7 @@ let chats = [
     {
         chat_id: "5",
         phone: "5500999990025",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -164,6 +170,7 @@ let chats = [
     {
         chat_id: "6",
         phone: "5500999990026",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -179,6 +186,7 @@ let chats = [
     {
         chat_id: "7",
         phone: "5500999990031",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -194,6 +202,7 @@ let chats = [
     {
         chat_id: "8",
         phone: "5500999990032",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -209,6 +218,7 @@ let chats = [
     {
         chat_id: "9",
         phone: "5500999990040",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -224,6 +234,7 @@ let chats = [
     {
         chat_id: "10",
         phone: "5500999990027",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -239,6 +250,7 @@ let chats = [
     {
         chat_id: "11",
         phone: "5500999990023",
+        pin: '1',
         msgs: [
             {
                 msgId: "0",
@@ -272,6 +284,7 @@ let chats = [
     {
         chat_id: "12",
         phone: "5500999990029",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -305,6 +318,7 @@ let chats = [
     {
         chat_id: "13",
         phone: "5500999990024",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -329,6 +343,7 @@ let chats = [
     {
         chat_id: "14",
         phone: "5500999990045",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -353,6 +368,7 @@ let chats = [
     {
         chat_id: "15",
         phone: "5500999990046",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -377,6 +393,7 @@ let chats = [
     {
         chat_id: "16",
         phone: "5500999990047",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -401,6 +418,7 @@ let chats = [
     {
         chat_id: "17",
         phone: "5500999990048",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -425,6 +443,7 @@ let chats = [
     {
         chat_id: "18",
         phone: "5500999990049",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -449,6 +468,7 @@ let chats = [
     {
         chat_id: "19",
         phone: "5500999990050",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -473,6 +493,7 @@ let chats = [
     {
         chat_id: "20",
         phone: "5500999990051",
+        pin: '2',
         msgs: [
             {
                 msgId: "0",
@@ -542,6 +563,7 @@ let chats = [
     {
         chat_id: "21",
         phone: "5500999990052",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -620,6 +642,7 @@ let chats = [
     {
         chat_id: "22",
         phone: "5500999990053",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -698,6 +721,7 @@ let chats = [
     {
         chat_id: "23",
         phone: "5500999990054",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -740,6 +764,7 @@ let chats = [
     {
         chat_id: "23",
         phone: "5500999990055",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
@@ -827,6 +852,7 @@ let chats = [
     {
         chat_id: "24",
         phone: "5500999990056",
+        pin: '0',
         msgs: [
             {
                 msgId: "0",
