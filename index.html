@@ -97,13 +97,36 @@
                                 <p class='screen-list-footer-menu-button-label'>Ligações</p>
                             </button>
                         </div>
-                        <button class='screen-list-footer-addchat-button' onclick='newChat();'>
+                        <button class='screen-list-footer-addchat-button' onclick='goToScreen("screen-contact");'>
                             <img id='screen-list-footer-addchat-img' src='./medias/icons/add_comment_FILL1_wght400_GRAD0_opsz24.svg' alt='addchat' class='icon svg-color-white'/>
                         </button>
                     </div>
                 </section>
                 <section id='screen-contact' class='display-none'>
-                    <div id='screen-contact-header' class='screen-contact-header'></div>
+                    <div id='screen-contact-header' class='screen-chat-header'>
+                        <div id='screen-contact-header-display' class='screen-chat-header-display'></div>
+                            <figure id='screen-contact-header-figure' class='screen-chat-header-figure'>
+                                <button onclick='goToScreen("screen-list")' id='screen-contact-header-figure-back'
+                                class='screen-chat-header-figure-back'>
+                                    <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
+                                </button>
+                                <div id='screen-contact-header-figure-name'
+                                class='screen-chat-header-figure-name'>
+                                    <figcaption class='screen-chat-header-figure-name-figcaption'>Contatos</figcaption>
+                                </div>
+                            </figure>
+                            <div id='screen-contact-header-menu'
+                            class='screen-chat-header-menu'>
+                                <button>
+                                    <img id='screen-contact-header-menu-search' src='./medias/icons/search_FILL0_wght600_GRAD0_opsz48.svg' alt='search' class='icon'/>
+                                </button>
+                                <button>
+                                    <img id='screen-contact-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
+                                </button>
+                            </div>
+                        <div id='screen-contact-header-options' class='screen-chat-header-edition display-none'>
+                        </div>
+                    </div>
                     <div id='screen-contact-main' class='whatsapp-scroll scrollable'></div>
                 </section>
                 <section id='screen-chat' class='display-active'>

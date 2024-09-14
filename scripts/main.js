@@ -104,10 +104,6 @@ function changeTick(button){
 
 //chat-list
 
-function newChat(){
-    console.log('open new chat');
-}
-
 function chatsList() {
     chats.forEach(function(element) {
         //console.log(element.phone);
