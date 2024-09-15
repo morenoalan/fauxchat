@@ -1,0 +1,15 @@
+.style-whatsapp {
+
+    * {
+        --whatsapp: "whatsapp";
+    };
+
+    .screen-profile-header-display {
+        background: transparent !important;
+        border-bottom: transparent !important;
+    }
+
+    #screen-chat-profile-more {
+        width: 1rem;
+    }
+}

@@ -1,0 +1,75 @@
+.style-whatsapp {
+
+    * {
+        --whatsapp: "whatsapp";
+    };
+
+    .screen-general-header {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: var(--dim-max-screen);
+        height: fit-content;
+    }
+
+    .screen-general-header-display {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.4rem;
+        padding-right: 1.2rem;
+        padding-bottom: 0.4rem;
+        padding-left: 0.2rem;
+        background: var(--color-white);
+        border-bottom: solid 0.01rem var(--color-gray-ds);
+        position: relative;
+        flex-direction: row;
+        height: 3.5rem;
+        width: 100%;
+        max-width: var(--dim-max-screen);
+    }
+
+    .screen-general-header-figure {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        width: calc(100% - 8rem);
+    }
+
+    .screen-general-header-figure-back {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100%;   
+    }
+
+    .screen-general-header-figure-name {
+        display: flex;
+        margin-left: 0.6rem;
+        flex-grow: 1;
+        max-width: calc(100% - 5rem);
+    }
+
+    .screen-general-header-figure-name-figcaption {
+        display: inline-block;
+        text-align: left;
+        max-width: max-content;
+        flex-grow: 1;
+        font-size: 1.3rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .screen-general-header-menu {
+        display: flex;
+        align-items: center;
+        column-gap: 1.6rem;
+    }
+
+}
