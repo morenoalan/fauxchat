@@ -1,6 +1,7 @@
 // localStorage
+// estrutura
 
-//Screenshot Region
+// screenshot region
 /*Need access to API html2canvas*/
 function captureDivScreenshot(divId) {
     let div = document.getElementById(divId);
@@ -102,44 +103,7 @@ function changeTick(button){
     button.value = tickCounter;
 }
 
-//chat-list
-
-function chatsList() {
-    chats.forEach(function(element) {
-        //console.log(element.phone);
-        let person = people.find(item => item.phone == element.phone);
-        let contactName = '';
-        if(person.nickname != ""){
-            //console.log(person.nickname);
-            contactName = person.nickname;
-        }else{
-            //console.log(person.name+" "+person.surname);
-            contactName = person.name+" "+person.surname;
-        }
-
-        let countStatus3 = 0;
-        element.msgs.forEach(msg => {
-            if (msg.status === "3" &&
-                msg.author !== "00_me" &&
-                msg.author !== "00_info") {
-                countStatus3++;
-            }
-        });
-
-        let lastMsg = element.msgs[element.msgs.length - 1];
-
-        let msg = lastMsg.msg;
-        let time = lastMsg.time;
-        let status = lastMsg.status;
-
-        console.log(person.phone+"; "+person.photo+"; "+contactName+"; "+msg+"; "+time+"; "+status+"; "+countStatus3);
-
-        chatListButton(person.phone, person.photo, contactName, msg, time, status, countStatus3);
-    });
-}
-
-chatsList();
-
+// chat-list
 function chatListButton(number0, img0, name0, msg0, time0, status0, unread0) {
 
     let number = number0;
@@ -164,18 +128,91 @@ function chatListButton(number0, img0, name0, msg0, time0, status0, unread0) {
         timeUnread = 'screen-list-main-chatlink-time-unread';
     }
 
-    let buttonDefault = `\<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign'\>\<img class='screen-list-main-chatlink-img' src='${img}'\/\>\<div class='screen-list-main-chatlink-columnalign'\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-container'\>\<p class='screen-list-main-chatlink-contact'\>${name}\<\/p\>\<\/div\>\<p class='screen-list-main-chatlink-time ${timeUnread}'\>${time}\<\/p\>\<\/div\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-status msg-bubble-tick ${tickDisplayNone}'\>\<img src='${statusIcon}'\/\>\<\/div\>\<div class='screen-list-main-chatlink-container'\>\<p class='screen-list-main-chatlink-msg'\>${lastMsg}\<\/p\>\<\/div\>\<div class='${pinDisplayNone}'\>\<img class='screen-list-main-chatlink-pin msg-bubble-tick' src='${pin}'\/\>\<\/div\>\<div class='${unreadDisplayNone}'\>\<p class='screen-list-main-chatlink-counter'\>${unread}\<\/p\>\<\/div\>\<\/div\>\<\/div\>\<\/button\>`
+    let buttonDefault = `\<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign' name='${number}' onclick='openChat(this.name);'\>\<img class='screen-list-main-chatlink-img' src='${img}'\/\>\<div class='screen-list-main-chatlink-columnalign'\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-container'\>\<p class='screen-list-main-chatlink-contact'\>${name}\<\/p\>\<\/div\>\<p class='screen-list-main-chatlink-time ${timeUnread}'\>${time}\<\/p\>\<\/div\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-status msg-bubble-tick ${tickDisplayNone}'\>\<img src='${statusIcon}'\/\>\<\/div\>\<div class='screen-list-main-chatlink-container'\>\<p class='screen-list-main-chatlink-msg'\>${lastMsg}\<\/p\>\<\/div\>\<div class='${pinDisplayNone}'\>\<img class='screen-list-main-chatlink-pin msg-bubble-tick' src='${pin}'\/\>\<\/div\>\<div class='${unreadDisplayNone}'\>\<p class='screen-list-main-chatlink-counter'\>${unread}\<\/p\>\<\/div\>\<\/div\>\<\/div\>\<\/button\>`
 
     let newButton = document.createElement('li');
     newButton.id = 'chat-'+number;
-    /*newButton.setAttribute('class','msg-container');*/
     newButton.innerHTML = buttonDefault;
 
     let chatList = document.getElementById('screen-list-main');
     chatList.appendChild(newButton);
 }
 
-//chat-main
+function chatsList() {
+    chats.forEach(function(element) {
+        let person = people.find(item => item.phone == element.phone);
+        let contactName = '';
+        if(person.nickname != "") {
+            contactName = person.nickname;
+        }else{
+            contactName = person.name+" "+person.surname;
+        }
+
+        let countStatus3 = 0;
+        element.msgs.forEach(msg => {
+            if (msg.status === "3" &&
+                msg.author !== "00_me" &&
+                msg.author !== "00_info") {
+                countStatus3++;
+            }
+        });
+
+        let lastMsg = element.msgs[element.msgs.length - 1];
+
+        let msg = lastMsg.msg;
+        let time = lastMsg.time;
+        let status = lastMsg.status;
+
+        console.log(person.phone+"; "+person.photo+"; "+contactName+"; "+msg+"; "+time+"; "+status+"; "+countStatus3);
+
+        chatListButton(person.phone, person.photo, contactName, msg, time, status, countStatus3);
+    });
+}
+chatsList();
+
+// contact-list
+function contactListButton(img0, name0, number0, bio0) {
+    let img = img0;
+    let name = name0;
+    let number = number0;
+    let bio = bio0;
+
+    let buttonDefault = `
+    \<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign' name='${number}' onclick='openChat(this.name);'\>
+        \<img class='screen-list-main-chatlink-img' src='${img}'\/\>
+        \<div class='screen-list-main-chatlink-columnalign'\>
+            \<div class='screen-list-main-chatlink-rowalign'\>
+                \<p class='screen-list-main-chatlink-contact'\>${name}\<\/p\>
+                \<div\>\<\/div\>
+            \<\/div\>
+            \<div class='screen-list-main-chatlink-rowalign'\>
+                \<p class='screen-list-main-chatlink-msg'\>${bio}\<\/p\>
+                \<div\>\<\/div\>
+            \<\/div\>
+        \<\/div\>
+    \<\/button\>`
+
+    let newButton = document.createElement('li');
+    newButton.innerHTML = buttonDefault;
+
+    let contactList = document.getElementById('screen-contact-main');
+    contactList.appendChild(newButton);
+}
+
+function contactList() {
+    people.forEach(function(element) {
+        let contactName = '';
+        if(element.nickname != ""){
+            contactName = element.nickname;
+        }else{
+            contactName = element.name+" "+element.surname;
+        }
+        contactListButton(element.photo, contactName, element.phone, element.bio);
+    });
+}
+contactList();
+
+// chat-main
 let bubblesIdCount = 0;
 let bubbleEditActivated = false;
 
@@ -214,7 +251,20 @@ function sendBubbleEdited(){
     closeBubbleEdit();
 }
 
-//chat-header-edition changing side of Msgs
+function openChat(element) {
+    goToScreen('screen-chat');
+    let person = people.find(item => item.phone == element);
+    let imgChat = document.getElementById('chat-img');
+    imgChat.src = person.photo;
+    let nameChat = document.getElementById('chat-name');
+    if(person.nickname != ""){
+        nameChat.textContent = person.nickname;
+    }else{
+        nameChat.textContent = person.name+" "+person.surname;
+    }
+}
+
+// chat-header-edition changing side of Msgs
 function cleanSelection(){
     maskedBubblesList.forEach(function (id) {
         let bubbleToClean = document.getElementById(id).getElementsByClassName('msg-selector')[0];
@@ -338,7 +388,7 @@ msgField.addEventListener('input', function () {
     }
 });
 
-//chat-send
+// chat-send
 function sendMessage(){
     if(bubbleEditActivated == true){
         sendBubbleEdited();

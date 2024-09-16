@@ -128,8 +128,8 @@
                         <div id='screen-contact-header-options' class='screen-chat-header-edition display-none'>
                         </div>
                     </div>
-                    <div id='screen-contact-main' class='screen-list-main whatsapp-scroll scrollable'>
-                    </div>
+                    <ul id='screen-contact-main' class='screen-list-main whatsapp-scroll scrollable'>
+                    </ul>
                 </section>
                 <section id='screen-chat' class='display-active'>
                     <div id='screen-chat-background'>
@@ -138,14 +138,14 @@
                     <div id='screen-chat-header' class='screen-general-header'>
                         <div id='screen-chat-header-display' class='screen-general-header-display'>
                             <figure id='screen-chat-header-figure' class='screen-general-header-figure'>
-                                <button onclick='goToScreen("screen-list")' id='screen-chat-header-figure-back'
-                                class='screen-general-header-figure-back' onclick=''>
+                                <button id='screen-chat-header-figure-back'
+                                class='screen-general-header-figure-back' onclick='goToScreen("screen-list");'>
                                     <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
-                                    <img src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='image' class='image-head'/>
+                                    <img id='chat-img' src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='image' class='image-head'/>
                                 </button>
                                 <button id='screen-chat-header-figure-name'
-                                class='screen-general-header-figure-name' onclick='goToScreen("screen-profile")'>
-                                    <figcaption class='screen-general-header-figure-name-figcaption screen-chat-header-figure-name-figcaption'>Flávia Xaxim</figcaption>
+                                class='screen-general-header-figure-name' onclick='goToScreen("screen-profile");'>
+                                    <figcaption id='chat-name' class='screen-general-header-figure-name-figcaption screen-chat-header-figure-name-figcaption'>Flávia Xaxim</figcaption>
                                 </button>
                             </figure>
                             <div id='screen-chat-header-menu'

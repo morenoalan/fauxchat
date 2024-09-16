@@ -4,7 +4,7 @@
         --whatsapp: "whatsapp";
     };
 
-    #screen-list-main {
+    .screen-list-main {
         display: flex;
         position: relative;
         flex-direction: column;
