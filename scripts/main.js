@@ -1,8 +1,8 @@
 // localStorage
-// estrutura
+
 
 // screenshot region
-/*Need access to API html2canvas*/
+/*meed access to API html2canvas*/
 function captureDivScreenshot(divId) {
     let div = document.getElementById(divId);
     html2canvas(div).then(canvas => {
@@ -32,7 +32,7 @@ let chatProfiles = [];
 let msgsCounterTag = document.getElementById('screen-chat-header-edition-counter');
 let msgsCounter = parseInt(msgsCounterTag.textContent);
 
-function flipChatHeader(msgsCounter){
+function flipChatHeader(msgsCounter) {
 
     const headerDisplay = document.getElementById('screen-chat-header-display');
     const headerEdition = document.getElementById('screen-chat-header-edition');
@@ -40,24 +40,24 @@ function flipChatHeader(msgsCounter){
 
     msgsCounterTag.textContent = msgsCounter;
 
-    if(msgsCounter === 0){
-        headerDisplay.classList.add('screen-chat-header-display');
+    if(msgsCounter === 0) {
+        headerDisplay.classList.add('screen-general-header-display');
         headerDisplay.classList.remove('display-none');
         headerEdition.classList.add('display-none');
-        headerEdition.classList.remove('screen-chat-header-display');
+        headerEdition.classList.remove('screen-general-header-display');
         maskedBubblesList = [];
 
-        if(bubbleEditActivated == true){
+        if(bubbleEditActivated == true) {
             closeBubbleEdit();
         }
     }else{
         headerDisplay.classList.add('display-none');
-        headerDisplay.classList.remove('screen-chat-header-display');
-        headerEdition.classList.add('screen-chat-header-display');
+        headerDisplay.classList.remove('screen-general-header-display');
+        headerEdition.classList.add('screen-general-header-display');
         headerEdition.classList.remove('display-none');
     }
 
-    if(msgsCounter === 1){
+    if(msgsCounter === 1) {
         buttonMsgEdit.classList.add('button-chat-edition');
         buttonMsgEdit.classList.remove('display-none');
     }else{
@@ -88,14 +88,14 @@ const tickIcons = [
 
 let tickCounter = 1;
 
-function changeTime(button){
+function changeTime(button) {
     console.log(button.textContent);
 
     let timeChanger = '';
     //chatMain.appendChild(timeBubble);
 }
 
-function changeTick(button){
+function changeTick(button) {
     tickCounter = (parseInt(button.value) % 4) + 1;
     let btBubbleDone = button.querySelector('img');
     let pickIcon = tickIcons.find(item => item.value == tickCounter);
@@ -251,20 +251,49 @@ function sendBubbleEdited(){
     closeBubbleEdit();
 }
 
+function loadChat(person0) {
+    console.log(person0);
+    let person = chats.find(item => item.phone == person0.phone);
+    console.log(person.msgs);
+    person.msgs.forEach(msg => {
+        msgField.innerHTML = msg.msg;
+        switch(msg.author){
+        case '00_me':
+            sendToMe();
+            break;
+        case '00_info':
+            sendToInfo();
+            break;
+        default:          
+            sendToPeople(person);
+            break;
+        }
+    });
+}
+
 function openChat(element) {
     goToScreen('screen-chat');
+    let chatMain = document.getElementById('screen-chat-main');
+    chatMain.innerHTML = '';
+
     let person = people.find(item => item.phone == element);
-    let imgChat = document.getElementById('chat-img');
+    let imgChat = document.getElementById('img-chat');
+    let imgChatEdit = document.getElementById('img-chat-edit');
+    let imgChatFooter = document.getElementById('img-chat-footer');
     imgChat.src = person.photo;
+    imgChatEdit.src = person.photo;
+    imgChatFooter.src = person.photo;
     let nameChat = document.getElementById('chat-name');
     if(person.nickname != ""){
         nameChat.textContent = person.nickname;
     }else{
         nameChat.textContent = person.name+" "+person.surname;
     }
+
+    loadChat(person);
 }
 
-// chat-header-edition changing side of Msgs
+// chat-header-edition changing side of msgs
 function cleanSelection(){
     maskedBubblesList.forEach(function (id) {
         let bubbleToClean = document.getElementById(id).getElementsByClassName('msg-selector')[0];
@@ -329,10 +358,10 @@ function bubbleRight(){
     });
 }
 
-// chat-main msg Selection
+// chat-main msg selection
 let maskedBubblesList = [];
 
-function msgSelect(bubble){
+function msgSelect(bubble) {
     let maskedBubble = bubble.parentNode.parentNode.getElementsByClassName('msg-selector')[0];
     maskedBubble.classList.add('mask-selection');
     maskedBubble.classList.remove('display-none');
@@ -345,7 +374,7 @@ function msgSelect(bubble){
 
 }
 
-function msgDeselect(msgSelector){
+function msgDeselect(msgSelector) {
     msgSelector.classList.add('display-none');
     msgSelector.classList.remove('mask-selection');
     msgsCounter--;
@@ -367,20 +396,20 @@ const panelSend = document.getElementById('screen-chat-footer-send-panel');
 const msgField = document.getElementById('screen-chat-footer-input-msg-field');
 const chatMain = document.getElementById('screen-chat-main');
 
-function messageFieldWriting(){
+function messageFieldWriting() {
     buttonPhoto.classList.add("display-none");
     buttonMic.classList.add("display-none");
     buttonSend.classList.remove("display-none");
 }
 
-function messageFieldClean(){
+function messageFieldClean() {
     buttonPhoto.classList.remove("display-none");
     buttonMic.classList.remove("display-none");
     buttonSend.classList.add("display-none");
 }
 
 msgField.addEventListener('input', function () {
-    if(msgField.textContent != ""){
+    if(msgField.textContent != "") {
         messageFieldWriting();
     }else{
         messageFieldClean();
@@ -389,8 +418,8 @@ msgField.addEventListener('input', function () {
 });
 
 // chat-send
-function sendMessage(){
-    if(bubbleEditActivated == true){
+function sendMessage() {
+    if(bubbleEditActivated == true) {
         sendBubbleEdited();
     }else{
         panelSend.classList.add('chat-send-panel');
@@ -398,13 +427,13 @@ function sendMessage(){
     }
 }
 
-function collapseSendPanel(){
+function collapseSendPanel() {
     panelSend.classList.add('display-none');
     panelSend.classList.remove('chat-send-panel');
     messageFieldClean();
 }
 
-function cleanMsgField(){
+function cleanMsgField() {
     msgField.textContent = '';
 }
 
@@ -505,16 +534,16 @@ function sendToPeople(people){
 }
 
 // screen-profile
-function clickObject(input){
+function clickObject(input) {
     document.getElementById(input).click();
 }
 
-function loadNewPhoto(input, img){
+function loadNewPhoto(input, img) {
     let preview = document.getElementById(img);
     let file = input.files[0];
     let reader = new FileReader();
 
-    reader.onload = function(e){
+    reader.onload = function(e) {
         preview.src = e.target.result;
         adaptImage(preview.src, preview);
     };
@@ -525,17 +554,17 @@ function loadNewPhoto(input, img){
 
 }
 
-function adaptImage(dataURL, img){
+function adaptImage(dataURL, img) {
 
     let imgLoaded = new Image();
     let ratioImage;
 
-    imgLoaded.onload = function (){
+    imgLoaded.onload = function () {
         let imageWidth = imgLoaded.width;
         let imageHeight = imgLoaded.height;
         ratioImage = imageWidth / imageHeight;
         
-        if(ratioImage < 1){
+        if(ratioImage < 1) {
             img.style.width = '100%';
             img.style.height = 'auto';
         }else{
@@ -546,7 +575,7 @@ function adaptImage(dataURL, img){
     imgLoaded.src = dataURL;
 }
 
-// Drag Scrolling
+// drag scrolling
 document.addEventListener('DOMContentLoaded', () => {
     const scrollableDivs = document.querySelectorAll('.scrollable');
     
