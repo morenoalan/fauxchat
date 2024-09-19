@@ -1,8 +1,78 @@
-// localStorage
+// manifest
+const manifest = {
+    name: 'FauxChat',
+    description: 'Fake chat for social media jokes.',
+    url: 'https://fauxchat.com',
+    version: '0.0.0',
+    author: {
+        name: 'Alan Moreno',
+        url: 'https://alanmoreno.com'
+    },
+    license: {
+        type: 'MIT',
+        url: 'https://opensource.org/licenses/MIT'
+    }
+}
 
+// localStorage
+function setToLocalStorage(order){
+    order.forEach(item => {
+        //console.log(item);
+        localStorage.setItem(item, JSON.stringify(eval(item)));
+        /*
+        switch (item) {
+            case 'chats':
+                localStorage.setItem('storageChats', JSON.stringify(chats));
+                break;
+            case 'people':
+                localStorage.setItem('storagePeople', JSON.stringify(people));
+                break;
+            case 'manifest':
+                localStorage.setItem('storageManifest', JSON.stringify(manifest));
+                break;
+            default:
+                console.log('saveToLocalStorage failed');
+                break;
+        }*/
+    });
+}
+
+setToLocalStorage(['manifest']);
+
+window.addEventListener('beforeunload', function(){
+    setToLocalStorage(['chats', 'people']);
+});
+
+function getFromLocalStorage(order){
+    order.forEach(item => {
+        if(localStorage.getItem(item) != 'null') {
+            item = JSON.parse(localStorage.getItem(item));
+            //console.log(item);
+        }
+    });
+}
+
+getFromLocalStorage(['chats', 'people']);
+
+/*
+if(localStorage.getItem('storageChats') != 'null') {
+    chats = JSON.parse(localStorage.getItem('storageChats'));
+}
+if(localStorage.getItem('storagePeople') != 'null') {
+    people = JSON.parse(localStorage.getItem('storagePeople'));
+}
+*/
+
+setInterval(function(){
+    setToLocalStorage(['chats']);
+}, 60000);
+
+setInterval(function(){
+    setToLocalStorage(['people']);
+}, 300000);
 
 // screenshot region
-/*meed access to API html2canvas*/
+/*need access to API html2canvas*/
 function captureDivScreenshot(divId) {
     let div = document.getElementById(divId);
     html2canvas(div).then(canvas => {
@@ -163,7 +233,7 @@ function chatsList() {
         let time = lastMsg.time;
         let status = lastMsg.status;
 
-        console.log(person.phone+"; "+person.photo+"; "+contactName+"; "+msg+"; "+time+"; "+status+"; "+countStatus3);
+        //console.log(person.phone+"; "+person.photo+"; "+contactName+"; "+msg+"; "+time+"; "+status+"; "+countStatus3);
 
         chatListButton(person.phone, person.photo, contactName, msg, time, status, countStatus3);
     });
@@ -200,6 +270,7 @@ function contactListButton(img0, name0, number0, bio0) {
 }
 
 function contactList() {
+    let peopleNames = [];
     people.forEach(function(element) {
         let contactName = '';
         if(element.nickname != ""){
@@ -207,10 +278,29 @@ function contactList() {
         }else{
             contactName = element.name+" "+element.surname;
         }
-        contactListButton(element.photo, contactName, element.phone, element.bio);
+        element.contactName = contactName;
+        peopleNames.push(element);
+    })
+    peopleNames.sort(function(a, b) {
+        return a['contactName'].localeCompare(b['contactName']);
+    });
+
+    peopleNames.forEach(function(element) {
+        contactListButton(element.photo, element.contactName, element.phone, element.bio);
     });
 }
 contactList();
+
+// handling chats data
+function updateChatList(){
+    console.log('update chat list');
+
+}
+
+function updateChatData(msgId, phone){
+    console.log('update chat data');
+
+}
 
 // chat-main
 let bubblesIdCount = 0;
@@ -240,11 +330,11 @@ function sendBubbleEdited(){
 
     let bubbleEditText = document.getElementById(maskedBubblesList[0]).getElementsByClassName('msg-bubble')[0];
 
-    whatTimeIsIt = bubbleEditText.getElementsByClassName('msg-bubble-time')[0].textContent;
+    localTimes = bubbleEditText.getElementsByClassName('msg-bubble-time-span')[0].textContent;
 
     let pickIcon = tickIcons.find(item => item.value == tickCounter);
 
-    let msgDefault = `${msg}\<button onmousedown='msgSelect(this);' class='button-select'\>\<\/button\>\<div class='msg-bubble-metadata'\>\<p class='msg-bubble-time'\>Editada ${whatTimeIsIt}\<\/p\>\<button onclick='changeTick(this);' value='${tickCounter}' class='msg-bubble-tick'\>\<img src='${pickIcon.icon}'\/\>\<\/button\>\<\/div\>\<\/div\>`;
+    let msgDefault = `${msg}\<button onmousedown='msgSelect(this);' class='button-select'\>\<\/button\>\<div class='msg-bubble-metadata'\>\<p class='msg-bubble-time'\>Editada \<span 'msg-bubble-time-span'\>${localTimes}\<\/span\>\<\/p\>\<button onclick='changeTick(this);' value='${tickCounter}' class='msg-bubble-tick'\>\<img src='${pickIcon.icon}'\/\>\<\/button\>\<\/div\>\<\/div\>`;
 
     bubbleEditText.innerHTML = msgDefault;
 
@@ -252,20 +342,19 @@ function sendBubbleEdited(){
 }
 
 function loadChat(person0) {
-    console.log(person0);
+    bubblesIdCount = 0;
     let person = chats.find(item => item.phone == person0.phone);
-    console.log(person.msgs);
     person.msgs.forEach(msg => {
         msgField.innerHTML = msg.msg;
         switch(msg.author){
         case '00_me':
-            sendToMe();
+            sendToMe(msg);
             break;
         case '00_info':
-            sendToInfo();
+            sendToInfo(msg);
             break;
         default:          
-            sendToPeople(person);
+            sendToPeople(msg);
             break;
         }
     });
@@ -437,19 +526,13 @@ function cleanMsgField() {
     msgField.textContent = '';
 }
 
-let whatTimeIsIt = '00:00';
+let localTimes = '00:00';
 
-/*
 function currentTime() {
-    let now = new Date();
-    let hours = now.getHours().toString().padStart(2, '0');
-    let minutes = now.getMinutes().toString().padStart(2, '0');
-    whatTimeIsIt = hours + ':' + minutes;
-
     function getMessageTimeInfo() {
         const date = new Date();
         
-        // Get date and time in format: YYYY-MM-DD HH:MM:SS
+        // Get date and time in format: YYYY-MM-DD HH:MM:SS (UTC time)
         const dateString = date.toISOString().slice(0, 19).replace("T", " ");
     
         // Time zone difference in minutes and convert to hours
@@ -458,60 +541,59 @@ function currentTime() {
         // Format the time zone with the sign (+ or -) and always with two digits
         const timeZone = (timeZoneOffset >= 0 ? "+" : "-") + Math.abs(timeZoneOffset).toString().padStart(2, '0') + ":00";
     
-        return {
-            dateTime: dateString,
-            timeZone: timeZone
-        };
-    }
+        // Extract hours and minutes from the dateString
+        let utcHours = parseInt(dateString.slice(11, 13));  // Extract hours from the dateString
+        let utcMinutes = parseInt(dateString.slice(14, 16)); // Extract minutes from the dateString
 
-    const messageTimeInfo = getMessageTimeInfo();
-    console.log(`${messageTimeInfo.dateTime} UTC${messageTimeInfo.timeZone}; Local Time: ${whatTimeIsIt}`);
-}
-*/
-
-function currentTime() {
-    function getMessageTimeInfo() {
-        const date = new Date();
+        // Apply the time zone offset to UTC time
+        let localHours = utcHours + timeZoneOffset;
         
-        // Get date and time in format: YYYY-MM-DD HH:MM:SS
-        const dateString = date.toISOString().slice(0, 19).replace("T", " ");
-    
-        // Time zone difference in minutes and convert to hours
-        const timeZoneOffset = -date.getTimezoneOffset() / 60;
-    
-        // Format the time zone with the sign (+ or -) and always with two digits
-        const timeZone = (timeZoneOffset >= 0 ? "+" : "-") + Math.abs(timeZoneOffset).toString().padStart(2, '0') + ":00";
-    
-        // Calculating local time by adding time zone offset to UTC time
-        console.log("getTime: " + timeZoneOffset + "; " + timeZoneOffset * 60 * 60 * 1000);
-        const localDate = new Date(date.getTime() + timeZoneOffset * 60 * 60 * 1000);
-        let localHours = localDate.getHours().toString().padStart(2, '0');
-        let localMinutes = localDate.getMinutes().toString().padStart(2, '0');
-        whatTimeIsIt = localHours + ':' + localMinutes;
+        // Handle hours going over 24 or below 0
+        if (localHours >= 24) {
+            localHours -= 24;  // Move to next day if hour is 24 or more
+        } else if (localHours < 0) {
+            localHours += 24;  // Move to previous day if hour is negative
+        }
+
+        // Format the local time
+        localHours = localHours.toString().padStart(2, '0');
+        let localMinutes = utcMinutes.toString().padStart(2, '0');
+
+        let localTimes = localHours + ':' + localMinutes;
     
         return {
             dateTime: dateString,
-            timeZone: timeZone
+            timeZone: timeZone,
+            localTime: localTimes
         };
     }
 
     const messageTimeInfo = getMessageTimeInfo();
-    console.log(`${messageTimeInfo.dateTime} UTC${messageTimeInfo.timeZone}; Local Time: ${whatTimeIsIt}`);
+    console.log(`${messageTimeInfo.dateTime} UTC${messageTimeInfo.timeZone}; Local Time: ${messageTimeInfo.localTime}`);  
 }
 
-function postMsg(prop){
-    let msg = msgField.innerHTML.replace(/\<div\>/g, '<br>').replace(/\<\/div\>/g, '');
+function postMsg(prop, msg0){
+    let msg = msg0;
+    let text = '';
+    let pickIcon = '';
+
+    if(msg != false) {
+        text = msg.msg;
+        tickCounter = msg.status;
+        localTime = msg.time;
+        bubblesIdCount = msg.msgId;
+    }else{
+        text = msgField.innerHTML.replace(/\<div\>/g, '<br>').replace(/\<\/div\>/g, '');
+        currentTime();
+        bubblesIdCount++;
+    }
+
+    pickIcon = tickIcons.find(item => item.value == tickCounter);
 
     cleanMsgField();
     collapseSendPanel();
 
-    bubblesIdCount++;
-
-    currentTime();
-
-    let pickIcon = tickIcons.find(item => item.value == tickCounter);
-
-    let msgDefault = `\<button onclick='msgDeselect(this);' class='msg-selector display-none'\>\<\/button\><div class='msg-bubble ${prop}'\>${msg}\<button onmousedown='msgSelect(this);' class='button-select'\>\<\/button\>\<div class='msg-bubble-metadata'\>\<button onclick='changeTime(this);' class='msg-bubble-time'\>${whatTimeIsIt}\<\/button\>\<button onclick='changeTick(this);' value='${tickCounter}' class='msg-bubble-tick'\>\<img src='${pickIcon.icon}'\/\>\<\/button\>\<\/div\>\<\/div\>`;
+    let msgDefault = `\<button onclick='msgDeselect(this);' class='msg-selector display-none'\>\<\/button\><div class='msg-bubble ${prop}'\>${text}\<button onmousedown='msgSelect(this);' class='button-select'\>\<\/button\>\<div class='msg-bubble-metadata'\>\<button onclick='changeTime(this);' class='msg-bubble-time'\>\<span class='msg-bubble-time-span'\>${localTime}\<\/span\>\<\/button\>\<button onclick='changeTick(this);' value='${tickCounter}' class='msg-bubble-tick'\>\<img src='${pickIcon.icon}'\/\>\<\/button\>\<\/div\>\<\/div\>`;
 
     let newMsg = document.createElement('div');
     newMsg.id = 'chat-msg-'+bubblesIdCount;
@@ -521,16 +603,16 @@ function postMsg(prop){
     chatMain.appendChild(newMsg);
 }
 
-function sendToMe(){
-    postMsg('msg-bubble-right');
+function sendToMe(msg){
+    postMsg('msg-bubble-right', msg);
 }
 
-function sendToInfo(){
-    postMsg('msg-bubble-center');
+function sendToInfo(msg){
+    postMsg('msg-bubble-center', msg);
 }
 
-function sendToPeople(people){
-    postMsg('msg-bubble-left');
+function sendToPeople(msg){
+    postMsg('msg-bubble-left', msg);
 }
 
 // screen-profile
