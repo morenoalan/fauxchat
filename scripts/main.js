@@ -198,7 +198,7 @@ function chatListButton(number0, img0, name0, msg0, time0, status0, unread0) {
         timeUnread = 'screen-list-main-chatlink-time-unread';
     }
 
-    let buttonDefault = `\<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign' name='${number}' onclick='openChat(this.name);'\>\<img class='screen-list-main-chatlink-img' src='${img}'\/\>\<div class='screen-list-main-chatlink-columnalign'\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-container'\>\<p class='screen-list-main-chatlink-contact'\>${name}\<\/p\>\<\/div\>\<p class='screen-list-main-chatlink-time ${timeUnread}'\>${time}\<\/p\>\<\/div\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-status msg-bubble-tick ${tickDisplayNone}'\>\<img src='${statusIcon}'\/\>\<\/div\>\<div class='screen-list-main-chatlink-container'\>\<p class='screen-list-main-chatlink-msg'\>${lastMsg}\<\/p\>\<\/div\>\<div class='${pinDisplayNone}'\>\<img class='screen-list-main-chatlink-pin msg-bubble-tick' src='${pin}'\/\>\<\/div\>\<div class='${unreadDisplayNone}'\>\<p class='screen-list-main-chatlink-counter'\>${unread}\<\/p\>\<\/div\>\<\/div\>\<\/div\>\<\/button\>`
+    let buttonDefault = `\<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign' onclick='openChat(${number});'\>\<img class='screen-list-main-chatlink-img' src='${img}'\/\>\<div class='screen-list-main-chatlink-columnalign'\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-container'\>\<p class='screen-list-main-chatlink-contact'\>${name}\<\/p\>\<\/div\>\<p class='screen-list-main-chatlink-time ${timeUnread}'\>${time}\<\/p\>\<\/div\>\<div class='screen-list-main-chatlink-rowalign'\>\<div class='screen-list-main-chatlink-status msg-bubble-tick ${tickDisplayNone}'\>\<img src='${statusIcon}'\/\>\<\/div\>\<div class='screen-list-main-chatlink-container'\>\<p class='screen-list-main-chatlink-msg'\>${lastMsg}\<\/p\>\<\/div\>\<div class='${pinDisplayNone}'\>\<img class='screen-list-main-chatlink-pin msg-bubble-tick' src='${pin}'\/\>\<\/div\>\<div class='${unreadDisplayNone}'\>\<p class='screen-list-main-chatlink-counter'\>${unread}\<\/p\>\<\/div\>\<\/div\>\<\/div\>\<\/button\>`
 
     let newButton = document.createElement('li');
     newButton.id = 'chat-'+number;
@@ -248,7 +248,7 @@ function contactListButton(img0, name0, number0, bio0) {
     let bio = bio0;
 
     let buttonDefault = `
-    \<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign' name='${number}' onclick='openChat(this.name);'\>
+    \<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign' onclick='openChat(${number});'\>
         \<img class='screen-list-main-chatlink-img' src='${img}'\/\>
         \<div class='screen-list-main-chatlink-columnalign'\>
             \<div class='screen-list-main-chatlink-rowalign'\>
@@ -292,21 +292,21 @@ function contactList() {
 contactList();
 
 // handling chats data
-function updateChatList(){
+function updateChatList() {
     console.log('update chat list');
 
 }
 
-function updateChatData(msgId, phone){
+function updateChatData(msgId, phone) {
     console.log('update chat data');
-
+    chats.push()
 }
 
 // chat-main
 let bubblesIdCount = 0;
 let bubbleEditActivated = false;
 
-function bubbleEdit(){
+function bubbleEdit() {
     bubbleEditActivated = true;
 
     let bubbleEditText = document.getElementById(maskedBubblesList[0]).getElementsByClassName('msg-bubble')[0];
@@ -317,13 +317,13 @@ function bubbleEdit(){
     messageFieldWriting();
 }
 
-function closeBubbleEdit(){
+function closeBubbleEdit() {
     cleanMsgField();
     cleanSelection();
     // To update: button screen-chat-header-figure-back
 }
 
-function sendBubbleEdited(){
+function sendBubbleEdited() {
     bubbleEditActivated = false;
 
     let msg = msgField.innerHTML.replace(/\<div\>/g, '<br>').replace(/\<\/div\>/g, '');
@@ -346,7 +346,8 @@ function loadChat(person0) {
     let person = chats.find(item => item.phone == person0.phone);
     person.msgs.forEach(msg => {
         msgField.innerHTML = msg.msg;
-        switch(msg.author){
+        postMsg(msg.author, msg);
+        switch(msg.author) {
         case '00_me':
             sendToMe(msg);
             break;
@@ -360,6 +361,28 @@ function loadChat(person0) {
     });
 }
 
+function removePeopleChatFooter() {
+    let parentDiv = document.getElementById('screen-chat-footer-send-panel');
+    let children = parentDiv.children;
+    while (children.length > 2) {
+        parentDiv.removeChild(children[2]);
+    }
+}
+
+function addPeopleChatFooter(person) {
+    removePeopleChatFooter();
+
+    let buttonDefault = `<img src='${person.photo}' class='image-send-people'/>`;
+
+    let newButton = document.createElement('button');
+    newButton.setAttribute('onclick', `postMsg("${person.phone}", false);`);
+    newButton.innerHTML = buttonDefault;
+
+    let sendPanel = document.getElementById('screen-chat-footer-send-panel');
+
+    sendPanel.appendChild(newButton);
+}
+
 function openChat(element) {
     goToScreen('screen-chat');
     let chatMain = document.getElementById('screen-chat-main');
@@ -368,12 +391,11 @@ function openChat(element) {
     let person = people.find(item => item.phone == element);
     let imgChat = document.getElementById('img-chat');
     let imgChatEdit = document.getElementById('img-chat-edit');
-    let imgChatFooter = document.getElementById('img-chat-footer');
     imgChat.src = person.photo;
     imgChatEdit.src = person.photo;
-    imgChatFooter.src = person.photo;
+    addPeopleChatFooter(person);
     let nameChat = document.getElementById('chat-name');
-    if(person.nickname != ""){
+    if(person.nickname != "") {
         nameChat.textContent = person.nickname;
     }else{
         nameChat.textContent = person.name+" "+person.surname;
@@ -526,7 +548,7 @@ function cleanMsgField() {
     msgField.textContent = '';
 }
 
-let localTimes = '00:00';
+let localTime = '00:00';
 
 function currentTime() {
     function getMessageTimeInfo() {
@@ -572,20 +594,37 @@ function currentTime() {
     console.log(`${messageTimeInfo.dateTime} UTC${messageTimeInfo.timeZone}; Local Time: ${messageTimeInfo.localTime}`);  
 }
 
-function postMsg(prop, msg0){
+function postMsg(author0, msg0){
+    let author = author0;
     let msg = msg0;
+    let prop = '';
     let text = '';
     let pickIcon = '';
+    let goUpdateChat = false;
+
+    switch(author) {
+    case '00_me':
+        prop = 'msg-bubble-right';
+        break;
+    case '00_info':
+        prop = 'msg-bubble-center';
+        break;
+    default:
+        prop = 'msg-bubble-left';
+        break;
+    }
 
     if(msg != false) {
         text = msg.msg;
         tickCounter = msg.status;
         localTime = msg.time;
         bubblesIdCount = msg.msgId;
+        goUpdateChat = false;
     }else{
         text = msgField.innerHTML.replace(/\<div\>/g, '<br>').replace(/\<\/div\>/g, '');
         currentTime();
         bubblesIdCount++;
+        goUpdateChat = true;
     }
 
     pickIcon = tickIcons.find(item => item.value == tickCounter);
@@ -601,6 +640,10 @@ function postMsg(prop, msg0){
     newMsg.innerHTML = msgDefault;
 
     chatMain.appendChild(newMsg);
+
+    if(goUpdateChat == true) {
+        updateChatData(phone, bubblesIdCount, localTime, author, );
+    }
 }
 
 function sendToMe(msg){
