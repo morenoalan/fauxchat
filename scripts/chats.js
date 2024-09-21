@@ -6,7 +6,7 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "12:00",
+                time: "2024-09-19 12:00:00 UTC-03:00",
                 author: "00_info",
                 respId: "",
                 resp: "",
@@ -15,8 +15,8 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "12:01",
-                author: "Flávia",
+                time: "2024-09-19 12:01:21 UTC-03:00",
+                author: "5500999990002",
                 respId: "",
                 resp: "",
                 msg: "second msg",
@@ -24,7 +24,7 @@ let chats = [
             },
             {
                 msgId: "2",
-                time: "12:01",
+                time: "2024-09-19 12:01:35 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -33,7 +33,7 @@ let chats = [
             },
             {
                 msgId: "3",
-                time: "12:02",
+                time: "2024-09-19 12:02:17 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -42,7 +42,7 @@ let chats = [
             },
             {
                 msgId: "4",
-                time: "12:04",
+                time: "2024-09-19 12:04:50 UTC-03:00",
                 author: "00_info",
                 respId: "",
                 resp: "",
@@ -51,7 +51,7 @@ let chats = [
             },
             {
                 msgId: "5",
-                time: "10:05",
+                time: "2024-09-20 10:05:22 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -60,8 +60,8 @@ let chats = [
             },
             {
                 msgId: "6",
-                time: "10:06",
-                author: "Flávia",
+                time: "2024-09-20 10:06:44 UTC-03:00",
+                author: "5500999990002",
                 respId: "",
                 resp: "",
                 msg: "answer 6",
@@ -76,8 +76,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "12:00",
-                author: "Miguel",
+                time: "2024-09-20 12:00:17 UTC-03:00",
+                author: "5500999990035",
                 respId: "",
                 resp: "",
                 msg: "Hi!",
@@ -92,8 +92,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "14:00",
-                author: "Alicinha",
+                time: "2024-09-20 17:00:00 UTC-03:00",
+                author: "5500999990036",
                 respId: "",
                 resp: "",
                 msg: "Hello!",
@@ -108,8 +108,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "13:00",
-                author: "Luciana",
+                time: "2024-09-20 16:00:00 UTC-03:00",
+                author: "5500999990030",
                 respId: "",
                 resp: "",
                 msg: "what's up?",
@@ -124,8 +124,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "17:00",
-                author: "Zé",
+                time: "2024-09-20 20:00:00 UTC-03:00",
+                author: "5500999990028",
                 respId: "",
                 resp: "",
                 msg: "hey",
@@ -133,7 +133,7 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "17:15",
+                time: "2024-09-20 20:15:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -149,8 +149,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "14:31",
-                author: "Érica",
+                time: "2024-09-20 17:31:00 UTC-03:00",
+                author: "5500999990025",
                 respId: "",
                 resp: "",
                 msg: "starting a chat here, friend",
@@ -158,8 +158,8 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "15:10",
-                author: "00_me",
+                time: "2024-09-20 18:10:00 UTC-03:00",
+                author: "5500999990025",
                 respId: "",
                 resp: "",
                 msg: "hey",
@@ -174,8 +174,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "9:33",
-                author: "Nando",
+                time: "2024-09-20 12:33:00 UTC-03:00",
+                author: "5500999990026",
                 respId: "",
                 resp: "",
                 msg: "remember the meeting friday night",
@@ -190,8 +190,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "7:00",
-                author: "Samanta",
+                time: "2024-09-20 04:00:00 UTC-03:00",
+                author: "5500999990031",
                 respId: "",
                 resp: "",
                 msg: "This isn't a pyramid scheme, just listen to our proposal",
@@ -206,8 +206,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "8:23",
-                author: "Lara",
+                time: "2024-09-20 11:23:00 UTC-03:00",
+                author: "5500999990032",
                 respId: "",
                 resp: "",
                 msg: "Are you all right?",
@@ -222,8 +222,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "11:48",
-                author: "Renata",
+                time: "2024-09-20 14:48:00 UTC-03:00",
+                author: "5500999990040",
                 respId: "",
                 resp: "",
                 msg: "Hello?",
@@ -238,8 +238,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "03:14",
-                author: "Pitu",
+                time: "2024-09-20 06:14:00 UTC-03:00",
+                author: "5500999990027",
                 respId: "",
                 resp: "",
                 msg: "Make a count to me. Take the length of a circle and divide it by 2 times the radius.",
@@ -254,8 +254,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "16:20",
-                author: "Beca",
+                time: "2024-09-20 19:20:00 UTC-03:00",
+                author: "5500999990023",
                 respId: "",
                 resp: "",
                 msg: "Don't do it, please.",
@@ -263,7 +263,7 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "16:21",
+                time: "2024-09-20 19:21:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -272,7 +272,7 @@ let chats = [
             },
             {
                 msgId: "2",
-                time: "16:21",
+                time: "2024-09-20 19:21:20 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -288,7 +288,7 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "23:44",
+                time: "2024-09-21 02:44:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -297,8 +297,8 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "23:50",
-                author: "Alzira",
+                time: "2024-09-21 02:50:00 UTC-03:00",
+                author: "5500999990029",
                 respId: "",
                 resp: "",
                 msg: "Tomorrow I don't.",
@@ -306,7 +306,7 @@ let chats = [
             },
             {
                 msgId: "2",
-                time: "23:52",
+                time: "2024-09-21 02:52:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -322,8 +322,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "05:43",
-                author: "Ariel",
+                time: "2024-09-20 08:43:00 UTC-03:00",
+                author: "5500999990024",
                 respId: "",
                 resp: "",
                 msg: "Are you Sebastian?",
@@ -331,7 +331,7 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "06:23",
+                time: "2024-09-20 09:23:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -347,8 +347,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "07:42",
-                author: "Ben",
+                time: "2024-09-20 10:42:00 UTC-03:00",
+                author: "5500999990045",
                 respId: "",
                 resp: "",
                 msg: "Hello, there!",
@@ -356,7 +356,7 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "10:37",
+                time: "2024-09-20 13:37:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -372,8 +372,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "08:02",
-                author: "Clara",
+                time: "2024-09-20 11:02:00 UTC-03:00",
+                author: "5500999990046",
                 respId: "",
                 resp: "",
                 msg: "Morning, friend!",
@@ -381,7 +381,7 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "08:03",
+                time: "2024-09-20 11:03:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -397,7 +397,7 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "08:24",
+                time: "2024-09-20 11:24:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -406,8 +406,8 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "08:29",
-                author: "Rosa",
+                time: "2024-09-20 11:29:00 UTC-03:00",
+                author: "5500999990047",
                 respId: "",
                 resp: "",
                 msg: "Right.",
@@ -422,8 +422,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "12:02",
-                author: "Suzy",
+                time: "2024-09-20 15:02:00 UTC-03:00",
+                author: "5500999990048",
                 respId: "",
                 resp: "",
                 msg: "Lunch is ready.",
@@ -431,7 +431,7 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "12:11",
+                time: "2024-09-20 15:11:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -447,8 +447,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "13:13",
-                author: "Van",
+                time: "2024-09-20 16:13:00 UTC-03:00",
+                author: "5500999990049",
                 respId: "",
                 resp: "",
                 msg: "13.",
@@ -456,7 +456,7 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "17:17",
+                time: "2024-09-20 20:17:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -472,8 +472,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "11:24",
-                author: "Emily",
+                time: "2024-09-20 14:19:00 UTC-03:00",
+                author: "5500999990050",
                 respId: "",
                 resp: "",
                 msg: "It's Sebas's number?",
@@ -481,7 +481,7 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "19:38",
+                time: "2024-09-20 22:38:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -497,8 +497,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "16:00",
-                author: "César",
+                time: "2024-09-20 19:00:00 UTC-03:00",
+                author: "5500999990051",
                 respId: "",
                 resp: "",
                 msg: "Learn to dance with teacher Coisinha de Jesus.",
@@ -506,7 +506,7 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "16:04",
+                time: "2024-09-20 19:04:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -515,8 +515,8 @@ let chats = [
             },
             {
                 msgId: "2",
-                time: "16:05",
-                author: "César",
+                time: "2024-09-20 19:05:00 UTC-03:00",
+                author: "5500999990051",
                 respId: "",
                 resp: "",
                 msg: "Do you want to visit us for a free class?",
@@ -524,7 +524,7 @@ let chats = [
             },
             {
                 msgId: "3",
-                time: "16:05",
+                time: "2024-09-20 19:06:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -533,8 +533,8 @@ let chats = [
             },
             {
                 msgId: "4",
-                time: "16:07",
-                author: "César",
+                time: "2024-09-20 19:07:00 UTC-03:00",
+                author: "5500999990051",
                 respId: "",
                 resp: "",
                 msg: "Can you come here next tuesday, at 2PM?",
@@ -542,7 +542,7 @@ let chats = [
             },
             {
                 msgId: "5",
-                time: "16:08",
+                time: "2024-09-20 19:08:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -551,8 +551,8 @@ let chats = [
             },
             {
                 msgId: "6",
-                time: "16:08",
-                author: "César",
+                time: "2024-09-20 19:08:50 UTC-03:00",
+                author: "5500999990051",
                 respId: "",
                 resp: "",
                 msg: "So we are waiting for you.",
@@ -567,7 +567,7 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "21:44",
+                time: "2024-09-21 00:34:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -576,8 +576,8 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "22:08",
-                author: "Bia",
+                time: "2024-09-21 01:02:00 UTC-03:00",
+                author: "5500999990052",
                 respId: "",
                 resp: "",
                 msg: "It's so late!",
@@ -585,8 +585,8 @@ let chats = [
             },
             {
                 msgId: "2",
-                time: "22:08",
-                author: "Bia",
+                time: "2024-09-21 01:08:00 UTC-03:00",
+                author: "5500999990052",
                 respId: "",
                 resp: "",
                 msg: "But ok, I see you.",
@@ -594,8 +594,8 @@ let chats = [
             },
             {
                 msgId: "3",
-                time: "22:08",
-                author: "Bia",
+                time: "2024-09-21 01:08:40 UTC-03:00",
+                author: "5500999990052",
                 respId: "",
                 resp: "",
                 msg: "Write it down, don't forget.",
@@ -603,7 +603,7 @@ let chats = [
             },
             {
                 msgId: "4",
-                time: "22:09",
+                time: "2024-09-21 01:09:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -612,7 +612,7 @@ let chats = [
             },
             {
                 msgId: "5",
-                time: "22:25",
+                time: "2024-09-21 01:25:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -621,8 +621,8 @@ let chats = [
             },
             {
                 msgId: "6",
-                time: "22:30",
-                author: "Bia",
+                time: "2024-09-21 01:30:00 UTC-03:00",
+                author: "5500999990052",
                 respId: "",
                 resp: "",
                 msg: "In front of the library. At 9 a.m.",
@@ -630,7 +630,7 @@ let chats = [
             },
             {
                 msgId: "7",
-                time: "22:31",
+                time: "2024-09-21 01:31:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -646,8 +646,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "3:28",
-                author: "Baiacu",
+                time: "2024-09-20 06:31:00 UTC-03:00",
+                author: "5500999990053",
                 respId: "",
                 resp: "",
                 msg: "Are you awake?",
@@ -655,7 +655,7 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "3:33",
+                time: "2024-09-20 06:33:10 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -664,8 +664,8 @@ let chats = [
             },
             {
                 msgId: "2",
-                time: "3:33",
-                author: "Baiacu",
+                time: "2024-09-20 06:33:40 UTC-03:00",
+                author: "5500999990053",
                 respId: "",
                 resp: "",
                 msg: "I can't.",
@@ -673,8 +673,8 @@ let chats = [
             },
             {
                 msgId: "3",
-                time: "3:34",
-                author: "Baiacu",
+                time: "2024-09-20 06:34:10 UTC-03:00",
+                author: "5500999990053",
                 respId: "",
                 resp: "",
                 msg: "Stay here.",
@@ -682,8 +682,8 @@ let chats = [
             },
             {
                 msgId: "4",
-                time: "3:35",
-                author: "Baiacu",
+                time: "2024-09-20 06:35:00 UTC-03:00",
+                author: "5500999990053",
                 respId: "",
                 resp: "",
                 msg: "Are you still here?",
@@ -691,7 +691,7 @@ let chats = [
             },
             {
                 msgId: "5",
-                time: "3:38",
+                time: "2024-09-20 06:38:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -700,8 +700,8 @@ let chats = [
             },
             {
                 msgId: "6",
-                time: "3:39",
-                author: "Baiacu",
+                time: "2024-09-20 06:39:00 UTC-03:00",
+                author: "5500999990053",
                 respId: "",
                 resp: "",
                 msg: "Please, don't go!",
@@ -709,8 +709,8 @@ let chats = [
             },
             {
                 msgId: "7",
-                time: "3:39",
-                author: "Baiacu",
+                time: "2024-09-20 06:39:45 UTC-03:00",
+                author: "5500999990053",
                 respId: "",
                 resp: "",
                 msg: "Don't go. Don't go away!",
@@ -725,8 +725,8 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "12:04",
-                author: "Gabiroba",
+                time: "2024-09-20 15:04:00 UTC-03:00",
+                author: "5500999990054",
                 respId: "",
                 resp: "",
                 msg: "Gabi here.",
@@ -734,8 +734,8 @@ let chats = [
             },
             {
                 msgId: "0",
-                time: "15:21",
-                author: "Gabiroba",
+                time: "2024-09-20 15:21:00 UTC-03:00",
+                author: "5500999990054",
                 respId: "",
                 resp: "",
                 msg: "Do you still have this number?",
@@ -743,8 +743,8 @@ let chats = [
             },
             {
                 msgId: "0",
-                time: "15:37",
-                author: "Gabiroba",
+                time: "2024-09-20 18:37:00 UTC-03:00",
+                author: "5500999990054",
                 respId: "",
                 resp: "",
                 msg: "please answer me asap.",
@@ -752,7 +752,7 @@ let chats = [
             },
             {
                 msgId: "0",
-                time: "16:25",
+                time: "2024-09-20 19:25:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -768,7 +768,7 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "16:26",
+                time: "2024-09-20 19:26:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -777,8 +777,8 @@ let chats = [
             },
             {
                 msgId: "1",
-                time: "16:29",
-                author: "Laura",
+                time: "2024-09-20 19:29:00 UTC-03:00",
+                author: "5500999990055",
                 respId: "",
                 resp: "",
                 msg: "Hey, wup?",
@@ -786,7 +786,7 @@ let chats = [
             },
             {
                 msgId: "2",
-                time: "16:31",
+                time: "2024-09-20 19:31:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -795,7 +795,7 @@ let chats = [
             },
             {
                 msgId: "3",
-                time: "17:55",
+                time: "2024-09-20 20:55:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -804,7 +804,7 @@ let chats = [
             },
             {
                 msgId: "4",
-                time: "21:03",
+                time: "2024-09-21 00:03:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -813,7 +813,7 @@ let chats = [
             },
             {
                 msgId: "5",
-                time: "21:03",
+                time: "2024-09-21 00:04:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -822,8 +822,8 @@ let chats = [
             },
             {
                 msgId: "6",
-                time: "21:08",
-                author: "Laura",
+                time: "2024-09-21 00:08:00 UTC-03:00",
+                author: "5500999990055",
                 respId: "",
                 resp: "",
                 msg: "It's late.",
@@ -831,8 +831,8 @@ let chats = [
             },
             {
                 msgId: "7",
-                time: "21:08",
-                author: "Laura",
+                time: "2024-09-21 00:08:50 UTC-03:00",
+                author: "5500999990055",
                 respId: "",
                 resp: "",
                 msg: "We can talk tomorrow.",
@@ -840,7 +840,7 @@ let chats = [
             },
             {
                 msgId: "8",
-                time: "21:10",
+                time: "2024-09-21 00:10:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -856,7 +856,7 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "11:11",
+                time: "2024-09-20 14:11:00 UTC-03:00",
                 author: "00_me",
                 respId: "",
                 resp: "",
@@ -891,11 +891,11 @@ let chats = [
         msgs: [
             {
                 msgId: "0",
-                time: "09:30",
-                author: "Sofia",
+                time: "2024-09-20 12:30:00 UTC-03:00",
+                author: "5500999990060",
                 respId: "",
                 resp: "",
-                msg: "Hora de brincar",
+                msg: "Playtime!",
                 status: "3"
             },
         ]
