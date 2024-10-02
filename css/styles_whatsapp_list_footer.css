@@ -20,7 +20,7 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
-        width: calc(100% - 2rem);
+        width: calc(100% - 1rem);
     }
 
     .screen-list-footer-menu > button {
@@ -28,14 +28,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 23%;
+        width: 24%;
         height: 4.5rem;
         background: var(--color-white);
     }
 
     .screen-list-footer-menu > button > p {
         margin-top: 0.5rem;
-        font-size: 1rem;
+        font-size: 0.75rem;
         font-weight: 600;
         line-height: 1rem;
     }
@@ -55,6 +55,7 @@
     
     .screen-list-footer-menu-button-label {
         color: var(--color-black);
+        word-break: break-word;
     }
 
 }
