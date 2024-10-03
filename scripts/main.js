@@ -18,6 +18,11 @@ const manifest = {
 let globalTime = '';
 let localTime = '00:00';
 
+// global functions
+function focusOn(element) {
+    document.getElementById(element).focus();
+}
+
 // localStorage
 function setToLocalStorage(order){
     order.forEach(item => {
