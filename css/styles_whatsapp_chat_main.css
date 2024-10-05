@@ -93,6 +93,10 @@
         float: left;
     }
 
+    .msg-bubble-left .msg-bubble-tick {
+        display: none;
+    }
+
     .msg-container:has(.msg-bubble-right) {
         margin-top: 0.16rem;
     }
