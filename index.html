@@ -32,24 +32,24 @@
             <div id='app-screens' class='style-whatsapp'>
                 <section id='screen-list' class='display-active'>
                     <div id='screen-list-header' class='screen-general-header'>
-                        <div id='screen-list-header-display' class='screen-general-header-display'>
-                            <figure id='screen-list-header-figure' class='screen-general-header-figure'>
-                                <button id='screen-list-header-figure-name'
-                                class='screen-general-header-figure-name' onclick='focusOn("screen-general-header-figure-name-figcaption");'>
+                        <div class='screen-general-header'>
+                            <div class='screen-general-header-display'>
+                                <figure class='screen-general-header-figure'>
+                                    <button class='screen-general-header-figure-name' onclick='focusOn("screen-general-header-figure-name-figcaption");'>
                                     <figcation id='screen-general-header-figure-name-figcaption' class='screen-general-header-figure-name-figcaption screen-list-header-figure-name-figcaption' contenteditable='true'>FauxChat</figcation>
                                 </button>
-                            </figure>
-                            <div id='screen-list-header-menu'
-                            class='screen-general-header-menu'>
-                                <button>
-                                    <img id='screen-list-header-menu-photo' src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='photo' class='icon'/>
-                                </button>
-                                <button>
-                                    <img id='screen-list-header-menu-search' src='./medias/icons/search_FILL0_wght600_GRAD0_opsz48.svg' alt='search' class='icon'/>
-                                </button>
-                                <button>
-                                    <img id='screen-list-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
-                                </button>
+                                </figure>
+                                <div class='screen-general-header-menu'>
+                                    <button>
+                                        <img src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='photo' class='icon'/>
+                                    </button>
+                                    <button>
+                                        <img src='./medias/icons/search_FILL0_wght600_GRAD0_opsz48.svg' alt='search' class='icon'/>
+                                    </button>
+                                    <button>
+                                        <img src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -78,27 +78,27 @@
                         </li>
                         -->
                     </ul>
-                    <div id='screen-list-footer' class='screen-list-footer'>
-                        <div class='screen-list-footer-menu'>
+                    <div class='screen-general-footer'>
+                        <div class='screen-general-footer-menu'>
                             <button onclick='goToScreen("screen-list");'>
-                                <img id='screen-list-footer-menu-list' src='./medias/icons/chat_FILL0_wght400_GRAD0_opsz24.svg' alt='chats' class='icon'/>
-                                <p class='screen-list-footer-menu-button-label'>Conversas</p>
+                                <img src='./medias/icons/chat_FILL0_wght400_GRAD0_opsz24.svg' alt='chats' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Conversas</p>
                             </button>
                             <button onclick='goToScreen("screen-updates");'>
-                                <img id='screen-list-footer-menu-updates' src='./medias/icons/updates_wpp_FILL0_wght400_GRAD0_opsz24.svg' alt='updates' class='icon'/>
-                                <p class='screen-list-footer-menu-button-label'>Atualizações</p>
+                                <img src='./medias/icons/updates_wpp_FILL0_wght400_GRAD0_opsz24.svg' alt='updates' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Atualizações</p>
                             </button>
                             <button onclick='goToScreen("screen-communities");'>
-                                <img id='screen-list-footer-menu-communities' src='./medias/icons/groups_FILL0_wght400_GRAD0_opsz24.svg' alt='communities' class='icon'/>
-                                <p class='screen-list-footer-menu-button-label'>Comunidades</p>
+                                <img src='./medias/icons/groups_FILL0_wght400_GRAD0_opsz24.svg' alt='communities' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Comunidades</p>
                             </button>
                             <button onclick='goToScreen("screen-calls");'>
-                                <img id='screen-list-footer-menu-calls' src='./medias/icons/call_FILL0_wght400_GRAD0_opsz24.svg' alt='calls' class='icon'/>
-                                <p class='screen-list-footer-menu-button-label'>Ligações</p>
+                                <img src='./medias/icons/call_FILL0_wght400_GRAD0_opsz24.svg' alt='calls' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Ligações</p>
                             </button>
                         </div>
-                        <button class='screen-list-footer-addchat-button' onclick='goToScreen("screen-contact");'>
-                            <img id='screen-list-footer-addchat-img' src='./medias/icons/add_comment_FILL1_wght400_GRAD0_opsz24.svg' alt='addchat' class='icon svg-color-white'/>
+                        <button class='screen-general-footer-addchat-button' onclick='goToScreen("screen-contact");'>
+                            <img src='./medias/icons/add_comment_FILL1_wght400_GRAD0_opsz24.svg' alt='addchat' class='icon svg-color-white'/>
                         </button>
                     </div>
                 </section>
@@ -272,9 +272,141 @@
                         </div>
                     </div>
                 </section>
-                <section id='screen-updates' class='display-none'></section>
-                <section id='screen-communities' class='display-none'></section>
-                <section id='screen-calls' class='display-none'></section>
+                <section id='screen-updates' class='display-none'>
+                    <div class='screen-general-header'>
+                        <div class='screen-general-header-display'>
+                            <figure class='screen-general-header-figure'>
+                                <div class='screen-general-header-figure-name'>
+                                    <figcation class='screen-general-header-figure-name-figcaption screen-list-header-figure-name-figcaption'>Atualizações</figcation>
+                                </button>
+                            </figure>
+                            <div class='screen-general-header-menu'>
+                                <button>
+                                    <img src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='photo' class='icon'/>
+                                </button>
+                                <button>
+                                    <img src='./medias/icons/search_FILL0_wght600_GRAD0_opsz48.svg' alt='search' class='icon'/>
+                                </button>
+                                <button>
+                                    <img src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul></ul>
+                    <div class='screen-general-footer'>
+                        <div class='screen-general-footer-menu'>
+                            <button onclick='goToScreen("screen-list");'>
+                                <img src='./medias/icons/chat_FILL0_wght400_GRAD0_opsz24.svg' alt='chats' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Conversas</p>
+                            </button>
+                            <button onclick='goToScreen("screen-updates");'>
+                                <img src='./medias/icons/updates_wpp_FILL0_wght400_GRAD0_opsz24.svg' alt='updates' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Atualizações</p>
+                            </button>
+                            <button onclick='goToScreen("screen-communities");'>
+                                <img src='./medias/icons/groups_FILL0_wght400_GRAD0_opsz24.svg' alt='communities' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Comunidades</p>
+                            </button>
+                            <button onclick='goToScreen("screen-calls");'>
+                                <img src='./medias/icons/call_FILL0_wght400_GRAD0_opsz24.svg' alt='calls' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Ligações</p>
+                            </button>
+                        </div>
+                        <button class='screen-general-footer-addchat-button' onclick='goToScreen("screen-contact");'>
+                            <img src='./medias/icons/add_comment_FILL1_wght400_GRAD0_opsz24.svg' alt='addchat' class='icon svg-color-white'/>
+                        </button>
+                    </div>
+                </section>
+                <section id='screen-communities' class='display-none'>
+                    <div class='screen-general-header'>
+                        <div class='screen-general-header-display'>
+                            <figure class='screen-general-header-figure'>
+                                <div class='screen-general-header-figure-name'>
+                                    <figcation class='screen-general-header-figure-name-figcaption screen-list-header-figure-name-figcaption'>Comunidades</figcation>
+                                </button>
+                            </figure>
+                            <div class='screen-general-header-menu'>
+                                <button>
+                                    <img src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='photo' class='icon'/>
+                                </button>
+                                <button>
+                                    <img src='./medias/icons/search_FILL0_wght600_GRAD0_opsz48.svg' alt='search' class='icon'/>
+                                </button>
+                                <button>
+                                    <img src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul></ul>
+                    <div class='screen-general-footer'>
+                        <div class='screen-general-footer-menu'>
+                            <button onclick='goToScreen("screen-list");'>
+                                <img src='./medias/icons/chat_FILL0_wght400_GRAD0_opsz24.svg' alt='chats' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Conversas</p>
+                            </button>
+                            <button onclick='goToScreen("screen-updates");'>
+                                <img src='./medias/icons/updates_wpp_FILL0_wght400_GRAD0_opsz24.svg' alt='updates' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Atualizações</p>
+                            </button>
+                            <button onclick='goToScreen("screen-communities");'>
+                                <img src='./medias/icons/groups_FILL0_wght400_GRAD0_opsz24.svg' alt='communities' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Comunidades</p>
+                            </button>
+                            <button onclick='goToScreen("screen-calls");'>
+                                <img src='./medias/icons/call_FILL0_wght400_GRAD0_opsz24.svg' alt='calls' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Ligações</p>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section id='screen-calls' class='display-none'>
+                    <div class='screen-general-header'>
+                        <div class='screen-general-header-display'>
+                            <figure class='screen-general-header-figure'>
+                                <div class='screen-general-header-figure-name'>
+                                    <figcation class='screen-general-header-figure-name-figcaption screen-list-header-figure-name-figcaption'>Ligações</figcation>
+                                </button>
+                            </figure>
+                            <div class='screen-general-header-menu'>
+                                <button>
+                                    <img src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='photo' class='icon'/>
+                                </button>
+                                <button>
+                                    <img src='./medias/icons/search_FILL0_wght600_GRAD0_opsz48.svg' alt='search' class='icon'/>
+                                </button>
+                                <button>
+                                    <img src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul></ul>
+                    <div class='screen-general-footer'>
+                        <div class='screen-general-footer-menu'>
+                            <button onclick='goToScreen("screen-list");'>
+                                <img src='./medias/icons/chat_FILL0_wght400_GRAD0_opsz24.svg' alt='chats' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Conversas</p>
+                            </button>
+                            <button onclick='goToScreen("screen-updates");'>
+                                <img src='./medias/icons/updates_wpp_FILL0_wght400_GRAD0_opsz24.svg' alt='updates' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Atualizações</p>
+                            </button>
+                            <button onclick='goToScreen("screen-communities");'>
+                                <img src='./medias/icons/groups_FILL0_wght400_GRAD0_opsz24.svg' alt='communities' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Comunidades</p>
+                            </button>
+                            <button onclick='goToScreen("screen-calls");'>
+                                <img src='./medias/icons/call_FILL0_wght400_GRAD0_opsz24.svg' alt='calls' class='icon'/>
+                                <p class='screen-general-footer-menu-button-label'>Ligações</p>
+                            </button>
+                        </div>
+                        <button class='screen-general-footer-addchat-button' onclick='goToScreen("screen-contact");'>
+                            <img src='./medias/icons/add_comment_FILL1_wght400_GRAD0_opsz24.svg' alt='addchat' class='icon svg-color-white'/>
+                        </button>
+                    </div>
+                </section>
                 <section id='screen-galery' class='display-none'></section>
             </div>
             <section id='float-keyboard' class='display-none'></section>
