@@ -40,7 +40,7 @@
         line-height: 1rem;
     }
 
-    .screen-general-footer-addchat-button {
+    .screen-general-footer-add-button {
         width: 4rem;
         height: 4rem;
         border-radius: 1rem;
@@ -50,6 +50,9 @@
         right: 1rem;
         z-index: 99;
         box-shadow: 0 0.2rem 0.5rem var(--color-gray-9s);
+    }
+
+    .screen-general-footer-add-button-list {
         padding-top: 0.4rem;
     }
     
