@@ -95,6 +95,9 @@ function captureDivScreenshot(divId) {
 
 // navigation
 function goToScreen(nextScreen) {
+    if(nextScreen == 'screen-contact') {
+        contactList();
+    }
     document.querySelectorAll('#app-screens section').forEach(section => {
         section.classList.remove('display-active');
         section.classList.add('display-none');
@@ -294,7 +297,6 @@ function contactList() {
         contactListButton(element.photo, element.contactName, element.phone, element.bio);
     });
 }
-contactList();
 
 // handling chats data
 function updateChatList() {
