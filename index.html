@@ -107,7 +107,7 @@
                         <div id='screen-contact-header-display' class='screen-general-header-display'>
                             <figure id='screen-contact-header-figure' class='screen-general-header-figure'>
                                 <button onclick='goToScreen("screen-list")' id='screen-contact-header-figure-back'
-                                class='screen-general-header-figure-back'>
+                                class='screen-general-header-figure-back back-button'>
                                     <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
                                 </button>
                                 <div id='screen-contact-header-figure-name'
@@ -139,7 +139,7 @@
                         <div id='screen-chat-header-display' class='screen-general-header-display'>
                             <figure id='screen-chat-header-figure' class='screen-general-header-figure'>
                                 <button id='screen-chat-header-figure-back'
-                                class='screen-general-header-figure-back' onclick='goToScreen("screen-list");'>
+                                class='screen-general-header-figure-back back-button' onclick='goToScreen("screen-list");'>
                                     <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
                                     <img id='img-chat' src='./medias/people/fauxchat-people-000.jpg' onclick='' alt='image' class='image-head'/>
                                 </button>
@@ -230,7 +230,7 @@
                 <section id='screen-profile' class='display-none'>
                     <div id='screen-profile-header' class='screen-profile-header'>
                         <div id='screen-profile-header-display' class='screen-general-header-display screen-profile-header-display'>
-                            <button onclick='goToScreen("screen-chat")'>
+                            <button onclick='goToScreen("screen-chat")' class='back-button'>
                                 <img id='screen-chat-profile-back'
                                 src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon screen-general-header-figure-back'/>
                             </button>
@@ -402,9 +402,22 @@
                                 <p class='screen-general-footer-menu-button-label'>Ligações</p>
                             </button>
                         </div>
-                        <button class='screen-general-footer-add-button' onclick='goToScreen("screen-contact");'>
+                        <button class='screen-general-footer-add-button' onclick='goToScreen("screen-contact-calls");'>
                             <img src='./medias/icons/add_call_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg' alt='addcall' class='icon svg-color-white'/>
                         </button>
+                    </div>
+                </section>
+                <section id='screen-calling' class='display-none'>
+                    <div id='screen-calling-header' class='screen-profile-header'>
+                        <div id='screen-calling-header-display' class='screen-general-header-display screen-profile-header-display'>
+                            <button onclick='goToScreen("screen-calls")' class='back-button'>
+                                <img id='screen-calling-profile-back'
+                                src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon screen-general-header-figure-back'/>
+                            </button>
+                            <button>
+                                <img id='screen-calling-profile-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
+                            </button>
+                        </div>
                     </div>
                 </section>
                 <section id='screen-galery' class='display-none'></section>

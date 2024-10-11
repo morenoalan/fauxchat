@@ -94,10 +94,24 @@ function captureDivScreenshot(divId) {
 }
 
 // navigation
+const backButton = document.getElementById('screen-contact-header-figure-back');
+
 function goToScreen(nextScreen) {
-    if(nextScreen == 'screen-contact') {
-        contactList();
+
+    switch (nextScreen) {
+    case 'screen-contact':
+        contactList('msg');
+        backButton.setAttribute('onclick', 'goToScreen("screen-list")');
+        break;
+    case 'screen-contact-calls':
+        nextScreen = 'screen-contact';
+        contactList('call');
+        backButton.setAttribute('onclick', 'goToScreen("screen-calls")');
+        break;
+    default:
+        break;
     }
+
     document.querySelectorAll('#app-screens section').forEach(section => {
         section.classList.remove('display-active');
         section.classList.add('display-none');
@@ -249,14 +263,24 @@ function chatsList() {
 chatsList();
 
 // contact-list
-function contactListButton(img0, name0, number0, bio0) {
+function contactListButton(img0, name0, number0, bio0, action0) {
     let img = img0;
     let name = name0;
     let number = number0;
     let bio = bio0;
+    let action = '';
+    
+    switch (action0) {
+    case 'call':
+        action = 'openCall';
+        break;
+    default:
+        action = 'openChat';
+        break;
+    }
 
     let buttonDefault = `
-    \<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign' onclick='openChat(${number});'\>
+    \<button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign' onclick='${action}(${number});'\>
         \<img class='screen-list-main-chatlink-img' src='${img}'\/\>
         \<div class='screen-list-main-chatlink-columnalign'\>
             \<div class='screen-list-main-chatlink-rowalign'\>
@@ -277,7 +301,12 @@ function contactListButton(img0, name0, number0, bio0) {
     contactList.appendChild(newButton);
 }
 
-function contactList() {
+function contactList(action) {
+    const ul = document.getElementById('screen-contact-main');
+    while (ul.firstChild) {
+        ul.removeChild(ul.firstChild);
+    }
+
     let peopleNames = [];
     people.forEach(function(element) {
         let contactName = '';
@@ -294,7 +323,7 @@ function contactList() {
     });
 
     peopleNames.forEach(function(element) {
-        contactListButton(element.photo, element.contactName, element.phone, element.bio);
+        contactListButton(element.photo, element.contactName, element.phone, element.bio, action);
     });
 }
 
@@ -675,6 +704,11 @@ function adaptImage(dataURL, img) {
         }
     };
     imgLoaded.src = dataURL;
+}
+
+// screen-calling
+function openCall(element) {
+    goToScreen('screen-calling');
 }
 
 // drag scrolling
