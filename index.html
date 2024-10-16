@@ -129,6 +129,21 @@
                         </div>
                     </div>
                     <ul id='screen-contact-main' class='screen-list-main whatsapp-scroll scrollable'>
+                        <li>
+                            <div id='screen-contact-main-tools'>
+                                <button class='screen-list-main-chatlink screen-list-main-chatlink-rowalign' onclick='console.log("add contact");'>
+                                    <div class='screen-list-main-chatlink-img'>
+                                        <img src='./medias/icons/person_add_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg' class='default-green-button-icon svg-color-white'/>
+                                    </div>
+                                    <div class='screen-list-main-chatlink-rowalign'>
+                                        <p class='screen-list-main-chatlink-contact'>Novo Contato</p>
+                                        <div></div>
+                                    </div>
+                                </button>
+                            </div>
+                            <p>Contatos no FauxChat</p>
+                            <ul id='screen-contact-main-list'></ul>
+                        </li>
                     </ul>
                 </section>
                 <section id='screen-chat' class='display-none'>
@@ -205,11 +220,11 @@
                             </button>
                         </div>
                         <div id='screen-chat-footer-command'>
-                            <button id='screen-chat-footer-mic' class='button-mic-send'>
-                                <img src='./medias/icons/mic_FILL1_wght500_GRAD0_opsz48.svg' alt='mic' class='icon-mic-send svg-color-white'/>
+                            <button id='screen-chat-footer-mic' class='default-green-button'>
+                                <img src='./medias/icons/mic_FILL1_wght500_GRAD0_opsz48.svg' alt='mic' class='default-green-button-icon svg-color-white'/>
                             </button>
-                            <button id='screen-chat-footer-send' onclick='sendMessage();' class='button-mic-send display-none'>
-                                <img src='./medias/icons/send_FILL1_wght500_GRAD0_opsz48.svg' alt='send' class='icon-mic-send svg-color-white'/>
+                            <button id='screen-chat-footer-send' onclick='sendMessage();' class='default-green-button display-none'>
+                                <img src='./medias/icons/send_FILL1_wght500_GRAD0_opsz48.svg' alt='send' class='default-green-button-icon svg-color-white'/>
                             </button>
                             <div id='screen-chat-footer-send-panel' class='display-none'>
                                 <button onclick='postMsg("00_me", false);' id='screen-chat-footer-me'>

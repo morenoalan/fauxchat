@@ -52,11 +52,15 @@
     }
 
     .screen-list-main-chatlink-img {
-        background: royalblue;
         width: 2.6rem;
         height: 2.6rem;
         border-radius: 50%;
         flex-shrink: 0;
+        background: var(--color-mediumseagreen);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .screen-list-main-chatlink-container {

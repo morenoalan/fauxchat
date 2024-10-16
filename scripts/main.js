@@ -297,12 +297,12 @@ function contactListButton(img0, name0, number0, bio0, action0) {
     let newButton = document.createElement('li');
     newButton.innerHTML = buttonDefault;
 
-    let contactList = document.getElementById('screen-contact-main');
+    let contactList = document.getElementById('screen-contact-main-list');
     contactList.appendChild(newButton);
 }
 
 function contactList(action) {
-    const ul = document.getElementById('screen-contact-main');
+    const ul = document.getElementById('screen-contact-main-list');
     while (ul.firstChild) {
         ul.removeChild(ul.firstChild);
     }
