@@ -94,19 +94,30 @@ function captureDivScreenshot(divId) {
 }
 
 // navigation
-const backButton = document.getElementById('screen-contact-header-figure-back');
+const contactBackButton = document.getElementById('screen-contact-header-figure-back');
+const newContactBackButton = document.getElementById('screen-new-contact-header-figure-back');
+const newContactButton = document.getElementById('screen-contact-new-contact-button');
 
 function goToScreen(nextScreen) {
 
     switch (nextScreen) {
     case 'screen-contact':
         contactList('msg');
-        backButton.setAttribute('onclick', 'goToScreen("screen-list")');
+        contactBackButton.setAttribute('onclick', 'goToScreen("screen-list");');
+        newContactButton.setAttribute('onclick', 'goToScreen("screen-new-contact");');
         break;
     case 'screen-contact-calls':
         nextScreen = 'screen-contact';
         contactList('call');
-        backButton.setAttribute('onclick', 'goToScreen("screen-calls")');
+        contactBackButton.setAttribute('onclick', 'goToScreen("screen-calls");');
+        newContactButton.setAttribute('onclick', 'goToScreen("screen-new-contact-calls");');
+        break;
+    case 'screen-new-contact':
+        newContactBackButton.setAttribute('onclick', 'goToScreen("screen-contact");');
+        break;
+    case 'screen-new-contact-calls':
+        nextScreen = 'screen-new-contact';
+        newContactBackButton.setAttribute('onclick', 'goToScreen("screen-contact-calls");');
         break;
     default:
         break;
