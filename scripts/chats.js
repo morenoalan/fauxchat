@@ -8,63 +8,175 @@ let chats = [
                 msgId: "0",
                 time: "2024-09-19 12:00:00 UTC-03:00",
                 author: "00_info",
-                respId: "",
-                resp: "",
-                msg: "Yesterday",
-                status: "3"
+                msg: "Diálogo informativo",
+                status: "4"
             },
             {
                 msgId: "1",
-                time: "2024-09-19 12:01:21 UTC-03:00",
+                time: "2024-09-19 12:01:00 UTC-03:00",
                 author: "5500999990002",
-                respId: "",
-                resp: "",
-                msg: "second msg",
-                status: "3"
+                msg: "Oi, você já ouviu falar sobre fake news?",
+                status: "4"
             },
             {
                 msgId: "2",
-                time: "2024-09-19 12:01:35 UTC-03:00",
+                time: "2024-09-19 12:02:00 UTC-03:00",
                 author: "00_me",
-                respId: "",
-                resp: "",
-                msg: "third msg",
-                status: "3"
+                msg: "Já ouvi o termo, mas nunca entendi muito bem o que significa.",
+                status: "4"
             },
             {
                 msgId: "3",
-                time: "2024-09-19 12:02:17 UTC-03:00",
+                time: "2024-09-19 12:02:30 UTC-03:00",
                 author: "00_me",
-                respId: "",
-                resp: "",
-                msg: "lorem ipsum 4",
-                status: "3"
+                msg: "Você pode me explicar?",
+                status: "4"
             },
             {
                 msgId: "4",
-                time: "2024-09-19 12:04:50 UTC-03:00",
-                author: "00_info",
-                respId: "",
-                resp: "",
-                msg: "Today",
-                status: "3"
+                time: "2024-09-19 12:04:00 UTC-03:00",
+                author: "5500999990002",
+                msg: "Claro!",
+                status: "4"
             },
             {
                 msgId: "5",
-                time: "2024-09-20 10:05:22 UTC-03:00",
-                author: "00_me",
-                respId: "",
-                resp: "",
-                msg: "message 5",
-                status: "3"
+                time: "2024-09-19 12:04:30 UTC-03:00",
+                author: "5500999990002",
+                msg: "Fake news são basicamente notícias falsas, criadas com a intenção de enganar as pessoas.",
+                status: "4"
             },
             {
                 msgId: "6",
-                time: "2024-09-20 10:06:44 UTC-03:00",
+                time: "2024-09-19 12:05:00 UTC-03:00",
                 author: "5500999990002",
-                respId: "",
-                resp: "",
-                msg: "answer 6",
+                msg: "Elas podem parecer verdadeiras, mas na realidade, são fabricadas ou distorcidas deliberadamente.",
+                status: "4"
+            },
+            {
+                msgId: "7",
+                time: "2024-09-19 12:05:30 UTC-03:00",
+                author: "5500999990002",
+                msg: "Muitas vezes, elas usam manchetes sensacionalistas ou conteúdos manipulados para chamar a atenção.",
+                status: "4"
+            },
+            {
+                msgId: "8",
+                time: "2024-09-19 12:06:00 UTC-03:00",
+                author: "00_me",
+                msg: "E por que alguém faria isso?",
+                status: "4"
+            },
+            {
+                msgId: "9",
+                time: "2024-09-19 12:06:30 UTC-03:00",
+                author: "5500999990002",
+                msg: "Existem vários motivos.",
+                status: "4"
+            },
+            {
+                msgId: "10",
+                time: "2024-09-19 12:08:00 UTC-03:00",
+                author: "5500999990002",
+                msg: "Algumas vezes, é por questões políticas, para manipular a opinião pública. Outras vezes, é simplesmente por lucro. Quanto mais cliques uma notícia recebe, mais dinheiro pode ser gerado com publicidade, mesmo que a história seja falsa.",
+                status: "4"
+            },
+            {
+                msgId: "11",
+                time: "2024-09-19 12:09:00 UTC-03:00",
+                author: "5500999990002",
+                msg: "Além disso, também existem grupos que fazem isso para semear o caos ou desacreditar instituições.",
+                status: "4"
+            },
+            {
+                msgId: "12",
+                time: "2024-09-19 12:09:30 UTC-03:00",
+                author: "00_me",
+                msg: "Mas como essas fake news se espalham tão rápido? 🤔",
+                status: "4"
+            },
+            {
+                msgId: "13",
+                time: "2024-09-19 12:12:00 UTC-03:00",
+                author: "5500999990002",
+                msg: "Boa pergunta. Veja:",
+                status: "4"
+            },
+            {
+                msgId: "14",
+                time: "2024-09-19 12:16:00 UTC-03:00",
+                author: "5500999990002",
+                msg: "As redes sociais são uma ferramenta poderosa nesse processo. Quando uma notícia falsa é postada, se ela for interessante ou provocativa, as pessoas compartilham sem verificar a veracidade. Isso cria um efeito cascata, onde milhares de pessoas veem e espalham ainda mais. Algoritmos de redes sociais também ajudam nesse processo, porque priorizam conteúdo que gera engajamento, e infelizmente, fake news tendem a gerar mais reações que notícias verdadeiras.",
+                status: "4"
+            },
+            {
+                msgId: "15",
+                time: "2024-09-19 12:18:00 UTC-03:00",
+                author: "00_me",
+                msg: "Nossa! 😱 Não tinha ideia de que isso era tão comum.",
+                status: "4"
+            },
+            {
+                msgId: "16",
+                time: "2024-09-19 12:18:30 UTC-03:00",
+                author: "5500999990002",
+                msg: "Pois é!",
+                status: "4"
+            },
+            {
+                msgId: "17",
+                time: "2024-09-19 12:19:00 UTC-03:00",
+                author: "00_me",
+                msg: "E quais são as consequências disso?",
+                status: "4"
+            },
+            {
+                msgId: "18",
+                time: "2024-09-19 12:20:00 UTC-03:00",
+                author: "5500999990002",
+                msg: "As consequências podem ser devastadoras.",
+                status: "4"
+            },
+            {
+                msgId: "19",
+                time: "2024-09-19 12:24:00 UTC-03:00",
+                author: "5500999990002",
+                msg: "Fake news podem influenciar eleições, criar desinformação em crises de saúde, como durante a pandemia, ou até provocar violência. Elas geram desconfiança na mídia, nas instituições e, no fim das contas, polarizam ainda mais a sociedade.",
+                status: "4"
+            },
+            {
+                msgId: "20",
+                time: "2024-09-19 12:27:00 UTC-03:00",
+                author: "5500999990002",
+                msg: "E a tecnologia, que deveria ser usada para informar e conectar as pessoas, acaba sendo usada para o oposto: para enganar e dividir.",
+                status: "4"
+            },
+            {
+                msgId: "21",
+                time: "2024-09-19 12:30:00 UTC-03:00",
+                author: "00_me",
+                msg: "Faz sentido. Então, espalhar fake news é realmente perigoso...",
+                status: "4"
+            },
+            {
+                msgId: "22",
+                time: "2024-09-19 12:32:00 UTC-03:00",
+                author: "5500999990002",
+                msg: "Sem dúvida. É por isso que é tão importante sermos críticos com o que consumimos e compartilhamos online.",
+                status: "3"
+            },
+            {
+                msgId: "23",
+                time: "2024-09-19 12:33:00 UTC-03:00",
+                author: "5500999990002",
+                msg: "As imagens e áudios que são disseminados pela internet podem não ser reais por mais que pareçam, sobretudo com o desenvolvimento absurdo que as inteligências artificiais estão tendo.",
+                status: "3"
+            },
+            {
+                msgId: "24",
+                time: "2024-09-19 12:33:30 UTC-03:00",
+                author: "5500999990002",
+                msg: "Verificar a fonte de uma notícia, checar os fatos e questionar aquilo que parece sensacionalista são passos fundamentais para combater essa prática.",
                 status: "3"
             },
         ]
