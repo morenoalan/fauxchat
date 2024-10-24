@@ -42,7 +42,7 @@
     .screen-list-main-chatlink-rowalign > p:last-child {
         margin-left: auto;
     }
-    .screen-list-main-chatlink-columnalign{
+    .screen-list-main-chatlink-columnalign {
         width: 100%;
         max-width: 100%;
         display: flex;
