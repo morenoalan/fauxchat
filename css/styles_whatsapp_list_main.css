@@ -136,4 +136,8 @@
         font-weight: 500;
         padding: 0.7rem;
     }
+
+    .toggle-button {
+        scale: 2;
+    }
 }

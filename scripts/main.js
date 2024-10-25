@@ -23,6 +23,21 @@ function focusOn(element) {
     document.getElementById(element).focus();
 }
 
+function toggleButton(element) {
+
+    const srcToggleOff = './medias/icons/toggle_off_24dp_000000_FILL0_wght100_GRAD0_opsz24.svg';
+    const srcToggleOn = './medias/icons/toggle_on_24dp_3CB371_FILL1_wght100_GRAD0_opsz24.svg';
+
+    let toggleImg = element.getElementsByTagName('img')[0];
+    if (toggleImg.getAttribute('src') == srcToggleOff) {
+        toggleImg.setAttribute('src', srcToggleOn);
+        toggleImg.classList.toggle('svg-color-gray');
+    } else {
+        toggleImg.setAttribute('src', srcToggleOff);
+        toggleImg.classList.toggle('svg-color-gray');
+    }
+}
+
 // localStorage
 function setToLocalStorage(order){
     order.forEach(item => {
