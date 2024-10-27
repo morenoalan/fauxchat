@@ -1,0 +1,18 @@
+.style-whatsapp {
+
+    * {
+        --whatsapp: "whatsapp";
+    };
+
+    .screen-contact-main-label {
+        background-color: var(--color-white);
+        color: var(--color-gray);
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.7rem;
+    }
+
+    .toggle-button {
+        scale: 2;
+    }
+}
