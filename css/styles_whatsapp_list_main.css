@@ -10,7 +10,7 @@
         flex-direction: column;
         /*align-items: fit-content;*/
         justify-content: flex-start;
-        background: transparent;
+        background: var(--color-white);;
         width: calc(100% - 0.05rem);
         height: 100%;
         resize: none;
