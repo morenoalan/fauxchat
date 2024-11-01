@@ -37,7 +37,37 @@
         justify-content: flex-start;
     }
 
-    #screen-new-contact label {
+    .label-above {
+        color: var(--color-gray-81);
+        position: absolute;
+        top: 0.8rem;
+        left: 0;
+        font-size: 0.7rem;
+    }
+
+    .label-within {
+        color: var(--color-gray-81);
+        position: absolute;
+        top: 1.9rem;
+        left: 0.3rem;
+        font-size: 0.85rem;
+        pointer-events: none;
+    }
+
+    .with-label input:not(:placeholder-shown) ~ label {
+        position: absolute;
+        top: 0.8rem;
+        left: 0;
+        font-size: 0.7rem;
+    }
+
+    .with-label input:focus {
+        border-bottom: 3px solid var(--color-mediumseagreen);
+        caret-color: var(--color-mediumseagreen);
+    }
+
+    .with-label input:focus ~ label {
+        color: var(--color-mediumseagreen);
         position: absolute;
         top: 0.8rem;
         left: 0;
