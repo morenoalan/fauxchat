@@ -17,7 +17,31 @@
     }
 */
     #screen-new-contact > .screen-list-main img {
+        margin: 1.8rem 1rem 0 1rem;
+        align-self: flex-start;
+    }
+
+    #screen-new-contact > .screen-list-main ul {
         margin: 0 1rem;
+        align-self: flex-start;
+    }
+
+    .screen-new-contact-field {
+        margin-top: 1.5rem;
+        height: 1.8rem;
+    }
+
+    .with-label {
+        position: relative;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #screen-new-contact label {
+        position: absolute;
+        top: 0.8rem;
+        left: 0;
+        font-size: 0.7rem;
     }
 
     #screen-new-contact .screen-list-main-chatlink-columnalign > li {
