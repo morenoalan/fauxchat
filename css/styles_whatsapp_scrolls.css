@@ -9,6 +9,7 @@
         height: 0.1rem;
         z-index: 100;
         background-color: transparent;
+        scroll-behavior: smooth;
     }
     
     .whatsapp-scroll::-webkit-scrollbar-track {
