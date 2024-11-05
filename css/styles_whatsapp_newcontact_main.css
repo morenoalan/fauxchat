@@ -94,4 +94,15 @@
     .scale-2 {
         scale: 2;
     }
+
+    .screen-general-footer-button {
+        align-self: center;
+        background-color: var(--color-mediumseagreen);
+        color: var(--color-white);
+        border-radius: 1.5rem;
+        height: 3rem;
+        width: 85%;
+        font-size: .85rem;
+        margin-bottom: 1rem;
+    }
 }
