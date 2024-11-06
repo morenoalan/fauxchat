@@ -26,6 +26,10 @@
         align-self: flex-start;
     }
 
+    #screen-new-contact > .screen-list-main p {
+        margin: 1.8rem 1rem 0 1rem;
+    }
+
     .screen-new-contact-field {
         margin-top: 1.5rem;
         height: 1.8rem;
@@ -106,12 +110,4 @@
         margin-bottom: 1rem;
     }
 
-    .screen-list-main-chatlink-rowalign-center {
-        width: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
 }
