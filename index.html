@@ -131,7 +131,7 @@
                     <ul id='screen-contact-main' class='screen-list-main whatsapp-scroll scrollable'>
                         <li>
                             <div id='screen-contact-main-tools'>
-                                <button id='screen-contact-new-contact-button' class='screen-list-main-chatlink screen-list-main-chatlink-rowalign' onclick='console.log("add contact");'>
+                                <button id='screen-contact-new-contact-button' class='screen-list-main-chatlink screen-list-main-chatlink-rowalign'>
                                     <div class='screen-list-main-chatlink-img'>
                                         <img src='./medias/icons/person_add_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg' class='default-green-button-icon svg-color-white'/>
                                     </div>
@@ -472,9 +472,7 @@
                             <img src='./medias/icons/call_FILL0_wght400_GRAD0_opsz24.svg' alt='phone' class='icon svg-color-gray'/>
                             <ul class='screen-list-main-chatlink-rowalign'>
                                 <li class='screen-list-main-chatlink-columnalign with-label'>
-                                    <select class='screen-new-contact-field'>
-                                        <option selected='true'>BR +55</option>
-                                        <option>EN +44</option>
+                                    <select id='select-country' class='screen-new-contact-field'>
                                     </select>
                                     <label class='label-above'>País</label>
                                 </li>
@@ -507,6 +505,7 @@
 	</footer>
     <script type='text/javascript' id='script-people' src='./scripts/people.js'></script>
     <script type='text/javascript' id='script-chats' src='./scripts/chats.js'></script>
+    <script type='text/javascript' id='script-idd' src='./scripts/idd.js'></script>
     <script type='text/javascript' id='script-main' src='./scripts/main.js'></script>
 </body>
 </html>

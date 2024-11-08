@@ -129,10 +129,12 @@ function goToScreen(nextScreen) {
         break;
     case 'screen-new-contact':
         newContactBackButton.setAttribute('onclick', 'goToScreen("screen-contact");');
+        openScreenNewContact();
         break;
     case 'screen-new-contact-calls':
         nextScreen = 'screen-new-contact';
         newContactBackButton.setAttribute('onclick', 'goToScreen("screen-contact-calls");');
+        openScreenNewContact();
         break;
     default:
         break;
@@ -735,6 +737,21 @@ function adaptImage(dataURL, img) {
 // screen-calling
 function openCall(element) {
     goToScreen('screen-calling');
+}
+
+// screen-new-contact
+function openScreenNewContact() {
+    const selectCountry = document.getElementById('select-country');
+    
+    for(let i = 0; i < countries.length; i++) {
+        let option = document.createElement('option');
+        option.value = countries[i];
+        option.textContent = countries[i];
+        if (countries[i] === 'BR +55') {
+            option.selected = true;
+        }
+        selectCountry.appendChild(option);
+    }
 }
 
 // drag scrolling
