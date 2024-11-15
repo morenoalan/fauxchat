@@ -9,6 +9,7 @@
 @import url(./styles_whatsapp_profile_header.css);
 @import url(./styles_whatsapp_profile_main.css);
 @import url(./styles_whatsapp_scrolls.css);
+@import url(./styles_whatsapp_updates_main.css);
 
 :root {
     --color-gray-ds: #dddddd;
