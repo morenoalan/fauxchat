@@ -784,7 +784,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isDown) return;
             e.preventDefault();
             const y = e.pageY - scrollableDiv.offsetTop;
-            const walk = (y - startY) * 3; // Scroll speed
+            const walk = (y - startY) * 1; // Scroll speed
             scrollableDiv.scrollTop = scrollTop - walk;
         });
     
@@ -803,8 +803,62 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isDown) return;
             e.preventDefault();
             const y = e.touches[0].pageY - scrollableDiv.offsetTop;
-            const walk = (y - startY) * 3; // Scroll speed
+            const walk = (y - startY) * 1; // Scroll speed
             scrollableDiv.scrollTop = scrollTop - walk;
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollableXDivs = document.querySelectorAll('.scrollableX');
+    
+    scrollableXDivs.forEach(scrollableXDiv => {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+    
+        scrollableXDiv.addEventListener('mousedown', (e) => {
+            isDown = true;
+            scrollableXDiv.classList.add('active');
+            startX = e.pageX - scrollableXDiv.offsetLeft;
+            scrollLeft = scrollableXDiv.scrollLeft;
+        });
+    
+        scrollableXDiv.addEventListener('mouseleave', () => {
+            isDown = false;
+            scrollableXDiv.classList.remove('active');
+        });
+    
+        scrollableXDiv.addEventListener('mouseup', () => {
+            isDown = false;
+            scrollableXDiv.classList.remove('active');
+        });
+    
+        scrollableXDiv.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - scrollableXDiv.offsetLeft;
+            const walk = (x - startX) * 1; // Scroll speed
+            scrollableXDiv.scrollLeft = scrollLeft - walk;
+        });
+    
+        // Mobile touch
+        scrollableXDiv.addEventListener('touchstart', (e) => {
+            isDown = true;
+            startX = e.touches[0].pageX - scrollableXDiv.offsetLeft;
+            scrollLeft = scrollableXDiv.scrollLeft;
+        });
+    
+        scrollableXDiv.addEventListener('touchend', () => {
+            isDown = false;
+        });
+    
+        scrollableXDiv.addEventListener('touchmove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.touches[0].pageX - scrollableXDiv.offsetLeft;
+            const walk = (x - startX) * 1; // Scroll speed
+            scrollableXDiv.scrollLeft = scrollLeft - walk;
         });
     });
 });
