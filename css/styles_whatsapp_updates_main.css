@@ -5,7 +5,7 @@
     };
 
     .screen-updates-main-label {
-        margin: 1rem;
+        margin: 1rem 1rem 0.5rem 1rem;
         font-weight: 500;
         color: var(--color-black);
         font-size: 1.1rem;
@@ -32,8 +32,8 @@
         display: flex;
         flex-direction: row;
         column-gap: 0.5rem;
-        margin: 1rem 0;
-        padding: 0 1rem;
+        margin-bottom: 0.2rem;
+        padding: 0.7rem 1rem 0 1rem;
         resize: none;
         overflow: hidden;
         overflow-x: auto;

@@ -36,7 +36,7 @@
         display: flex;
         align-items: center;
         width: fit-content;
-        width: calc(100% - 8rem);
+        width: calc(100% - 9rem);
     }
 
     .screen-general-header-figure-back {
@@ -52,13 +52,13 @@
         display: flex;
         margin-left: 0.6rem;
         flex-grow: 1;
-        max-width: calc(100% - 5rem);
+        width: 100%;
     }
 
     .screen-general-header-figure-name-figcaption {
         display: inline-block;
         text-align: left;
-        max-width: max-content;
+        width: 100%;
         flex-grow: 1;
         font-size: 1.3rem;
         white-space: nowrap;
