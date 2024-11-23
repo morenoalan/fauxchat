@@ -407,6 +407,38 @@ function sendBubbleEdited() {
 function loadChat(person0) {
     bubblesIdCount = 0;
     let person = chats.find(item => item.phone == person0.phone);
+    let src = person.background;
+    
+    let img = document.createElement('img');
+    img.src = src;
+    console.log(img);
+    let imgTest = new Image();
+    imgTest.onload = function () {
+        console.log('testing');
+        img.src = src;
+    }
+    imgTest.onerror = function () {
+        console.log('falhou');
+        src = `url("/medias/backgrounds/_1b5694c4-153b-440c-9819-f7e6d96c25b3.jpeg");`;
+    }
+
+    let chatBackground = document.getElementById('screen-chat-background');
+    chatBackground.appendChild(img);
+    
+    chatBackground.style.background = `url('${src}')`;
+
+    /*
+
+    let chatBackground = document.getElementById('screen-chat-background');
+    chatBackground.style.background = `url('${src}')`;
+
+    chatBackground.style.background.onerror = function () {
+        img = `url("/medias/backgrounds/_1b5694c4-153b-440c-9819-f7e6d96c25b3.jpeg");`;
+        console.log('falhou');
+    }
+
+    chatBackground.style.background = `url('${src}')`;
+*/
     person.msgs.forEach(msg => {
         msgField.innerHTML = msg.msg;
         postMsg(msg.author, msg);
