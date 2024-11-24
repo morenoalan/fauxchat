@@ -3,7 +3,7 @@ let chats = [
         chat_id: "0",
         phone: "5500999990002",
         pin: '0',
-        background: "0/medias/backgrounds/_681a3f8d-4f8d-42f9-a95f-f51e177fa556.jpeg",
+        background: '/medias/backgrounds/_681a3f8d-4f8d-42f9-a95f-f51e177fa556.jpeg',
         msgs: [
             {
                 msgId: "0",

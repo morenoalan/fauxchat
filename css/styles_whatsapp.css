@@ -54,9 +54,8 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: url("/medias/backgrounds/_1b5694c4-153b-440c-9819-f7e6d96c25b3.jpeg");
-        background-size: cover;
-        background-position: center;
+        background-size: cover !important;
+        background-position: center !important;
         filter: brightness(0.3) invert(1);
     }
 
