@@ -56,14 +56,5 @@
         height: 100%;
         background-size: cover !important;
         background-position: center !important;
-        filter: brightness(0.3) invert(1);
     }
-
-    #screen-chat-background > div {
-        width: 100%;
-        height: 100%;
-        background: var(--color-burlywood);
-        filter: opacity(70%) invert(1);
-    }
-
 }

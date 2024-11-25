@@ -17,7 +17,7 @@ const manifest = {
 // global variables
 let globalTime = '';
 let localTime = '00:00';
-const backgroundStandard = '/medias/backgrounds/_1b5694c4-153b-440c-9819-f7e6d96c25b3.jpeg';
+const backgroundStandard = '/medias/backgrounds/spaceman_light.jpg';
 
 // global functions
 function focusOn(element) {
