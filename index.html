@@ -29,7 +29,7 @@
         <section id='main-section-left' class='display-none'></section>
         <section id='main-section-center'>
             <div id='app-screens' class='style-whatsapp'>
-                <section id='screen-list' class='display-active'>
+                <section id='screen-list' class='display-none'>
                     <div id='screen-list-header' class='screen-general-header'>
                         <div class='screen-general-header'>
                             <div class='screen-general-header-display'>
@@ -683,26 +683,26 @@
                         </button>
                     </div>
                 </section>
-                <section id='screen-status' class='display-none'>
+                <section id='screen-status' class='display-active'>
                     <div id='screen-status-background' class='screen-background'>
-                        <div></div>
                     </div>
-                    <div class='screen-general-header'>
-                        <div class='screen-general-header-display'>
-                            <figure class='screen-general-header-figure'>
-                                <div class='screen-general-header-figure-name'>
-                                    <figcation class='screen-general-header-figure-name-figcaption screen-list-header-figure-name-figcaption'>Atualizações</figcation>
+                    <div id='screen-chat-header' class='screen-general-header'>
+                        <div id='screen-chat-header-display' class='screen-general-header-display'>
+                            <figure id='screen-chat-header-figure' class='screen-general-header-figure'>
+                                <button id='screen-chat-header-figure-back'
+                                class='screen-general-header-figure-back back-button' onclick='goToScreen("screen-list");'>
+                                    <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
+                                    <img id='img-chat' src='./medias/people/fauxchat-people-000.jpg' onclick='' alt='image' class='image-head'/>
+                                </button>
+                                <button id='screen-chat-header-figure-name'
+                                class='screen-general-header-figure-name' onclick='goToScreen("screen-profile");'>
+                                    <figcaption id='chat-name' class='screen-general-header-figure-name-figcaption screen-chat-header-figure-name-figcaption'>FauxChat</figcaption>
                                 </button>
                             </figure>
-                            <div class='screen-general-header-menu'>
+                            <div id='screen-chat-header-menu'
+                            class='screen-general-header-menu'>
                                 <button>
-                                    <img src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='photo' class='icon'/>
-                                </button>
-                                <button>
-                                    <img src='./medias/icons/search_FILL0_wght600_GRAD0_opsz48.svg' alt='search' class='icon'/>
-                                </button>
-                                <button>
-                                    <img src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
+                                    <img id='screen-chat-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
                                 </button>
                             </div>
                         </div>
