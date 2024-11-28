@@ -687,22 +687,26 @@
                     <div id='screen-status-background' class='screen-background'>
                     </div>
                     <div id='screen-status-header' class='screen-general-header'>
+                        <div id='screen-status-bar-time' class='screen-status-bar-time'>
+                            <div class='screen-status-bar-progress'></div>
+                        </div>
                         <div id='screen-status-header-display' class='screen-general-header-display'>
                             <figure id='screen-status-header-figure' class='screen-general-header-figure'>
                                 <button id='screen-status-header-figure-back'
                                 class='screen-general-header-figure-back back-button' onclick='goToScreen("screen-updates");'>
-                                    <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon'/>
+                                    <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon svg-color-white'/>
                                     <img id='img-chat' src='./medias/people/fauxchat-people-000.jpg' onclick='' alt='image' class='image-head'/>
                                 </button>
                                 <button id='screen-chat-header-figure-name'
                                 class='screen-general-header-figure-name' onclick='goToScreen("screen-profile");'>
-                                    <figcaption id='chat-name' class='screen-general-header-figure-name-figcaption screen-chat-header-figure-name-figcaption'>FauxChat</figcaption>
+                                    <figcaption id='screen-status-figcaption' class='screen-general-header-figure-name-figcaption screen-chat-header-figure-name-figcaption'>FauxChat</figcaption>
+                                    <p id='screen-status-time'
                                 </button>
                             </figure>
                             <div id='screen-chat-header-menu'
                             class='screen-general-header-menu'>
                                 <button>
-                                    <img id='screen-chat-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon'/>
+                                    <img id='screen-chat-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon svg-color-white'/>
                                 </button>
                             </div>
                         </div>
