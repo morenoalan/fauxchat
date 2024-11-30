@@ -6,7 +6,7 @@ const manifest = {
     version: '0.0.0',
     author: {
         name: 'Alan Moreno',
-        url: 'https://alanmoreno.com'
+        url: 'https://links.alanmoreno.com'
     },
     license: {
         type: 'MIT',
@@ -773,6 +773,16 @@ function openScreenNewContact() {
         }
         selectCountry.appendChild(option);
     }
+}
+
+// screen-updates
+function loadUpdates() {
+    
+}
+
+// screen-status
+function loadStatus() {
+    
 }
 
 // drag scrolling
