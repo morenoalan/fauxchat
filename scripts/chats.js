@@ -2,8 +2,8 @@ let chats = [
     {
         chat_id: "0",
         phone: "5500999990002",
-        pin: '0',
-        background: '/medias/backgrounds/coffeebreak_light.jpg',
+        pin: "0",
+        background: "/medias/backgrounds/coffeebreak_light.jpg",
         msgs: [
             {
                 msgId: "0",
