@@ -781,8 +781,19 @@ function loadUpdates() {
 }
 
 // screen-status
-function loadStatus() {
-    
+function pauseCronometer() {
+
+}
+function cronometer() {
+}
+
+function loadStatus(phone0) {
+    const barTime = `
+    \<div class='screen-status-bar-time'\>
+        \<div class='screen-status-bar-progress'\>
+        \<\/div\>
+    \<\/div\>
+    `;
 }
 
 // drag scrolling

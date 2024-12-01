@@ -36,7 +36,12 @@
         border-radius: 0.07rem;
     }
 
-    #screen-status-figcaption {
+    .screen-status-header-figure-name-figcaption {
         color: var(--color-white);
+    }
+
+    .screen-status-figure-time {
+        color: var(--color-white);
+        font-size: 0.85rem;
     }
 }
