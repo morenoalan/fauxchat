@@ -53,6 +53,15 @@ function loadImageTest(src) {
     });
 }
 
+function setName(person) {
+    if(person.nickname != "") {
+        contactName = person.nickname;
+    }else{
+        contactName = person.name+" "+person.surname;
+    }
+    return contactName;
+}
+
 // localStorage
 function setToLocalStorage(order){
     order.forEach(item => {
@@ -277,11 +286,7 @@ function chatsList() {
     chats.forEach(function(element) {
         let person = people.find(item => item.phone == element.phone);
         let contactName = '';
-        if(person.nickname != "") {
-            contactName = person.nickname;
-        }else{
-            contactName = person.name+" "+person.surname;
-        }
+        setName(person);
 
         let countStatus3 = 0;
         element.msgs.forEach(msg => {
@@ -776,8 +781,25 @@ function openScreenNewContact() {
 }
 
 // screen-updates
+
 function loadUpdates() {
-    
+    let buttonUpdatesToStatus = `
+        \<li\>
+            \<button onclick='loadStatus(${phone});'\>
+                \<img src='${photo}'\/\>
+            \<\/button\>
+            \<figcaption\>${contactName}\<\/figcaption\>
+        \<\/li\>
+    `;
+
+    chats.forEach(function(element) {
+        let person = people.find(item => item.phone == element.phone);
+        let contactName = '';
+        setName(person);
+    });
+
+    let phone = '';
+    let photo = '';
 }
 
 // screen-status
@@ -788,7 +810,7 @@ function cronometer() {
 }
 
 function loadStatus(phone0) {
-    const barTime = `
+    let barTime = `
     \<div class='screen-status-bar-time'\>
         \<div class='screen-status-bar-progress'\>
         \<\/div\>
