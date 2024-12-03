@@ -62,6 +62,11 @@ function setName(person) {
     return contactName;
 }
 
+function cleanContainer(containerId) {
+    let container = document.getElementById(containerId);
+    container.innerHTML = '';
+}
+
 // localStorage
 function setToLocalStorage(order){
     order.forEach(item => {
@@ -164,8 +169,8 @@ function goToScreen(nextScreen) {
         chatsList();
         break;
     case 'screen-updates':
-        loadUpdates();
-        loadChannels();
+        loadUpdatesStatuses();
+        loadUpdatesChannels();
         break;
     default:
         break;
@@ -290,6 +295,8 @@ function chatListButton(number0, img0, name0, msg0, time0, status0, unread0) {
 }
 
 function chatsList() {
+    cleanContainer('screen-list-main');
+
     chats.forEach(function(element) {
         let person = people.find(item => item.phone == element.phone);
         let contactName = '';
@@ -789,8 +796,14 @@ function openScreenNewContact() {
 
 // screen-updates
 
-function loadUpdates() {
-    let buttonUpdatesToStatus = `
+function loadUpdatesStatuses() {
+    //cleanContainer('screen-updates-main-status');
+
+    let phone = '';
+    let photo = '';
+    let contactName = '';
+    
+    let buttonToStatus = `
         \<li\>
             \<button onclick='loadStatus(${phone});'\>
                 \<img src='${photo}'\/\>
@@ -801,12 +814,13 @@ function loadUpdates() {
 
     chats.forEach(function(element) {
         let person = people.find(item => item.phone == element.phone);
-        let contactName = '';
-        setName(person);
+        contactName = setName(person);
     });
 
-    let phone = '';
-    let photo = '';
+}
+
+function loadUpdatesChannels() {
+    //cleanContainer('screen-updates-main-channels');
 }
 
 // screen-status
@@ -824,6 +838,7 @@ function loadStatus(phone0) {
     \<\/div\>
     `;
 }
+
 
 // drag scrolling
 document.addEventListener('DOMContentLoaded', () => {
