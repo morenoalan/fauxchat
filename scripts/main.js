@@ -160,6 +160,13 @@ function goToScreen(nextScreen) {
         newContactBackButton.setAttribute('onclick', 'goToScreen("screen-contact-calls");');
         openScreenNewContact();
         break;
+    case 'screen-list':
+        chatsList();
+        break;
+    case 'screen-updates':
+        loadUpdates();
+        loadChannels();
+        break;
     default:
         break;
     }
