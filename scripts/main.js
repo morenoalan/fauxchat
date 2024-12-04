@@ -812,7 +812,7 @@ function loadUpdatesStatuses() {
         \<\/li\>
     `;
 
-    chats.forEach(function(element) {
+    statuses.forEach(function(element) {
         let person = people.find(item => item.phone == element.phone);
         contactName = setName(person);
     });

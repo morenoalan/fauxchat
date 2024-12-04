@@ -1,4 +1,4 @@
-let status = [
+let statuses = [
     {
         phone: "5500999990002",
         hide: false,
