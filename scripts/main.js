@@ -67,6 +67,11 @@ function cleanContainer(containerId) {
     container.innerHTML = '';
 }
 
+function addElement(containerId, element) {
+    let container = document.getElementById(containerId);
+    container.appendChild(element);
+}
+
 // localStorage
 function setToLocalStorage(order){
     order.forEach(item => {
@@ -184,6 +189,17 @@ function goToScreen(nextScreen) {
     document.getElementById(nextScreen).classList.add('display-active');
 }
 
+function callGallery(withCam) {
+    switch (withCam) {
+    case 'withCam':
+        break;
+    default:
+        break;
+    }
+    document.getElementById('screen-gallery').classList.remove('display-none');
+    document.getElementById('screen-gallery').classList.add('display-active');
+}
+
 // flip chat-header-edition
 let msgsCounterTag = document.getElementById('screen-chat-header-edition-counter');
 let msgsCounter = parseInt(msgsCounterTag.textContent);
@@ -290,8 +306,11 @@ function chatListButton(number0, img0, name0, msg0, time0, status0, unread0) {
     newButton.id = 'chat-'+number;
     newButton.innerHTML = buttonDefault;
 
+    addElement('screen-list-main', newButton);
+/*
     let chatList = document.getElementById('screen-list-main');
     chatList.appendChild(newButton);
+    */
 }
 
 function chatsList() {
@@ -299,8 +318,7 @@ function chatsList() {
 
     chats.forEach(function(element) {
         let person = people.find(item => item.phone == element.phone);
-        let contactName = '';
-        contactName = setName(person);
+        let contactName = setName(person);
 
         let countStatus3 = 0;
         element.msgs.forEach(msg => {
@@ -796,13 +814,8 @@ function openScreenNewContact() {
 
 // screen-updates
 
-function loadUpdatesStatuses() {
-    //cleanContainer('screen-updates-main-status');
+function loadButtonStatus(contactName, phone, photo, objects) {
 
-    let phone = '';
-    let photo = '';
-    let contactName = '';
-    
     let buttonToStatus = `
         \<li\>
             \<button onclick='loadStatus(${phone});'\>
@@ -812,9 +825,20 @@ function loadUpdatesStatuses() {
         \<\/li\>
     `;
 
+    console.log(contactName+"; "+phone+"; "+photo+"; "+objects);
+}
+
+function loadUpdatesStatuses() {
+    //cleanContainer('screen-updates-main-status');
+
     statuses.forEach(function(element) {
         let person = people.find(item => item.phone == element.phone);
-        contactName = setName(person);
+        let contactName = setName(person);
+        let phone = person.phone;
+        let photo = person.photo;
+        let objects = element.objects.length;
+        
+        loadButtonStatus(contactName, phone, photo, objects);
     });
 
 }
