@@ -300,7 +300,7 @@ function chatsList() {
     chats.forEach(function(element) {
         let person = people.find(item => item.phone == element.phone);
         let contactName = '';
-        setName(person);
+        contactName = setName(person);
 
         let countStatus3 = 0;
         element.msgs.forEach(msg => {
