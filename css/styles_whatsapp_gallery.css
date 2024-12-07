@@ -5,9 +5,29 @@
     };
 
     #screen-gallery {
-        background-color: var(--color-gray-81);
-        border-radius: 2rem 0 0 2rem;
-        
+        position: absolute;
+        background-color: var(--color-white);
+        border-radius: 2rem 2rem 0 0;
+        /*
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: flex-start;
+        */
+        z-index: 152;
+    }
+
+    #screen-gallery-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: flex-start;
+        width: 100%;
+    }
+
+    #screen-gallery-close {
+        position: absolute;
+        left: 0;
     }
 
 }

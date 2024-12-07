@@ -97,10 +97,6 @@
         margin-right: 0.5rem;
     }
 
-    .scale-2 {
-        scale: 2;
-    }
-
     .screen-general-footer-button {
         align-self: center;
         background-color: var(--color-mediumseagreen);

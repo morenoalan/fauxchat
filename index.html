@@ -21,12 +21,26 @@
 		<br />
     </noscript>
     <header>
+        <div id='header-left'>
+            <button id='header-library' class='display-none'>
+                <img src='./medias/icons/newsstand_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg' alt='library' class='icon svg-color-white'/>
+            </button>
+        </div>
         <figure>
             <figcaption>FauxChat</figcaption>
         </figure>
+        <div id='header-right'>
+            <button id='header-settings' class='display-none'>
+                <img src='./medias/icons/settings_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg' alt='settings' class='icon svg-color-white'/>
+            </button>
+            <button id='header-info' class='display-none'>
+                <img src='./medias/icons/info_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg' alt='info' class='icon svg-color-white'/>
+            </button>
+        </div>
     </header>
     <main>
         <section id='main-section-left' class='display-none'></section>
+        <section id='main-section-right' class='display-none'></section>
         <section id='main-section-center'>
             <div id='app-screens' class='style-whatsapp'>
                 <section id='screen-list' class='display-none'>
@@ -877,11 +891,27 @@
                         Salvar
                     </button>
                 </section>
-                <section id='screen-gallery' class='display-none'></section>
+                <section id='screen-glass' class='display-none'></section>
+                <section id='screen-gallery' class='display-none'>
+                    <div id='screen-gallery-header'>
+                        <button id='screen-gallery-header-rule' class='grabbable'>
+                            <img src='./medias/icons/horizontal_rule_24dp_000000_FILL0_wght500_GRAD0_opsz24.svg' alt='rule' class='icon svg-color-gray scale-1-5'/>
+                        </button>
+                        <div>
+                            <button id='screen-gallery-close' onclick='closeGallery();' class='clickable'>
+                                <img src='./medias/icons/close_24dp_000000_FILL0_wght500_GRAD0_opsz24.svg' alt='close' class='icon svg-color-gray'/>
+                            </button>
+                            <button>
+                                Downloads
+                            </button>
+                        </div>
+                    </div>
+                    <div id='screen-gallery-main whatsapp-scroll scrollable'></div>
+                    <div id='screen-gallery-footer'></div>
+                </section>
             </div>
             <section id='float-keyboard' class='display-none'></section>
         </section>
-        <section id='main-section-right' class='display-none'></section>
     </main>
     <footer id='footer' class='screen-general-footer'>
 		<p><a id='author' href='https://links.alanmoreno.com' target='_blank'>Alan Moreno</a> <span class='invert-horizontal'>&#169;</span> <span id='copyleft-year'>2024</span> | <a href='https://www.github.com/morenoalan/fauxchat' target='_blank'>Repository</a></p>

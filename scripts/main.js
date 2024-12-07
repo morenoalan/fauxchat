@@ -196,8 +196,17 @@ function callGallery(withCam) {
     default:
         break;
     }
+    document.getElementById('screen-glass').classList.remove('display-none');
+    document.getElementById('screen-glass').classList.add('display-active');
     document.getElementById('screen-gallery').classList.remove('display-none');
     document.getElementById('screen-gallery').classList.add('display-active');
+}
+
+function closeGallery() {
+    document.getElementById('screen-glass').classList.remove('display-active');
+    document.getElementById('screen-glass').classList.add('display-none');
+    document.getElementById('screen-gallery').classList.remove('display-active');
+    document.getElementById('screen-gallery').classList.add('display-none');
 }
 
 // flip chat-header-edition

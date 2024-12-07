@@ -83,11 +83,17 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;    
+    max-width: var(--dim-max-screen);
+    min-width: var(--dim-min-screen);  
 }
 
 header {
+    justify-content: space-between;
     position: absolute;
+}
+
+footer {
+    justify-content: center;
 }
 
 footer * {
@@ -120,6 +126,31 @@ main {
     background-color: var(--color-gray-fns);
 }
 
+.svg-color-white {
+    filter: invert(1);
+}
+
+.svg-color-gray {
+    filter: invert(0.5);
+}
+
+.scale-2 {
+    scale: 2;
+}
+
+.scale-1-5 {
+    scale: 1.5;
+}
+
 .scrollable {
+    /* This class has an event listening */
     cursor: grab;
+}
+
+.grabbable {
+    cursor: grab;
+}
+
+.clickable {
+    cursor: pointer;
 }
