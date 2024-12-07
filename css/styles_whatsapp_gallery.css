@@ -1,0 +1,13 @@
+.style-whatsapp {
+
+    * {
+        --whatsapp: "whatsapp";
+    };
+
+    #screen-gallery {
+        background-color: var(--color-gray-81);
+        border-radius: 2rem 0 0 2rem;
+        
+    }
+
+}
