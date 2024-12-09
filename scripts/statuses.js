@@ -1,16 +1,3 @@
-let statusesMe = {
-    phone: "5500999990000",
-    hide: false,
-    objects: [
-        {
-            time: "2024-09-19 12:00:00 UTC-03:00",
-            media: "/medias/statuses/livro_box_a_arma_escarlate.jpg",
-            subtitle: "https://amzn.to/3CYi9ua",
-            viewed: false,
-        },
-    ]
-};
-
 let statuses = [
     {
         phone: "5500999990002",
@@ -124,6 +111,18 @@ let statuses = [
                 subtitle: "https://amzn.to/4eR2Rol",
                 viewed: false,
             }
+        ]
+    },
+    {
+        phone: "5500999990000",
+        hide: false,
+        objects: [
+            {
+                time: "2024-09-19 12:00:00 UTC-03:00",
+                media: "/medias/statuses/livro_box_a_arma_escarlate.jpg",
+                subtitle: "https://amzn.to/3CYi9ua",
+                viewed: false,
+            },
         ]
     },
     {

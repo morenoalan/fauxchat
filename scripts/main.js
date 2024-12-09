@@ -15,6 +15,7 @@ const manifest = {
 }
 
 // global variables
+let myPhone = '5500999990000';
 let globalTime = '';
 let localTime = '00:00';
 const backgroundStandard = '/medias/backgrounds/spaceman_light.jpg';
@@ -825,6 +826,18 @@ function openScreenNewContact() {
 
 function loadButtonStatus(contactName, phone, photo, objects) {
 
+    let buttonToMyStatus = `
+        \<li\>
+            \<button onclick='loadStatus(${phone});'\>
+                \<img src='${photo}'\/\>
+            \<\/button\>
+            \<button\>
+                \<img src='.\/medias\/icons\/add_circle_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg' alt='add' class='add-icon' \/\>
+            \<\/button\>
+            \<figcaption\>${contactName}\<\/figcaption\>
+        \<\/li\>
+    `;
+
     let buttonToStatus = `
         \<li\>
             \<button onclick='loadStatus(${phone});'\>
@@ -837,8 +850,23 @@ function loadButtonStatus(contactName, phone, photo, objects) {
     console.log(contactName+"; "+phone+"; "+photo+"; "+objects);
 }
 
+
+function getStatuses() {
+    console.log(statuses.length);
+    let myStatus = statuses.find(item => item.phone == myPhone);
+    let myStatusIndex = statuses.findIndex(item => item.phone == myPhone);
+    let otherStatuses = statuses;
+    if (myStatusIndex !== -1) {
+        otherStatuses.splice(myStatusIndex, 1);
+    }
+    console.log(myStatus);
+    console.log(otherStatuses);
+}
+
 function loadUpdatesStatuses() {
     //cleanContainer('screen-updates-main-status');
+
+    let newStatuses = getStatuses();
 
     statuses.forEach(function(element) {
         let person = people.find(item => item.phone == element.phone);

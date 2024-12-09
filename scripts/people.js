@@ -1,15 +1,14 @@
-let peopleMe = {
-    phone: "5500999990000",
-    name: "FauxChat",
-    surname: "",
-    nickname: "",
-    photo: "./medias/people/fauxchat-people-000.jpg",
-    username: "",
-    bio: "This isn't FauxChat!",
-    datebio: "1 de abril"
-};
-
 let people = [
+    {
+        phone: "5500999990000",
+        name: "FauxChat",
+        surname: "",
+        nickname: "",
+        photo: "./medias/people/fauxchat-people-000.jpg",
+        username: "",
+        bio: "This isn't FauxChat!",
+        datebio: "1 de abril"
+    },
     {
         phone: "5500999990001",
         name: "Isabela",
