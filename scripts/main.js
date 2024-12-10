@@ -55,11 +55,19 @@ function loadImageTest(src) {
 }
 
 function setName(person) {
-    if(person.nickname != "") {
-        contactName = person.nickname;
+    let personNickname = person.nickname.replace(/\s+/g, ' ').trim();
+    let personName = person.name.replace(/\s+/g, ' ').trim();
+    let personSurname = person.surname.replace(/\s+/g, ' ').trim();
+    let personPhone = person.phone.replace(/\s+/g, ' ').trim();
+
+    if(personNickname != "") {
+        contactName = personNickname;
+    }else if(personName != "" || personSurname != "") {
+        contactName = personName + " " + personSurname;
     }else{
-        contactName = person.name+" "+person.surname;
+        contactName = personPhone;
     }
+    contactName = contactName.replace(/\s+/g, ' ').trim();
     return contactName;
 }
 
@@ -71,6 +79,16 @@ function cleanContainer(containerId) {
 function addElement(containerId, element) {
     let container = document.getElementById(containerId);
     container.appendChild(element);
+}
+
+function detachOne(elementKey, key, array) {
+    let theOne = array.find(item => item[key] == elementKey);
+    let elementIndex = array.findIndex(item => item[key] == elementKey);
+    let newArray = array.map(item => item);
+    if (theOne !== -1) {
+        newArray.splice(elementIndex, 1);
+    }
+    return [theOne, newArray];
 }
 
 // localStorage
@@ -825,9 +843,23 @@ function openScreenNewContact() {
 // screen-updates
 
 function loadButtonStatus(contactName, phone, photo, objects) {
+    console.log(contactName+"; "+phone+"; "+photo+"; "+objects);
+}
 
-    let buttonToMyStatus = `
-        \<li\>
+function loadUpdatesStatuses() {
+    cleanContainer('screen-updates-main-status');
+    let result = detachOne(myPhone, 'phone', statuses);
+    let myStatus = result[0];
+    let otherStatuses = result[1];
+
+    function loadMyStatus() {
+        let person = people.find(item => item.phone == myPhone);
+        let contactName = setName(person);
+        let phone = person.phone;
+        let photo = person.photo;
+        let objects = myStatus.objects.length;
+        
+        let buttonMyStatus = `
             \<button onclick='loadStatus(${phone});'\>
                 \<img src='${photo}'\/\>
             \<\/button\>
@@ -835,47 +867,31 @@ function loadButtonStatus(contactName, phone, photo, objects) {
                 \<img src='.\/medias\/icons\/add_circle_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg' alt='add' class='add-icon' \/\>
             \<\/button\>
             \<figcaption\>${contactName}\<\/figcaption\>
-        \<\/li\>
-    `;
+        `;
 
-    let buttonToStatus = `
-        \<li\>
-            \<button onclick='loadStatus(${phone});'\>
-                \<img src='${photo}'\/\>
-            \<\/button\>
-            \<figcaption\>${contactName}\<\/figcaption\>
-        \<\/li\>
-    `;
-
-    console.log(contactName+"; "+phone+"; "+photo+"; "+objects);
-}
-
-
-function getStatuses() {
-    console.log(statuses.length);
-    let myStatus = statuses.find(item => item.phone == myPhone);
-    let myStatusIndex = statuses.findIndex(item => item.phone == myPhone);
-    let otherStatuses = statuses;
-    if (myStatusIndex !== -1) {
-        otherStatuses.splice(myStatusIndex, 1);
+        let taggedElement = document.createElement('li');
+        taggedElement.innerHTML = buttonMyStatus;
+        addElement('screen-updates-main-status', taggedElement);
     }
-    console.log(myStatus);
-    console.log(otherStatuses);
-}
+    loadMyStatus();
 
-function loadUpdatesStatuses() {
-    //cleanContainer('screen-updates-main-status');
-
-    let newStatuses = getStatuses();
-
-    statuses.forEach(function(element) {
+    otherStatuses.forEach(function(element) {
         let person = people.find(item => item.phone == element.phone);
         let contactName = setName(person);
         let phone = person.phone;
         let photo = person.photo;
         let objects = element.objects.length;
-        
-        loadButtonStatus(contactName, phone, photo, objects);
+
+        let buttonStatus = `
+            \<button onclick='loadStatus(${phone});'\>
+                \<img src='${photo}'\/\>
+            \<\/button\>
+            \<figcaption\>${contactName}\<\/figcaption\>
+        `;
+
+        let taggedElement = document.createElement('li');
+        taggedElement.innerHTML = buttonStatus;
+        addElement('screen-updates-main-status', taggedElement);
     });
 
 }

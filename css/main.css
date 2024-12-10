@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-user-select: none;
     user-select: none;
     touch-action: none;
     border: none;
@@ -124,6 +125,10 @@ main {
     width: 100%;
     height: 100%;
     background-color: var(--color-gray-fns);
+}
+
+img {
+    -webkit-user-drag: none;
 }
 
 .svg-color-white {
