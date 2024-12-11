@@ -908,6 +908,8 @@ function cronometer() {
 }
 
 function loadStatus(phone0) {
+    goToScreen('screen-status');
+    console.log(phone0);
     let barTime = `
     \<div class='screen-status-bar-time'\>
         \<div class='screen-status-bar-progress'\>
