@@ -910,6 +910,10 @@ function cronometer() {
 function loadStatus(phone0) {
     goToScreen('screen-status');
     console.log(phone0);
+
+    let person = statuses.find(item => item.phone == phone0);
+    let contactName = setName(person);
+
     let barTime = `
     \<div class='screen-status-bar-time'\>
         \<div class='screen-status-bar-progress'\>
