@@ -21,6 +21,8 @@ let localTime = '00:00';
 const backgroundStandard = '/medias/backgrounds/spaceman_light.jpg';
 
 // global functions
+document.getElementById('copyleft-year').innerHTML = new Date().getUTCFullYear();
+
 function focusOn(element) {
     document.getElementById(element).focus();
 }
