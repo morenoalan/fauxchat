@@ -916,6 +916,14 @@ function loadStatus(phone0) {
     let person = statuses.find(item => item.phone == phone0);
     let contactName = setName(person);
 
+    let divImg = `
+    \<div\>
+        \<img src='' class=''\/\>
+        \<button class='' onclick='previousStatus();'\>\<\/button\>
+        \<button class='' onclick='nextStatus();'\>\<\/button\>
+    \<\/div\>
+    `;
+
     let barTime = `
     \<div class='screen-status-bar-time'\>
         \<div class='screen-status-bar-progress'\>
