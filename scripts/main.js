@@ -918,9 +918,9 @@ function loadStatus(phone0) {
 
     let divImg = `
     \<div\>
-        \<img src='' class=''\/\>
-        \<button class='' onclick='previousStatus();'\>\<\/button\>
-        \<button class='' onclick='nextStatus();'\>\<\/button\>
+        \<img src='' class='mediaStatus'\/\>
+        \<button class='previousAndNext' onclick='previousStatus();'\>\<\/button\>
+        \<button class='previousAndNext' onclick='nextStatus();'\>\<\/button\>
     \<\/div\>
     `;
 

@@ -1,0 +1,23 @@
+.style-whatsapp {
+
+    * {
+        --whatsapp: "whatsapp";
+    };
+
+    .mediaStatus {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .previousAndNext:first-of-type {
+        height: 100%;
+        width: 20%;
+    }
+
+    .previousAndNext:last-of-type {
+        height: 100%;
+        width: 80%;
+    }
+
+}
