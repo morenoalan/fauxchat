@@ -915,6 +915,17 @@ function loadStatus(phone0) {
 
     let person = statuses.find(item => item.phone == phone0);
     let contactName = setName(person);
+    let objectTime = '';
+    let objectMedia = '';
+    let objectSubtitle = '';
+
+    person.objects.forEach(object => {
+        objectTime = object.time;
+        objectMedia = object.media;
+        objectSubtitle = object.subtitle;
+    });
+
+    console.log(contactName+'; '+person.objects);
 
     let divImg = `
     \<div\>
@@ -930,6 +941,7 @@ function loadStatus(phone0) {
         \<\/div\>
     \<\/div\>
     `;
+
 }
 
 
