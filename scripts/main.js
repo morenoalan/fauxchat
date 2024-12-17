@@ -913,7 +913,7 @@ function loadStatus(phone0) {
     goToScreen('screen-status');
     console.log(phone0);
 
-    let person = statuses.find(item => item.phone == phone0);
+    let person = people.find(item => item.phone == phone0);
     let contactName = setName(person);
     let objectTime = '';
     let objectMedia = '';
@@ -923,6 +923,7 @@ function loadStatus(phone0) {
         objectTime = object.time;
         objectMedia = object.media;
         objectSubtitle = object.subtitle;
+        console.log(objectTime);
     });
 
     console.log(contactName+'; '+person.objects);
