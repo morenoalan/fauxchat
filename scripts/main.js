@@ -915,18 +915,18 @@ function loadStatus(phone0) {
 
     let person = people.find(item => item.phone == phone0);
     let contactName = setName(person);
+    console.log(contactName);
+
     let objectTime = '';
     let objectMedia = '';
     let objectSubtitle = '';
-
-    person.objects.forEach(object => {
+    let status = statuses.find(item => item.phone == phone0);
+    status.objects.forEach(object => {
         objectTime = object.time;
         objectMedia = object.media;
         objectSubtitle = object.subtitle;
-        console.log(objectTime);
+        console.log(objectTime+'; '+objectMedia+'; '+objectSubtitle);
     });
-
-    console.log(contactName+'; '+person.objects);
 
     let divImg = `
     \<div\>
