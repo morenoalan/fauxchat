@@ -913,6 +913,8 @@ function loadStatus(phone0) {
     goToScreen('screen-status');
     console.log(phone0);
 
+    cleanContainer('screen-status-background');
+
     let person = people.find(item => item.phone == phone0);
     let contactName = setName(person);
     console.log(contactName);
