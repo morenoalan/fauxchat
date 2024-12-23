@@ -394,43 +394,50 @@
                 <section id='screen-status' class='display-active'>
                     <div id='screen-status-background' class='screen-background'>
                     </div>
-                    <div id='screen-status-header' class='screen-general-header'>
-                        <div id='screen-status-bar-set' class='screen-status-bar-set'>
-                            <!--
-                            <div class='screen-status-bar-time'>
-                                <div class='screen-status-bar-progress'></div>
+                    <ul class='screen-status-people'>
+                        <li class='screen-status-person'>
+                            <div id='screen-status-header' class='screen-general-header'>
+                                <div id='screen-status-bar-set' class='screen-status-bar-set'>
+                                    <!--
+                                    <div class='screen-status-bar-time'>
+                                        <div class='screen-status-bar-progress'></div>
+                                    </div>
+                                    -->
+                                </div>
+                                <div id='screen-status-header-display' class='screen-general-header-display'>
+                                    <figure id='screen-status-header-figure' class='screen-general-header-figure'>
+                                        <button id='screen-status-header-figure-back'
+                                        class='screen-general-header-figure-back back-button' onclick='goToScreen("screen-updates");'>
+                                            <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon svg-color-white'/>
+                                            <img id='img-chat' src='./medias/people/fauxchat-people-000.jpg' onclick='' alt='image' class='image-head'/>
+                                        </button>
+                                        <button id='screen-status-header-figure-name'
+                                        class='screen-general-header-figure-name' onclick='goToScreen("screen-profile");'>
+                                            <figcaption id='screen-status-figcaption' class='screen-general-header-figure-name-figcaption screen-status-header-figure-name-figcaption'>FauxChat</figcaption>
+                                            <p id='screen-status-figure-time' class='screen-status-figure-time'>Ontem 12:00</p>
+                                        </button>
+                                    </figure>
+                                    <div id='screen-status-header-menu'
+                                    class='screen-general-header-menu'>
+                                        <button>
+                                            <img id='screen-status-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon svg-color-white'/>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            -->
-                        </div>
-                        <div id='screen-status-header-display' class='screen-general-header-display'>
-                            <figure id='screen-status-header-figure' class='screen-general-header-figure'>
-                                <button id='screen-status-header-figure-back'
-                                class='screen-general-header-figure-back back-button' onclick='goToScreen("screen-updates");'>
-                                    <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon svg-color-white'/>
-                                    <img id='img-chat' src='./medias/people/fauxchat-people-000.jpg' onclick='' alt='image' class='image-head'/>
-                                </button>
-                                <button id='screen-status-header-figure-name'
-                                class='screen-general-header-figure-name' onclick='goToScreen("screen-profile");'>
-                                    <figcaption id='screen-status-figcaption' class='screen-general-header-figure-name-figcaption screen-status-header-figure-name-figcaption'>FauxChat</figcaption>
-                                    <p id='screen-status-figure-time' class='screen-status-figure-time'>Ontem 12:00</p>
-                                </button>
-                            </figure>
-                            <div id='screen-status-header-menu'
-                            class='screen-general-header-menu'>
-                                <button>
-                                    <img id='screen-status-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon svg-color-white'/>
-                                </button>
+                            <div id='screen-status-main'>
+                                <div class='screen-status-deck'>
+                                    <div class='screen-status-card'>
+                                        <img class='status-media' src='#' />
+                                        <p class='status-subtitle'></p>
+                                    </div>
+                                    <button onclick='goStatusPrevious' class='button-status-go-previous'></button>
+                                    <button onclick='goStatusNext' class='button-status-go-next'></button>
+                                    <div class='screen-status-footer'></div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div id='screen-status-main'>
-                        <div class='screen-status-main-cards'>
-                            <img class='status-media' src='#' />
-                            <p class='status-subtitle'></p>
-                            <button onclick='goStatusPrevious' class='button-status-go-previous'></button>
-                            <button onclick='goStatusNext' class='button-status-go-next'></button>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </section>
                 <section id='screen-communities' class='display-none'>
                     <div class='screen-general-header'>

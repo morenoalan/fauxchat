@@ -24,8 +24,12 @@
         z-index: 10;
     }
 
+    .screen-status-person {
+    }
+
     #screen-status-header {
         z-index: 101;
+        position: absolute;
     }
 
     #screen-status-main {
