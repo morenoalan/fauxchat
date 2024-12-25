@@ -230,6 +230,19 @@ function closeGallery() {
     document.getElementById('screen-gallery').classList.add('display-none');
 }
 
+function goAnotherStatus(target) {
+    switch (target) {
+    case 'previous':
+
+        break;
+    case 'next':
+
+        break;
+    default:
+        break;
+    }
+}
+
 // flip chat-header-edition
 let msgsCounterTag = document.getElementById('screen-chat-header-edition-counter');
 let msgsCounter = parseInt(msgsCounterTag.textContent);
