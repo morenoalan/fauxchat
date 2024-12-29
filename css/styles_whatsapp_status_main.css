@@ -53,4 +53,22 @@
         color: white;
     }
 
+    .screen-status-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        align-self: center;
+        /*
+        background-color: var(--color-mediumseagreen);
+        color: var(--color-white);
+        */
+        border-radius: 1.5rem;
+        height: 3rem;
+        width: 85%;
+        font-size: .85rem;
+        margin-bottom: 1rem;
+    }
+
 }
