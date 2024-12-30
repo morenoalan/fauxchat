@@ -54,6 +54,10 @@
     }
 
     .screen-status-footer {
+        /*position: absolute;*/
+        z-index: 102;
+        background-color: green;
+
         display: flex;
         flex-direction: row;
         align-items: center;
