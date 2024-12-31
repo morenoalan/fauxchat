@@ -54,7 +54,8 @@
     }
 
     .screen-status-footer {
-        /*position: absolute;*/
+        position: absolute;
+        bottom: 0.5rem;
         z-index: 102;
         background-color: green;
 
@@ -72,7 +73,7 @@
         height: 3rem;
         width: 85%;
         font-size: .85rem;
-        margin-bottom: 1rem;
+        /*margin-bottom: 1rem;*/
     }
 
 }
