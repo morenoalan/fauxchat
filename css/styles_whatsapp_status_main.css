@@ -57,7 +57,7 @@
         position: absolute;
         bottom: 0.5rem;
         z-index: 102;
-        background-color: green;
+        background-color: transparent;
 
         display: flex;
         flex-direction: row;
@@ -70,9 +70,8 @@
         color: var(--color-white);
         */
         width: 95%;
-        font-size: .85rem;
         /*margin-bottom: 1rem;*/
-        column-gap: 0.8rem;
+        column-gap: 0.75rem;
     }
 
     .screen-status-footer > * {
@@ -84,6 +83,8 @@
     .screen-status-footer > input {
         width: calc(100% - 3.8rem);
         color: white;
+        padding: 0 1rem;
+        font-size: 1.2rem;
     }
 
     .screen-status-footer > button {
