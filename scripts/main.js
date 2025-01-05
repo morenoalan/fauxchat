@@ -960,6 +960,10 @@ function loadStatus(phone0) {
 
 }
 
+function callFooterStatus(){
+    
+}
+
 
 // drag scrolling
 document.addEventListener('DOMContentLoaded', () => {
