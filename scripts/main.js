@@ -961,7 +961,11 @@ function loadStatus(phone0) {
 }
 
 function callFooterStatus(){
-    console.log("calling status footer")
+    console.log("calling status footer");
+}
+
+function likeStatus() {
+    console.log("like status");
 }
 
 
