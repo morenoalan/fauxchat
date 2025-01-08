@@ -964,7 +964,21 @@ function callFooterStatus(){
     console.log("calling status footer");
 }
 
-function likeStatus() {
+function toggleLikeStatus(this0) {
+
+    imgLike01 = this0.getElementsByClassName("display-none");
+    imgLike02 = this0.getElementsByClassName("img-active");
+
+    console.log([imgLike01.id, imgLike02.id]);
+
+    imgLike01.classList.toggle("display-none");
+    imgLike02.classList.toggle("display-none");
+    imgLike01.classList.toggle("img-active");
+    imgLike02.classList.toggle("img-active");
+}
+
+function likeStatus(this0) {
+    toggleLikeStatus(this0);
     console.log("like status");
 }
 
