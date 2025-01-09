@@ -975,9 +975,13 @@ function toggleLikeStatus(this0) {
     imgLike02.classList.toggle("img-active");
 }
 
+function recordLikeStatus() {
+    console.log("recordLikeStatus");
+}
+
 function likeStatus(this0) {
     toggleLikeStatus(this0);
-    
+    recordLikeStatus();
 }
 
 // drag scrolling
