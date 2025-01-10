@@ -960,19 +960,15 @@ function loadStatus(phone0) {
 
 }
 
-function callFooterStatus() {
-    console.log("calling status footer");
-}
+function toggleElements(this0) {
+    element1 = this0.getElementsByClassName("display-none")[0];
+    element2 = this0.getElementsByClassName("img-active")[0];
 
-function toggleLikeStatus(this0) {
-    imgLike01 = this0.getElementsByClassName("display-none")[0];
-    imgLike02 = this0.getElementsByClassName("img-active")[0];
+    element1.classList.toggle("display-none");
+    element1.classList.toggle("img-active");
 
-    imgLike01.classList.toggle("display-none");
-    imgLike01.classList.toggle("img-active");
-
-    imgLike02.classList.toggle("display-none");
-    imgLike02.classList.toggle("img-active");
+    element2.classList.toggle("display-none");
+    element2.classList.toggle("img-active");
 }
 
 function recordLikeStatus() {
@@ -980,9 +976,15 @@ function recordLikeStatus() {
 }
 
 function likeStatus(this0) {
-    toggleLikeStatus(this0);
+    toggleElements(this0);
     recordLikeStatus();
 }
+
+function callFooterStatus(this0) {
+    console.log("calling status footer");
+    toggleElements(this0);
+}
+
 
 // drag scrolling
 document.addEventListener('DOMContentLoaded', () => {
