@@ -436,11 +436,48 @@
                                 </div>
                             </div>
                             <div id='screen-status-footer' class='screen-status-footer'>
-                                <input placeholder='Responder' onclick='callFooterStatus();'/>
-                                <button onclick='likeStatus(this);'>
-                                    <img src='./medias/icons/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg' class='svg-color-white img-active'/>
-                                    <img src='./medias/icons/favorite_24dp_3CB371_FILL1_wght400_GRAD0_opsz24.svg' class='display-none'/>
-                                </button>
+                                <div class='obj-active'>
+                                    <input placeholder='Responder' onclick='callFooterStatus();'/>
+                                    <button onclick='likeStatus(this);'>
+                                        <img src='./medias/icons/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg' class='svg-color-white img-active'/>
+                                        <img src='./medias/icons/favorite_24dp_3CB371_FILL1_wght400_GRAD0_opsz24.svg' class='display-none'/>
+                                    </button>
+                                </div>
+                                <div class='display-none'>
+                                    <div>
+                                        <button>
+                                            <img src='./medias/icons/mood_FILL0_wght500_GRAD0_opsz48.svg' alt='emoji' class='icon svg-color-gray'/>
+                                        </button>
+                                        <div class='input-msg-field whatsapp-scroll' role='textbox' contenteditable='true'></div>
+                                        <button id='screen-chat-footer-attachment'>
+                                            <img src='./medias/icons/attach_file_FILL0_wght500_GRAD0_opsz48.svg' alt='attach' class='icon svg-color-gray'/>
+                                        </button>
+                                        <button>
+                                            <img src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='photo' class='icon svg-color-gray'/>
+                                        </button>
+                                    </div>
+                                    <div id='screen-chat-footer-command'>
+                                        <button id='screen-chat-footer-mic' class='default-green-button'>
+                                            <img src='./medias/icons/mic_FILL1_wght500_GRAD0_opsz48.svg' alt='mic' class='default-green-button-icon svg-color-white'/>
+                                        </button>
+                                        <button id='screen-chat-footer-send' onclick='sendMessage();' class='default-green-button display-none'>
+                                            <img src='./medias/icons/send_FILL1_wght500_GRAD0_opsz48.svg' alt='send' class='default-green-button-icon svg-color-white'/>
+                                        </button>
+                                        <div id='screen-chat-footer-send-panel' class='display-none'>
+                                            <button onclick='postMsg("00_me", false);' id='screen-chat-footer-me'>
+                                                <div class='image-send-people'>
+                                                    Eu
+                                                </div>
+                                            </button>
+                                            <button onclick='postMsg("00_info", false);' id='screen-chat-footer-info'>
+                                                <img src='./medias/icons/chat_info_FILL0_wght400_GRAD0_opsz24.svg' onclick='' alt='info' class='icon svg-color-white'/>
+                                            </button>
+                                            <button onclick='postMsg("", false);' class='screen-chat-footer-people'>
+                                                <img id='img-chat-footer' src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='002' class='image-send-people'/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                     </ul>
