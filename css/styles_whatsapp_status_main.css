@@ -55,6 +55,13 @@
 
     .screen-status-footer {
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .screen-status-footer > .obj-active {
+        position: absolute;
         bottom: 0.5rem;
         z-index: 102;
         background-color: transparent;
@@ -74,23 +81,23 @@
         column-gap: 0.75rem;
     }
 
-    .screen-status-footer > * {
+    .screen-status-footer > .obj-active > * {
         height: 3rem;
         border-radius: 1.5rem;
         background-color: var(--color-gray-89);
     }
 
-    .screen-status-footer > input {
+    .screen-status-footer > .obj-active > input {
         width: calc(100% - 3.8rem);
         color: white;
         padding: 0 1rem;
         font-size: 1.2rem;
     }
-    .screen-status-footer > input::placeholder {
+    .screen-status-footer > .obj-active > input::placeholder {
         color: white;
     }
 
-    .screen-status-footer > button {
+    .screen-status-footer > .obj-active > button {
         width: 3rem;
         display: flex;
         flex-direction: column;
