@@ -962,13 +962,13 @@ function loadStatus(phone0) {
 
 function toggleElements(this0) {
     element1 = this0.getElementsByClassName("display-none")[0];
-    element2 = this0.getElementsByClassName("img-active")[0];
+    element2 = this0.getElementsByClassName("obj-active")[0];
 
     element1.classList.toggle("display-none");
-    element1.classList.toggle("img-active");
+    element1.classList.toggle("obj-active");
 
     element2.classList.toggle("display-none");
-    element2.classList.toggle("img-active");
+    element2.classList.toggle("obj-active");
 }
 
 function recordLikeStatus() {
