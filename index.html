@@ -437,7 +437,7 @@
                             </div>
                             <div id='screen-status-footer' class='screen-status-footer'>
                                 <div class='obj-active'>
-                                    <input placeholder='Responder' onclick='callFooterStatus(this.parentNode.parentNode);'/>
+                                    <input placeholder='Responder' onclick='callFooterWriting(this.parentNode.parentNode);'/>
                                     <button onclick='likeStatus(this);'>
                                         <img src='./medias/icons/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg' class='svg-color-white obj-active'/>
                                         <img src='./medias/icons/favorite_24dp_3CB371_FILL1_wght400_GRAD0_opsz24.svg' class='display-none'/>
@@ -463,19 +463,6 @@
                                         <button onclick='sendMessage();' class='default-green-button display-none'>
                                             <img src='./medias/icons/send_FILL1_wght500_GRAD0_opsz48.svg' alt='send' class='default-green-button-icon svg-color-white'/>
                                         </button>
-                                        <div class='display-none'>
-                                            <button onclick='postMsg("00_me", false);' id='screen-chat-footer-me'>
-                                                <div class='image-send-people'>
-                                                    Eu
-                                                </div>
-                                            </button>
-                                            <button onclick='postMsg("00_info", false);'>
-                                                <img src='./medias/icons/chat_info_FILL0_wght400_GRAD0_opsz24.svg' onclick='' alt='info' class='icon svg-color-white'/>
-                                            </button>
-                                            <button onclick='postMsg("", false);' class='screen-chat-footer-people'>
-                                                <img src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='002' class='image-send-people'/>
-                                            </button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

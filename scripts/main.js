@@ -961,14 +961,17 @@ function loadStatus(phone0) {
 }
 
 function toggleElements(this0) {
-    element1 = this0.getElementsByClassName("display-none")[0];
-    element2 = this0.getElementsByClassName("obj-active")[0];
+    let element1 = this0.querySelector(":scope > .display-none");
+    let element2 = this0.querySelector(":scope > .obj-active");
 
-    element1.classList.toggle("display-none");
-    element1.classList.toggle("obj-active");
+    if (element1 && element2) {
 
-    element2.classList.toggle("display-none");
-    element2.classList.toggle("obj-active");
+        element1.classList.toggle("display-none");
+        element1.classList.toggle("obj-active");
+
+        element2.classList.toggle("display-none");
+        element2.classList.toggle("obj-active");
+    }
 }
 
 function recordLikeStatus() {
@@ -980,9 +983,17 @@ function likeStatus(this0) {
     recordLikeStatus();
 }
 
-function callFooterStatus(this0) {
+function generalBlur(el, cmd) {
+    el.removeEventListener("blur", cmd);
+    el.addEventListener("blur", cmd);
+}
+
+function callFooterWriting(this0) {
     console.log("calling status footer");
     toggleElements(this0);
+    let inputMsgField = this0.querySelector(":scope .input-msg-field");
+    inputMsgField.focus();
+    generalBlur(inputMsgField, () => toggleElements(this0));
 }
 
 
