@@ -110,6 +110,17 @@ function detachOne(elementKey, key, array) {
     return [theOne, newArray];
 }
 
+function focusDivAtEnd(editableDiv) {
+    editableDiv.focus();
+    let range = document.createRange();
+    range.selectNodeContents(editableDiv);
+    range.collapse(false);
+    let selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+}
+
+
 // localStorage
 function setToLocalStorage(order){
     order.forEach(item => {
@@ -1001,20 +1012,21 @@ function likeStatus(this0) {
     recordLikeStatus();
 }
 
-function generalBlur(el, cmd) {
-    console.log("generalBlur");
-    console.log(el);
-    console.log(cmd);
-    el.removeEventListener("blur", cmd);
-    el.addEventListener("blur", cmd);
+function generalBlur(el, cmdName, cmdFunc) {
+    el.removeEventListener("blur", el[cmdName]);
+    el[cmdName] = cmdFunc;
+    el.addEventListener("blur", cmdFunc);
 }
 
 function callFooterWriting(this0) {
     console.log("calling status footer");
     toggleElements(this0);
     let inputMsgField = this0.querySelector(":scope .input-msg-field");
-    inputMsgField.focus();
-    generalBlur(inputMsgField, () => toggleElements(this0));
+    
+    focusDivAtEnd(inputMsgField);
+
+    const blurHandler = () => toggleElements(this0);
+    generalBlur(inputMsgField, "_blurHandler", blurHandler);
 }
 
 
