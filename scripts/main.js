@@ -21,6 +21,23 @@ let localTime = '00:00';
 const backgroundStandard = '/medias/backgrounds/spaceman_light.jpg';
 
 // global functions
+
+// creating a global record of events
+const eventListeners = [];
+(function () {
+    const originalAddEventListener = EventTarget.prototype.addEventListener;
+
+    EventTarget.prototype.addEventListener = function (type, listener, options) {
+        eventListeners.push({
+            target: this,
+            type: type,
+            listener: listener,
+            options: options,
+        });
+        originalAddEventListener.call(this, type, listener, options);
+    };
+})();
+
 document.getElementById('copyleft-year').innerHTML = new Date().getUTCFullYear();
 
 function focusOn(element) {
@@ -961,6 +978,7 @@ function loadStatus(phone0) {
 }
 
 function toggleElements(this0) {
+    console.log("toggleElements");
     let element1 = this0.querySelector(":scope > .display-none");
     let element2 = this0.querySelector(":scope > .obj-active");
 
@@ -984,6 +1002,9 @@ function likeStatus(this0) {
 }
 
 function generalBlur(el, cmd) {
+    console.log("generalBlur");
+    console.log(el);
+    console.log(cmd);
     el.removeEventListener("blur", cmd);
     el.addEventListener("blur", cmd);
 }
