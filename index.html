@@ -156,7 +156,7 @@
                         </li>
                     </ul>
                 </section>
-                <section id='screen-chat' class='display-none'>
+                <section id='screen-chat' class='display-active'>
                     <div id='screen-chat-background' class='screen-background'>
                     </div>
                     <div id='screen-chat-header' class='screen-general-header'>
@@ -215,7 +215,7 @@
                     </div>
                     <div id='screen-chat-main' class='whatsapp-scroll scrollable'>
                     </div>
-                    <div id='screen-chat-footer'>
+                    <div id='screen-chat-footer' class='screen-chat-footer'>
                         <div id='screen-chat-footer-content'>
                             <button>
                                 <img id='screen-chat-footer-emoji-text' src='./medias/icons/mood_FILL0_wght500_GRAD0_opsz48.svg' alt='emoji' class='icon svg-color-gray'/>
@@ -241,7 +241,7 @@
                                         Eu
                                     </div>
                                 </button>
-                                <button onclick='postMsg("00_info", false);' id='screen-chat-footer-info'>
+                                <button onclick='postMsg("00_info", false);' id='screen-chat-footer-info' class='screen-chat-footer-info'>
                                     <img src='./medias/icons/chat_info_FILL0_wght400_GRAD0_opsz24.svg' onclick='' alt='info' class='icon svg-color-white'/>
                                 </button>
                                 <button onclick='postMsg("", false);' class='screen-chat-footer-people'>
@@ -391,7 +391,7 @@
                         </button>
                     </div>
                 </section>
-                <section id='screen-status' class='display-active'>
+                <section id='screen-status' class='display-none'>
                     <div id='screen-status-background' class='screen-background'>
                     </div>
                     <ul class='screen-status-people'>
@@ -443,7 +443,7 @@
                                         <img src='./medias/icons/favorite_24dp_3CB371_FILL1_wght400_GRAD0_opsz24.svg' class='display-none'/>
                                     </button>
                                 </div>
-                                <div class='display-none'>
+                                <div class='screen-chat-footer display-none'>
                                     <div>
                                         <button>
                                             <img src='./medias/icons/mood_FILL0_wght500_GRAD0_opsz48.svg' alt='emoji' class='icon svg-color-gray'/>
