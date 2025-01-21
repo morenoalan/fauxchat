@@ -156,7 +156,7 @@
                         </li>
                     </ul>
                 </section>
-                <section id='screen-chat' class='display-active'>
+                <section id='screen-chat' class='display-none'>
                     <div id='screen-chat-background' class='screen-background'>
                     </div>
                     <div id='screen-chat-header' class='screen-general-header'>
@@ -391,7 +391,7 @@
                         </button>
                     </div>
                 </section>
-                <section id='screen-status' class='display-none'>
+                <section id='screen-status' class='display-active'>
                     <div id='screen-status-background' class='screen-background'>
                     </div>
                     <ul class='screen-status-people'>
@@ -427,12 +427,12 @@
                             </div>
                             <div id='screen-status-main'>
                                 <div class='screen-status-deck'>
+                                    <button onclick='goAnotherStatus("previous");' class='button-status-go-previous'></button>
+                                    <button onclick='goAnotherStatus("next");' class='button-status-go-next'></button>
                                     <div class='screen-status-card'>
                                         <img class='status-media' src='#' />
                                         <p class='status-subtitle'></p>
                                     </div>
-                                    <button onclick='goAnotherStatus("previous");' class='button-status-go-previous'></button>
-                                    <button onclick='goAnotherStatus("next");' class='button-status-go-next'></button>
                                 </div>
                             </div>
                             <div id='screen-status-footer' class='screen-status-footer'>

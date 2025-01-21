@@ -989,7 +989,6 @@ function loadStatus(phone0) {
 }
 
 function toggleElements(this0) {
-    console.log("toggleElements");
     let element1 = this0.querySelector(":scope > .display-none");
     let element2 = this0.querySelector(":scope > .obj-active");
 
@@ -1019,7 +1018,6 @@ function generalBlur(el, cmdName, cmdFunc) {
 }
 
 function callFooterWriting(this0) {
-    console.log("calling status footer");
     toggleElements(this0);
     let inputMsgField = this0.querySelector(":scope .input-msg-field");
     
