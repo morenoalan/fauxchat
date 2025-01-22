@@ -67,17 +67,19 @@
         width: 30%;
         height: 100%;
 
-        background-color: green;
+        background-color: black;
+        filter: opacity(0.5);
     }
 
     .button-status-go-next {
         width: 70%;
         height: 100%;
 
-        background-color: yellow;
+        background-color: white;
+        filter: opacity(0.5);
     }
 
-    .button-status-card {
+    .screen-status-card {
         width: 100%;
         height: 100%;
 

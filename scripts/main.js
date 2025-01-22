@@ -22,7 +22,7 @@ const backgroundStandard = '/medias/backgrounds/spaceman_light.jpg';
 
 // global functions
 
-// creating a global record of events
+/*creating a global record of events*/
 const eventListeners = [];
 (function () {
     const originalAddEventListener = EventTarget.prototype.addEventListener;
@@ -37,6 +37,7 @@ const eventListeners = [];
         originalAddEventListener.call(this, type, listener, options);
     };
 })();
+/*/*/
 
 document.getElementById('copyleft-year').innerHTML = new Date().getUTCFullYear();
 
@@ -70,6 +71,7 @@ function loadImageTest(src) {
         img.onerror = function () {
             resolve(backgroundStandard);
         }
+        console.log(reject);
     });
 }
 
@@ -119,7 +121,6 @@ function focusDivAtEnd(editableDiv) {
     selection.removeAllRanges();
     selection.addRange(range);
 }
-
 
 // localStorage
 function setToLocalStorage(order){
@@ -192,6 +193,9 @@ function captureDivScreenshot(divId) {
 }
 
 // navigation
+let navChainLength = 0;
+let navChain = ["screen-status"];
+
 const contactBackButton = document.getElementById('screen-contact-header-figure-back');
 const newContactBackButton = document.getElementById('screen-new-contact-header-figure-back');
 const newContactButton = document.getElementById('screen-contact-new-contact-button');
