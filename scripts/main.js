@@ -196,11 +196,18 @@ function captureDivScreenshot(divId) {
 let navChainLength = 0;
 let navChain = ["screen-status"];
 
+function checkChain(nextScreen) {
+    navChain.push(nextScreen);
+    navChainLength++;
+}
+
 const contactBackButton = document.getElementById('screen-contact-header-figure-back');
 const newContactBackButton = document.getElementById('screen-new-contact-header-figure-back');
 const newContactButton = document.getElementById('screen-contact-new-contact-button');
 
 function goToScreen(nextScreen) {
+
+    checkChain(nextScreen);
 
     switch (nextScreen) {
     case 'screen-contact':
