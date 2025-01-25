@@ -1038,6 +1038,20 @@ function callFooterWriting(this0) {
     generalBlur(inputMsgField, "_blurHandler", blurHandler);
 }
 
+const screenStatusPeople = document.getElementById('screen-status-people');
+
+screenStatusPeople.addEventListener('input', function (event) {
+    if (event.target.classList.contains('input-msg-field')) {
+        const msgField = event.target;
+        if (msgField.textContent !== "") {
+            messageFieldWriting(msgField);
+        } else {
+            messageFieldClean(msgField);
+            collapseSendPanel(msgField);
+        }
+    }
+});
+
 
 // drag scrolling
 document.addEventListener('DOMContentLoaded', () => {
