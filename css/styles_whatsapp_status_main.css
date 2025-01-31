@@ -66,15 +66,17 @@
     .button-status-go-previous {
         width: 30%;
         height: 100%;
-
+        cursor: pointer;
         background-color: transparent;
+        opacity: 0.1;
     }
 
     .button-status-go-next {
         width: 70%;
         height: 100%;
-
-        background-color: transparent;
+        cursor: pointer;
+        background-color: red;
+        opacity: 0;
     }
 
     .screen-status-card {

@@ -272,10 +272,10 @@ function closeGallery() {
 function goAnotherStatus(target) {
     switch (target) {
     case 'previous':
-
+        console.log('previous');
         break;
     case 'next':
-
+        console.log('next');
         break;
     default:
         break;
