@@ -63,6 +63,12 @@
         justify-content: center;
     }
 
+    .status-media {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }  
+
     .button-status-go-previous {
         width: 30%;
         height: 100%;
