@@ -122,6 +122,14 @@ function focusDivAtEnd(editableDiv) {
     selection.addRange(range);
 }
 
+function transformLinks(text) {
+    // Find all links in the text
+    const regex = /(https?:\/\/[^\s]+)/g;
+
+    // Replace all links into clickable HTML tags
+    return texto.replace(regex, '<a href="$1" target="_blank">$1</a>');
+}
+
 // localStorage
 function setToLocalStorage(order){
     order.forEach(item => {
@@ -961,6 +969,12 @@ function pauseCronometer() {
 function cronometer() {
 }
 
+function grabStatus() {
+    let originalText = "";
+    let textWithLinks = transformLinks(originalText);
+    console.log(textWithLinks);
+}
+
 function loadStatus(phone0) {
     goToScreen('screen-status');
     console.log(phone0);
@@ -1051,7 +1065,6 @@ screenStatusPeople.addEventListener('input', function (event) {
         }
     }
 });
-
 
 // drag scrolling
 document.addEventListener('DOMContentLoaded', () => {
