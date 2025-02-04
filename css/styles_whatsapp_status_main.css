@@ -76,7 +76,12 @@
         justify-content: flex-start;
         
         position: absolute;
-        bottom: 5rem;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        padding: 0.5rem;
+        height: 6rem;
+        width: 100%;
+        z-index: 203;
     }
 
     .button-status-go-previous {
@@ -85,6 +90,7 @@
         cursor: pointer;
         background-color: transparent;
         opacity: 0; /*Property needed to materialize the button*/
+        z-index: 202;
     }
 
     .button-status-go-next {
@@ -93,6 +99,7 @@
         cursor: pointer;
         background-color: transparent;
         opacity: 0; /*Property needed to materialize the button*/
+        z-index: 201;
     }
 
     .screen-status-card {
@@ -105,7 +112,7 @@
         align-items: center;
         justify-content: center;
 
-        background-color: black;
+        background-color: gainsboro;
     }
 
     .screen-status-footer {
