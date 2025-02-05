@@ -74,14 +74,23 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        text-align: center;
         
         position: absolute;
-        bottom: 0;
+        bottom: 3.5rem;
         background-color: rgba(0,0,0,0.5);
-        padding: 0.5rem;
-        height: 6rem;
+        padding: 0.5rem 0.5rem 0.8rem 0.5rem;
         width: 100%;
         z-index: 203;
+    }
+
+    .status-subtitle::after {
+        content: '';
+        position: absolute;
+        bottom: -3.5rem;
+        width: 100%;
+        height: 3.5rem;
+        background-color: rgba(0,0,0,0.5);
     }
 
     .button-status-go-previous {
