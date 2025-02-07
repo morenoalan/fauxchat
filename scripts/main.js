@@ -277,13 +277,14 @@ function closeGallery() {
     document.getElementById('screen-gallery').classList.add('display-none');
 }
 
-function findStatus(this) {
-    let allImg = this.parentNode.querySelectorAll('img');
+function findStatus(thisEl) {
+    let allImg = thisEl.parentNode.querySelectorAll('img');
     console.log(allImg);
 }
 
 function goAnotherStatus(this, target) {
-    findStatus(this);
+    let thisEl = this;
+    findStatus(thisEl);
     switch (target) {
     case 'previous':
         console.log('previous');
