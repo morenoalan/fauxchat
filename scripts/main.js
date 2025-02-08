@@ -216,7 +216,7 @@ const newContactButton = document.getElementById('screen-contact-new-contact-but
 function goToScreen(nextScreen) {
 
     checkChain(nextScreen);
-
+    console.log(nextScreen);
     switch (nextScreen) {
     case 'screen-contact':
         contactList('msg');
@@ -282,9 +282,9 @@ function findStatus(thisEl) {
     console.log(allImg);
 }
 
-function goAnotherStatus(this, target) {
-    let thisEl = this;
-    findStatus(thisEl);
+function goAnotherStatus(this0, target) {
+    console.log(this0, target);
+    findStatus(this0);
     switch (target) {
     case 'previous':
         console.log('previous');
@@ -933,7 +933,7 @@ function loadUpdatesStatuses() {
                 \<img src='${photo}'\/\>
             \<\/button\>
             \<button\>
-                \<img src='.\/medias\/icons\/add_circle_24dp_000000_FILL1_wght400_GRAD0_opsz24.svg' alt='add' class='add-icon' \/\>
+                \<img src='.\/medias\/icons\/add_circle_24dp_3CB371_FILL1_wght400_GRAD0_opsz24.svg' alt='add' class='add-icon' \/\>
             \<\/button\>
             \<figcaption\>${contactName}\<\/figcaption\>
         `;
