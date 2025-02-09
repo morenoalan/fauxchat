@@ -277,9 +277,12 @@ function closeGallery() {
     document.getElementById('screen-gallery').classList.add('display-none');
 }
 
-function findStatus(thisEl) {
-    let allImg = thisEl.parentNode.querySelectorAll('img');
-    console.log(allImg);
+function findStatus(this0) {
+    let allMedia = Array.from(this0.parentNode.querySelectorAll('.screen-status-card'));
+    console.log(allMedia);
+    let index = allMedia.findIndex(media => media.classList.contains('status-active'));
+    console.log(index);
+    return index; // Retorna o índice encontrado
 }
 
 function goAnotherStatus(this0, target) {
