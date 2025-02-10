@@ -277,23 +277,38 @@ function closeGallery() {
     document.getElementById('screen-gallery').classList.add('display-none');
 }
 
-function findStatus(this0) {
-    let allMedia = Array.from(this0.parentNode.querySelectorAll('.screen-status-card'));
-    console.log(allMedia);
-    let index = allMedia.findIndex(media => media.classList.contains('status-active'));
-    console.log(index);
-    return index; // Retorna o índice encontrado
+function goToAnotherDeck(indexDeck, target) {
+
 }
 
-function goAnotherStatus(this0, target) {
-    console.log(this0, target);
-    findStatus(this0);
+function goToAnotherCard(indexCard, target) {
+
+}
+
+function goToAnotherStatus(thisCard, target) {
+    console.log(thisCard, target);
+    let allCards = Array.from(thisCard.parentNode.querySelectorAll('.screen-status-card'));
+    let indexCard = allCards.findIndex(card => card.classList.contains('card-active'));
+
+    let allDecks = Array.from(thisCard.parentNode.parentNode.querySelectorAll('.screen-status-deck'));
+    let indexDeck = allDecks.findIndex(deck => deck.classList.contains('deck-active'));
+
     switch (target) {
     case 'previous':
-        console.log('previous');
+        indexCard--;
+        if(indexCard < 0) {
+            goToAnotherDeck(indexDeck, 'previous');
+        }else{
+            goToAnotherCard(indexCard, 'previous');
+        }
         break;
     case 'next':
-        console.log('next');
+        index++;
+        if(indexCard == allCards.length) {
+            goToAnotherDeck(indexDeck, 'next');
+        }else{
+            goToAnotherCard(indexCard, 'next');
+        }
         break;
     default:
         break;
