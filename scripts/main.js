@@ -278,11 +278,11 @@ function closeGallery() {
 }
 
 function goToAnotherDeck(indexDeck, target) {
-
+    console.log(indexDeck, target);
 }
 
 function goToAnotherCard(indexCard, target) {
-
+    console.log(indexCard, target);
 }
 
 function goToAnotherStatus(thisCard, target) {
@@ -303,7 +303,7 @@ function goToAnotherStatus(thisCard, target) {
         }
         break;
     case 'next':
-        index++;
+        indexCard++;
         if(indexCard == allCards.length) {
             goToAnotherDeck(indexDeck, 'next');
         }else{
