@@ -121,7 +121,7 @@
         align-items: center;
         justify-content: center;
 
-        background-color: gainsboro;
+        background-color: var(--color-gray-89);
     }
 
     .screen-status-footer {
