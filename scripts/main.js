@@ -297,17 +297,17 @@ function goToAnotherStatus(thisCard, target) {
     case 'previous':
         indexCard--;
         if(indexCard < 0) {
-            goToAnotherDeck(indexDeck, 'previous');
+            goToAnotherDeck(indexDeck, 'previous deck');
         }else{
-            goToAnotherCard(indexCard, 'previous');
+            goToAnotherCard(indexCard, 'previous card');
         }
         break;
     case 'next':
         indexCard++;
         if(indexCard == allCards.length) {
-            goToAnotherDeck(indexDeck, 'next');
+            goToAnotherDeck(indexDeck, 'next deck');
         }else{
-            goToAnotherCard(indexCard, 'next');
+            goToAnotherCard(indexCard, 'next card');
         }
         break;
     default:
