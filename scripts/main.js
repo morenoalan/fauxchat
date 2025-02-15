@@ -281,8 +281,18 @@ function goToAnotherDeck(indexDeck, target) {
     console.log(indexDeck, target);
 }
 
-function goToAnotherCard(indexCard, target) {
+function goToAnotherCard(allCards, indexCard, target) {
     console.log(indexCard, target);
+    
+    for(let i = 0; i < allCards.length; i++) {
+        allCards[i].classList.remove('card-active');
+        allCards[i].classList.remove('display-none');
+        allCards[i].classList.add('display-none');
+    }
+
+    allCards[indexCard].classList.remove('display-none');
+    allCards[indexCard].classList.add('card-active');
+
 }
 
 function goToAnotherStatus(thisCard, target) {
@@ -297,17 +307,17 @@ function goToAnotherStatus(thisCard, target) {
     case 'previous':
         indexCard--;
         if(indexCard < 0) {
-            goToAnotherDeck(indexDeck, 'previous deck');
+            goToAnotherDeck(indexDeck, 'previous');
         }else{
-            goToAnotherCard(indexCard, 'previous card');
+            goToAnotherCard(allCards, indexCard, 'next');
         }
         break;
     case 'next':
         indexCard++;
         if(indexCard == allCards.length) {
-            goToAnotherDeck(indexDeck, 'next deck');
+            goToAnotherDeck(indexDeck, 'next');
         }else{
-            goToAnotherCard(indexCard, 'next card');
+            goToAnotherCard(allCards, indexCard, 'next');
         }
         break;
     default:
