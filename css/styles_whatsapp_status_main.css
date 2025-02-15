@@ -24,7 +24,7 @@
         z-index: 10;
     }
 
-    .screen-status-person {
+    .person-active {
         height: 100%;
         width: 100%;
         display: flex;
@@ -33,12 +33,12 @@
         justify-content: center;
     }
 
-    #screen-status-header {
+    .screen-status-header {
         z-index: 101;
         position: absolute;
     }
 
-    #screen-status-main {
+    .screen-status-main {
         z-index: 100;
         width: 100%;
         height: 100%;

@@ -395,8 +395,8 @@
                     <div id='screen-status-background' class='screen-background'>
                     </div>
                     <ul class='screen-status-people'>
-                        <li class='screen-status-person'>
-                            <div id='screen-status-header' class='screen-general-header'>
+                        <li class='screen-status-person person-active'>
+                            <div class='screen-status-header screen-general-header'>
                                 <div id='screen-status-bar-set' class='screen-status-bar-set'>
                                     <!--
                                     <div class='screen-status-bar-time'>
@@ -428,7 +428,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id='screen-status-main'>
+                            <div class='screen-status-main'>
                                 <div class='screen-status-deck deck-active'>
                                     <div class='screen-status-card card-active'>
                                         <img class='status-media' src='./medias/statuses/jogo_coup.jpg' />
@@ -441,6 +441,160 @@
                                     <div class='screen-status-card display-none'>
                                         <img class='status-media' src='./medias/statuses/jogo_dixit.jpg' />
                                         <p class='status-subtitle'>https://amzn.to/3Z9W7fr</p>
+                                    </div>
+                                    <button onclick='goToAnotherStatus(this, "previous");' class='button-status-go-previous'></button>
+                                    <button onclick='goToAnotherStatus(this, "next");' class='button-status-go-next'></button>
+                                </div>
+                            </div>
+                            <div id='screen-status-footer' class='screen-status-footer'>
+                                <div class='obj-active'>
+                                    <input placeholder='Responder' onclick='callFooterWriting(this.parentNode.parentNode);'/>
+                                    <button onclick='likeStatus(this);'>
+                                        <img src='./medias/icons/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg' class='svg-color-white obj-active'/>
+                                        <img src='./medias/icons/favorite_24dp_3CB371_FILL1_wght400_GRAD0_opsz24.svg' class='display-none'/>
+                                    </button>
+                                </div>
+                                <div class='screen-chat-footer display-none'>
+                                    <div>
+                                        <button>
+                                            <img src='./medias/icons/mood_FILL0_wght500_GRAD0_opsz48.svg' alt='emoji' class='icon svg-color-gray'/>
+                                        </button>
+                                        <div class='input-msg-field whatsapp-scroll' role='textbox' contenteditable='true'></div>
+                                        <button id='screen-chat-footer-attachment'>
+                                            <img src='./medias/icons/attach_file_FILL0_wght500_GRAD0_opsz48.svg' alt='attach' class='icon svg-color-gray'/>
+                                        </button>
+                                        <button>
+                                            <img src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='photo' class='icon svg-color-gray'/>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button id='screen-chat-footer-mic' class='default-green-button'>
+                                            <img src='./medias/icons/mic_FILL1_wght500_GRAD0_opsz48.svg' alt='mic' class='default-green-button-icon svg-color-white'/>
+                                        </button>
+                                        <button onclick='sendMessage();' class='default-green-button display-none'>
+                                            <img src='./medias/icons/send_FILL1_wght500_GRAD0_opsz48.svg' alt='send' class='default-green-button-icon svg-color-white'/>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='screen-status-person display-none'>
+                            <div class='screen-status-header screen-general-header'>
+                                <div id='screen-status-bar-set' class='screen-status-bar-set'>
+                                </div>
+                                <div id='screen-status-header-display' class='screen-general-header-display'>
+                                    <figure id='screen-status-header-figure' class='screen-general-header-figure'>
+                                        <button id='screen-status-header-figure-back'
+                                        class='screen-general-header-figure-back back-button' onclick='goToScreen("screen-updates");'>
+                                            <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon svg-color-white'/>
+                                            <img id='img-chat' src='./medias/people/fauxchat-people-025.jpg' onclick='' alt='image' class='image-head'/>
+                                        </button>
+                                        <button id='screen-status-header-figure-name'
+                                        class='screen-general-header-figure-name' onclick='goToScreen("screen-profile");'>
+                                            <figcaption id='screen-status-figcaption' class='screen-general-header-figure-name-figcaption screen-status-header-figure-name-figcaption'>Érica Peroba</figcaption>
+                                            <p id='screen-status-figure-time' class='screen-status-figure-time'>Ontem 12:00</p>
+                                        </button>
+                                    </figure>
+                                    <div id='screen-status-header-menu'
+                                    class='screen-general-header-menu'>
+                                        <button>
+                                            <img id='screen-status-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon svg-color-white'/>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='screen-status-main'>
+                                <div class='screen-status-deck deck-active'>
+                                    <div class='screen-status-card card-active'>
+                                        <img class='status-media' src='./medias/statuses/livro_codigo_limpo.jpg' />
+                                        <p class='status-subtitle'>https://amzn.to/3B8V7Aj</p>
+                                    </div>
+                                    <div class='screen-status-card card-active'>
+                                        <img class='status-media' src='./medias/statuses/livro_domain-driven_design.jpg' />
+                                        <p class='status-subtitle'>https://amzn.to/4fPST8b</p>
+                                    </div>
+                                    <div class='screen-status-card card-active'>
+                                        <img class='status-media' src='./medias/statuses/livro_entendendo_algoritmos.jpg' />
+                                        <p class='status-subtitle'>https://amzn.to/3B1nn83</p>
+                                    </div>
+                                    <div class='screen-status-card display-none'>
+                                        <img class='status-media' src='./medias/statuses/livro_estruturas_de_dados_e_algoritmos_com_javascript.jpg' />
+                                        <p class='status-subtitle'>https://amzn.to/3CPrpB3</p>
+                                    </div>
+                                    <div class='screen-status-card display-none'>
+                                        <img class='status-media' src='./medias/statuses/livro_expressoes_regulares.jpg' />
+                                        <p class='status-subtitle'>https://amzn.to/4g8razc</p>
+                                    </div>
+                                    <button onclick='goToAnotherStatus(this, "previous");' class='button-status-go-previous'></button>
+                                    <button onclick='goToAnotherStatus(this, "next");' class='button-status-go-next'></button>
+                                </div>
+                            </div>
+                            <div id='screen-status-footer' class='screen-status-footer'>
+                                <div class='obj-active'>
+                                    <input placeholder='Responder' onclick='callFooterWriting(this.parentNode.parentNode);'/>
+                                    <button onclick='likeStatus(this);'>
+                                        <img src='./medias/icons/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg' class='svg-color-white obj-active'/>
+                                        <img src='./medias/icons/favorite_24dp_3CB371_FILL1_wght400_GRAD0_opsz24.svg' class='display-none'/>
+                                    </button>
+                                </div>
+                                <div class='screen-chat-footer display-none'>
+                                    <div>
+                                        <button>
+                                            <img src='./medias/icons/mood_FILL0_wght500_GRAD0_opsz48.svg' alt='emoji' class='icon svg-color-gray'/>
+                                        </button>
+                                        <div class='input-msg-field whatsapp-scroll' role='textbox' contenteditable='true'></div>
+                                        <button id='screen-chat-footer-attachment'>
+                                            <img src='./medias/icons/attach_file_FILL0_wght500_GRAD0_opsz48.svg' alt='attach' class='icon svg-color-gray'/>
+                                        </button>
+                                        <button>
+                                            <img src='./medias/icons/photo_camera_FILL0_wght600_GRAD0_opsz48.svg' alt='photo' class='icon svg-color-gray'/>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button id='screen-chat-footer-mic' class='default-green-button'>
+                                            <img src='./medias/icons/mic_FILL1_wght500_GRAD0_opsz48.svg' alt='mic' class='default-green-button-icon svg-color-white'/>
+                                        </button>
+                                        <button onclick='sendMessage();' class='default-green-button display-none'>
+                                            <img src='./medias/icons/send_FILL1_wght500_GRAD0_opsz48.svg' alt='send' class='default-green-button-icon svg-color-white'/>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='screen-status-person display-none'>
+                            <div class='screen-status-header screen-general-header'>
+                                <div id='screen-status-bar-set' class='screen-status-bar-set'>
+                                </div>
+                                <div id='screen-status-header-display' class='screen-general-header-display'>
+                                    <figure id='screen-status-header-figure' class='screen-general-header-figure'>
+                                        <button id='screen-status-header-figure-back'
+                                        class='screen-general-header-figure-back back-button' onclick='goToScreen("screen-updates");'>
+                                            <img src='./medias/icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg' alt='back' class='icon svg-color-white'/>
+                                            <img id='img-chat' src='./medias/people/fauxchat-people-002.jpg' onclick='' alt='image' class='image-head'/>
+                                        </button>
+                                        <button id='screen-status-header-figure-name'
+                                        class='screen-general-header-figure-name' onclick='goToScreen("screen-profile");'>
+                                            <figcaption id='screen-status-figcaption' class='screen-general-header-figure-name-figcaption screen-status-header-figure-name-figcaption'>Faúxa</figcaption>
+                                            <p id='screen-status-figure-time' class='screen-status-figure-time'>Ontem 12:00</p>
+                                        </button>
+                                    </figure>
+                                    <div id='screen-status-header-menu'
+                                    class='screen-general-header-menu'>
+                                        <button>
+                                            <img id='screen-status-header-menu-more' src='./medias/icons/more_vert_FILL0_wght400_GRAD0_opsz24.svg' alt='more' class='icon svg-color-white'/>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='screen-status-main'>
+                                <div class='screen-status-deck deck-active'>
+                                    <div class='screen-status-card card-active'>
+                                        <img class='status-media' src='./medias/statuses/livro_a_cabeca_do_santo.jpg' />
+                                        <p class='status-subtitle'>https://amzn.to/419WjOD</p>
+                                    </div>
+                                    <div class='screen-status-card display-none'>
+                                        <img class='status-media' src='./medias/statuses/livro_sem_anos_de_solidao.jpg' />
+                                        <p class='status-subtitle'>https://amzn.to/41a3YMz</p>
                                     </div>
                                     <button onclick='goToAnotherStatus(this, "previous");' class='button-status-go-previous'></button>
                                     <button onclick='goToAnotherStatus(this, "next");' class='button-status-go-next'></button>

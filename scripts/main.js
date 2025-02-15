@@ -277,12 +277,22 @@ function closeGallery() {
     document.getElementById('screen-gallery').classList.add('display-none');
 }
 
-function goToAnotherDeck(indexDeck, target) {
-    console.log(indexDeck, target);
+function goToAnotherPerson(allPeople, indexPerson, target) {
+    console.log(indexPerson, target + " person");
+
+    for(let i = 0; i < allPeople.length; i++) {
+        allPeople[i].classList.remove('person-active');
+        allPeople[i].classList.remove('display-none');
+        allPeople[i].classList.add('display-none');
+    }
+
+    allPeople[indexPerson].classList.remove('display-none');
+    allPeople[indexPerson].classList.add('person-active');
+
 }
 
 function goToAnotherCard(allCards, indexCard, target) {
-    console.log(indexCard, target);
+    console.log(indexCard, target + " card");
     
     for(let i = 0; i < allCards.length; i++) {
         allCards[i].classList.remove('card-active');
@@ -300,22 +310,37 @@ function goToAnotherStatus(thisCard, target) {
     let allCards = Array.from(thisCard.parentNode.querySelectorAll('.screen-status-card'));
     let indexCard = allCards.findIndex(card => card.classList.contains('card-active'));
 
-    let allDecks = Array.from(thisCard.parentNode.parentNode.querySelectorAll('.screen-status-deck'));
-    let indexDeck = allDecks.findIndex(deck => deck.classList.contains('deck-active'));
+    let allPeople = Array.from(thisCard.parentNode.parentNode.parentNode.parentNode.querySelectorAll('.screen-status-person'));
+    console.log(allPeople);
+    let indexPerson = allPeople.findIndex(person => person.classList.contains('person-active'));
 
     switch (target) {
     case 'previous':
         indexCard--;
         if(indexCard < 0) {
-            goToAnotherDeck(indexDeck, 'previous');
+            indexPerson--;
+            if(indexPerson < 0) {
+                console.log('updates-');
+                goToScreen("screen-updates");
+            }else{
+                goToAnotherPerson(allPeople, indexPerson, 'previous');
+                goToAnotherCard(allCards, 0, 'previous');
+            }
         }else{
-            goToAnotherCard(allCards, indexCard, 'next');
+            goToAnotherCard(allCards, indexCard, 'previous');
         }
         break;
     case 'next':
         indexCard++;
         if(indexCard == allCards.length) {
-            goToAnotherDeck(indexDeck, 'next');
+            indexPerson++;
+            if(indexPerson == allPeople.length) {
+                console.log('updates+');
+                goToScreen("screen-updates");
+            }else{
+                goToAnotherPerson(allPeople, indexPerson, 'next');
+                goToAnotherCard(allCards, 0, 'next');
+            }
         }else{
             goToAnotherCard(allCards, indexCard, 'next');
         }
