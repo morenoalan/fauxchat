@@ -1111,11 +1111,25 @@ function callFooterWriting(this0) {
     const blurHandler = () => toggleElements(this0);
     generalBlur(inputMsgField, "_blurHandler", blurHandler);
 }
-
+/*
 const screenStatusPeople = document.getElementById('screen-status-people');
 
 screenStatusPeople.addEventListener('input', function (event) {
     if (event.target.classList.contains('input-msg-field')) {
+        const msgField = event.target;
+        if (msgField.textContent !== "") {
+            messageFieldWriting(msgField);
+        } else {
+            messageFieldClean(msgField);
+            collapseSendPanel(msgField);
+        }
+    }
+});
+*/
+document.body.addEventListener("input", function (event) {
+    const parentUl = event.target.closest(".screen-status-people");
+
+    if (parentUl && event.target.classList.contains("input-msg-field")) {
         const msgField = event.target;
         if (msgField.textContent !== "") {
             messageFieldWriting(msgField);
