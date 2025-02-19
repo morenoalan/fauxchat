@@ -1056,6 +1056,8 @@ function loadStatus(phone0) {
         console.log(objectTime+'; '+objectMedia+'; '+objectSubtitle);
     });
 
+    grabStatus();
+
     let divImg = `
     \<div\>
         \<img src='' class='mediaStatus'\/\>
