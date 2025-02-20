@@ -1023,10 +1023,10 @@ function loadUpdatesChannels() {
 }
 
 // screen-status
-function pauseCronometer() {
+function pauseChronometer() {
 
 }
-function cronometer() {
+function chronometer() {
 }
 
 function grabStatus() {
