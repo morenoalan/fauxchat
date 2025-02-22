@@ -127,7 +127,7 @@ function transformLinks(text) {
     const regex = /(https?:\/\/[^\s]+)/g;
 
     // Replace all links into clickable HTML tags
-    return texto.replace(regex, '<a href="$1" target="_blank">$1</a>');
+    return text.replace(regex, '<a href="$1" target="_blank">$1</a>');
 }
 
 // localStorage
