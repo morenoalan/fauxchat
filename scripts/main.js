@@ -1024,9 +1024,25 @@ function loadUpdatesChannels() {
 
 // screen-status
 function pauseChronometer() {
-
 }
+
 function chronometer() {
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const loadingBar = document.getElementById("loadingBar");
+
+    // Inicia a animação da barra de carregamento
+    loadingBar.style.width = "100%";
+
+    // Dispara a função após 60 segundos
+    setTimeout(function() {
+        minhaFuncao();
+    }, 60000); // 60 segundos em milissegundos
+});
+
+function minhaFuncao() {
+    alert("A barra de carregamento terminou e esta função foi disparada!");
 }
 
 function grabStatus() {
