@@ -1029,20 +1029,16 @@ function pauseChronometer() {
 function chronometer() {
 }
 
-function loadingStatus() {
+function loadingNextStatus() {
     alert("A barra de carregamento terminou e esta função foi disparada!");
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const loadingBar = document.getElementById("loadingBar");
-
-    // Inicia a animação da barra de carregamento
+    let loadingBar = document.getElementById("loadingBar");
     loadingBar.style.width = "100%";
-
-    // Dispara a função após 60 segundos
     setTimeout(function() {
-        loadingStatus();
-    }, 60000); // 60 segundos em milissegundos
+        loadingNextStatus();
+    }, 60000);
 });
 
 function grabStatus() {
