@@ -27,10 +27,14 @@
         height: 100%;
         background-color: gray;
         border-radius: 0.07rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .screen-status-bar-progress {
-        width: 50%;
+        width: 24%;
         height: 100%;
         background-color: white;
         border-radius: 0.07rem;
