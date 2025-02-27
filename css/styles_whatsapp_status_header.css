@@ -38,6 +38,17 @@
         height: 100%;
         background-color: white;
         border-radius: 0.07rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .screen-status-bar-progress > .bar-progress-loading {
+        width: 50%;
+        height: 100%;
+        background-color: red;
+        border-radius: 0.07rem;
     }
 
     .screen-status-header-figure-name-figcaption {
