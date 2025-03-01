@@ -4,7 +4,7 @@
         --whatsapp: "whatsapp";
     };
 
-    #screen-status-header-display {
+    .screen-status-header-display {
         background: transparent;
         border-bottom: none;
     }
