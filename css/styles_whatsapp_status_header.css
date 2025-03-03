@@ -28,6 +28,7 @@
         background-color: gray;
         border-radius: 0.07rem;
         display: flex; /* to divided the width of sons dynamically */
+        column-gap: 0.75%;
     }
 
     .screen-status-bar-progress {
